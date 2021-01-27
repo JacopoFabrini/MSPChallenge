@@ -1,180 +1,198 @@
-# Introduction
+# Intro
 
-### Write something nice here!
+The MSP Challenge Simulation Platform is openly available for users to download and use, as explained on the Download & Install page.
 
->First off, thank you for considering contributing to Active Admin. It's people like you that make Active Admin such a great tool.
+You might however be interested in developing new Client features, or to create your own Simulations to add additional data calculations to the platform. For this purpose, we have provided the source code of the Client, Server, and Simulations for our community to use for expanding on the MSP Challenge Simulation Platform.
 
-[source: [Active Admin](https://github.com/activeadmin/activeadmin/blob/master/CONTRIBUTING.md)] **Need more inspiration?** [1] [Read The Docs](http://read-the-docs.readthedocs.org/en/latest/contribute.html) [2] [Mustache.js](https://github.com/janl/mustache.js/#contributing)
+Source Location: MSPChallenge Repository
 
-### Tell them why they should read your guidelines.
+License: GPL-3.0
 
->Following these guidelines helps to communicate that you respect the time of the developers managing and developing this open source project. In return, they should reciprocate that respect in addressing your issue, assessing changes, and helping you finalize your pull requests.
 
-[source: [Hoodie](https://github.com/hoodiehq/hoodie/blob/master/CONTRIBUTING.md)]
+Thank you for considering to contribute to the MSP Challenge Platform Edition. We have seen many users of the MSP Challenge over the years, and it brings us great joy to see the enthusiasm of these users extend into becoming contributors to the platform.
 
-### Explain what kinds of contributions you are looking for.
+The following guidelines help understand why we made the project open source, and how we expect to reply to community contributions. As the MSP Challenge team consists of a small team without funding for dedicated open-source support staff, we ask for your understanding in our capabilities to respond to any contact related to community contributions
 
-Keep an open mind! Improving documentation, bug triaging, or writing tutorials are all examples of helpful contributions that mean less work for you.
 
-> Elasticsearch is an open source project and we love to receive contributions from our community — you! There are many ways to contribute, from writing tutorials or blog posts, improving the documentation, submitting bug reports and feature requests or writing code which can be incorporated into Elasticsearch itself.
 
-[source: [Elasticsearch](https://github.com/elastic/elasticsearch/blob/master/CONTRIBUTING.md)] **Need more inspiration?** [1] [Devise](https://github.com/plataformatec/devise/wiki/Contributing) [2] [Geocoder](https://github.com/alexreisner/geocoder#known-issues) (“known issues”)
 
-### Explain contributions you are NOT looking for (if any).
+## Free to extend on the MSP Challenge Platform Edition
 
-Again, defining this up front means less work for you. If someone ignores your guide and submits something you don’t want, you can simply close it and point to your policy.
+Our aim is to allow all community members with the required technical knowledge to freely contribute to the MSP Challenge project, both the content as well as the features. To aid in this effort we decided to release the source code under the GPL-3.0-only license. Under this license you may freely copy, distribute and modify the software as long as you track changes and their dates in source files. This license counts for the data and code made available via the public Github repo.
 
-> Please, don't use the issue tracker for [support questions]. Check whether the #pocoo IRC channel on Freenode can help with your issue. If your problem is not strictly Werkzeug or Flask specific, #python is generally more active. Stack Overflow is also worth considering.
+For more information on the Terms & Condition of using the MSP Challenge Simulation platform, please visit the Terms and Conditions page
 
-[source: [Flask](https://github.com/pallets/flask/blob/master/CONTRIBUTING.rst)] **Need more inspiration?** [1] [cucumber-ruby](https://github.com/cucumber/cucumber-ruby/blob/master/CONTRIBUTING.md#about-to-create-a-new-github-issue) [2] [Read the Docs](http://read-the-docs.readthedocs.org/en/latest/open-source-philosophy.html#unsupported)
+Terms & Conditions - MSP Challenge Community
 
-# Ground Rules
-### Set expectations for behavior (yours, and theirs).
-This includes not just how to communicate with others (being respectful, considerate, etc) but also technical responsibilities (importance of testing, project dependencies, etc). Mention and link to your code of conduct, if you have one.
 
-> Responsibilities
-> * Ensure cross-platform compatibility for every change that's accepted. Windows, Mac, Debian & Ubuntu Linux.
-> * Ensure that code that goes into core meets all requirements in this checklist: https://gist.github.com/audreyr/4feef90445b9680475f2
-> * Create issues for any major changes and enhancements that you wish to make. Discuss things transparently and get community feedback.
-> * Don't add any classes to the codebase unless absolutely needed. Err on the side of using functions.
-> * Keep feature versions as small as possible, preferably one new feature per version.
-> * Be welcoming to newcomers and encourage diverse new contributors from all backgrounds. See the [Python Community Code of Conduct](https://www.python.org/psf/codeofconduct/).
 
-[source: [cookiecutter](https://github.com/audreyr/cookiecutter/blob/master/CONTRIBUTING.rst)] **Need more inspiration?** [1] [Celery](https://github.com/celery/celery/blob/master/CONTRIBUTING.rst#community-code-of-conduct) [2] [geocoder](https://github.com/alexreisner/geocoder#contributing)
 
-# Your First Contribution
-Help people who are new to your project understand where they can be most helpful. This is also a good time to let people know if you follow a label convention for flagging beginner issues.
+## Licensed elements
 
-> Unsure where to begin contributing to Atom? You can start by looking through these beginner and help-wanted issues:
-> Beginner issues - issues which should only require a few lines of code, and a test or two.
-> Help wanted issues - issues which should be a bit more involved than beginner issues.
-> Both issue lists are sorted by total number of comments. While not perfect, number of comments is a reasonable proxy for impact a given change will have.
+### Plugins and Packages
 
-[source: [Atom](https://github.com/atom/atom/blob/master/CONTRIBUTING.md#your-first-code-contribution)] **Need more inspiration?** [1] [Read the Docs](http://docs.readthedocs.org/en/latest/contribute.html#contributing-to-development) [2] [Django](https://docs.djangoproject.com/en/dev/internals/contributing/new-contributors/#first-steps) (scroll down to "Guidelines" as well)
+While the source code of MSP Challenge itself is open source, several packages and plugins have been used to develop the software, which have their own licenses. We are NOT able share many of these files, and ask you to retrieve your own copy if you wish to use these files or plugins. This involves several plugins we purchased via the Unity Asset Store amongst others. You can find these plugins and libraries on the following page on the wiki: Source code - MSP Challenge Community
 
-### Bonus points: Add a link to a resource for people who have never contributed to open source before.
-Here are a couple of friendly tutorials you can include: http://makeapullrequest.com/ and http://www.firsttimersonly.com/
+### GIS Data
 
-> Working on your first Pull Request? You can learn how from this *free* series, [How to Contribute to an Open Source Project on GitHub](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github).
+Our GIS data can only be used by us to create derivate works, not to publicly share, therefore we have provided an example GeoServer, including GIS files and configuration, to assist in the setup and development of community based content.  To find out where exactly we retrieved our data, please visit our Data Sources page.
 
-[source: [React](https://github.com/facebook/react/blob/master/CONTRIBUTING.md#pull-requests)]  
 
-As a side note, it helps to use newcomer-friendly language throughout the rest of your document. Here are a couple of examples from [Active Admin](https://github.com/activeadmin/activeadmin/blob/master/CONTRIBUTING.md):
+## Retrieving the MSP Challenge Source Data
 
->At this point, you're ready to make your changes! Feel free to ask for help; everyone is a beginner at first :smile_cat:
->
->If a maintainer asks you to "rebase" your PR, they're saying that a lot of code has changed, and that you need to update your branch so it's easier to merge.
+We chose to host the MSP Challenge on GitHub, being one of the major hosting platforms for Open Source projects. You can find the repository here. Contributors are free to fork the repository, and use this fork to extend on the project, as long as all changes are tracked. Community members are only able to edit their own fork, and cannot directly edit and commit to the public MSP Challenge repository itself.
 
-# Getting started
-### Give them a quick walkthrough of how to submit a contribution.
-How you write this is up to you, but some things you may want to include:
+For more information on how to fork a repository, please visit the documentation page by GitHub - Fork a repo / GitHub Docs
 
-* Let them know if they need to sign a CLA, agree to a DCO, or get any other legal stuff out of the way
-* If tests are required for contributions, let them know, and explain how to run the tests
-* If you use anything other than GitHub to manage issues (ex. JIRA or Trac), let them know which tools they’ll need to contribute
 
->For something that is bigger than a one or two line fix:
 
->1. Create your own fork of the code
->2. Do the changes in your fork
->3. If you like the change and think the project could use it:
-    * Be sure you have followed the code style for the project.
-    * Sign the Contributor License Agreement, CLA, with the jQuery Foundation.
-    * Note the jQuery Foundation Code of Conduct.
-    * Send a pull request indicating that you have a CLA on file.
 
-[source: [Requirejs](http://requirejs.org/docs/contributing.html)] **Need more inspiration?** [1] [Active Admin](https://github.com/activeadmin/activeadmin/blob/master/CONTRIBUTING.md#1-where-do-i-go-from-here) [2] [Node.js](https://github.com/nodejs/node/blob/master/CONTRIBUTING.md#code-contributions) [3] [Ember.js](https://github.com/emberjs/ember.js/blob/master/CONTRIBUTING.md#pull-requests)
+## Code Responsibilities
 
-### If you have a different process for small or "obvious" fixes, let them know.
+To make sure that community contributions can be considered for integration, please respect the following rules and responsibilities.
 
-> Small contributions such as fixing spelling errors, where the content is small enough to not be considered intellectual property, can be submitted by a contributor as a patch, without a CLA.
->
->As a rule of thumb, changes are obvious fixes if they do not introduce any new functionality or creative thinking. As long as the change does not affect functionality, some likely examples include the following:
->* Spelling / grammar fixes
->* Typo correction, white space and formatting changes
->* Comment clean up
->* Bug fixes that change default return values or error codes stored in constants
->* Adding logging messages or debugging output
->* Changes to ‘metadata’ files like Gemfile, .gitignore, build scripts, etc.
->* Moving source files from one directory or package to another
+- The MSP Challenge Client is Cross-Platform for both Mac and Windows 10. Contributions are not allowed to use code or content unable to run on either of these platforms.
 
-[source: [Chef](https://github.com/chef/chef/blob/master/CONTRIBUTING.md#chef-obvious-fix-policy)] **Need more inspiration?** [1] [Puppet](https://github.com/puppetlabs/puppet/blob/master/CONTRIBUTING.md#making-trivial-changes)
+- tbd
 
-# How to report a bug
-### Explain security disclosures first!
-At bare minimum, include this sentence:
-> If you find a security vulnerability, do NOT open an issue. Email XXXX instead.
+### Consequences:
 
-If you don’t want to use your personal contact information, set up a “security@” email address. Larger projects might have more formal processes for disclosing security, including encrypted communication. (Disclosure: I am not a security expert.)
+Failure to comply with the code responsibilities will lead to an immediate rejection during our integration process.
 
-> Any security issues should be submitted directly to security@travis-ci.org
-> In order to determine whether you are dealing with a security issue, ask yourself these two questions:
-> * Can I access something that's not mine, or something I shouldn't have access to?
-> * Can I disable something for other people?
->
-> If the answer to either of those two questions are "yes", then you're probably dealing with a security issue. Note that even if you answer "no" to both questions, you may still be dealing with a security issue, so if you're unsure, just email us at security@travis-ci.org.
 
-[source: [Travis CI](https://github.com/travis-ci/travis-ci/blob/master/CONTRIBUTING.md)] **Need more inspiration?** [1] [Celery](https://github.com/celery/celery/blob/master/CONTRIBUTING.rst#security) [2] [Express.js](https://github.com/expressjs/express/blob/master/Security.md)
 
-### Tell your contributors how to file a bug report.
-You can even include a template so people can just copy-paste (again, less work for you).
 
-> When filing an issue, make sure to answer these five questions:
->
-> 1. What version of Go are you using (go version)?
-> 2. What operating system and processor architecture are you using?
-> 3. What did you do?
-> 4. What did you expect to see?
-> 5. What did you see instead?
-> General questions should go to the golang-nuts mailing list instead of the issue tracker. The gophers there will answer or ask you to file an issue if you've tripped over a bug.
+## Community Responsibilities
 
-[source: [Go](https://github.com/golang/go/blob/master/CONTRIBUTING.md#filing-issues)] **Need more inspiration?** [1] [Celery](https://github.com/celery/celery/blob/master/CONTRIBUTING.rst#other-bugs ) [2] [Atom](https://github.com/atom/atom/blob/master/CONTRIBUTING.md#reporting-bugs) (includes template)
+The MSP Community consists of a diverse group of users and contributors from different backgrounds, with varying levels of technical knowhow. To create an open and welcoming community, we ask everyone to comply with the following responsibilities:
 
-# How to suggest a feature or enhancement
-### If you have a particular roadmap, goals, or philosophy for development, share it here.
-This information will give contributors context before they make suggestions that may not align with the project’s needs.
+- In all communication efforts, both between community members, and with developers, please be open and friendly.
 
-> The Express philosophy is to provide small, robust tooling for HTTP servers, making it a great solution for single page applications, web sites, hybrids, or public HTTP APIs.
->
-> Express does not force you to use any specific ORM or template engine. With support for over 14 template engines via Consolidate.js, you can quickly craft your perfect framework.
+- Remember that any contributions are made as part of the community, and created for the good of the community itself. Be thoughtful, and keep this in mind when addressing any communications inside the community.
 
-[source: [Express](https://github.com/expressjs/express#philosophy)] **Need more inspiration?** [Active Admin](https://github.com/activeadmin/activeadmin#goals)
+- You are talking to other people, whether via mail, direct messaging, or a videocall, treat people with respect across all communication channels.
 
-### Explain your desired process for suggesting a feature.
-If there is back-and-forth or signoff required, say so. Ask them to scope the feature, thinking through why it’s needed and how it might work.
+- Many contributions are made with personal time and effort, respect the community members and developers who put in their personal time. Any contribution is a show of appreciation towards the community and the product as a whole, please treat these with the respect they deserve.
 
-> If you find yourself wishing for a feature that doesn't exist in Elasticsearch, you are probably not alone. There are bound to be others out there with similar needs. Many of the features that Elasticsearch has today have been added because our users saw the need. Open an issue on our issues list on GitHub which describes the feature you would like to see, why you need it, and how it should work.
+- The MSP Challenge Community is focused on the development and improvement of the MSP Challenge Platform, we therefore ask our members to refrain from including or discussing any political topics on MSP Challenge related communication channels.
 
-[source: [Elasticsearch](https://github.com/elastic/elasticsearch/blob/master/CONTRIBUTING.md#feature-requests)] **Need more inspiration?** [1] [Hoodie](https://github.com/hoodiehq/hoodie/blob/master/CONTRIBUTING.md#feature-requests) [2] [Ember.js](https://github.com/emberjs/ember.js/blob/master/CONTRIBUTING.md#requesting-a-feature)
+### Inappropriate Behavior:
 
-# Code review process
-### Explain how a contribution gets accepted after it’s been submitted.
-Who reviews it? Who needs to sign off before it’s accepted? When should a contributor expect to hear from you? How can contributors get commit access, if at all?
+The following examples of behavior are deemed unacceptable within the digital / online MSP Challenge Community:
 
-> The core team looks at Pull Requests on a regular basis in a weekly triage meeting that we hold in a public Google Hangout. The hangout is announced in the weekly status updates that are sent to the puppet-dev list. Notes are posted to the Puppet Community community-triage repo and include a link to a YouTube recording of the hangout.
-> After feedback has been given we expect responses within two weeks. After two weeks we may close the pull request if it isn't showing any activity.
+- Any form of harassment of any community participant, this counts for direct harassment as well as incitement of harassment
 
-[source: [Puppet](https://github.com/puppetlabs/puppet/blob/master/CONTRIBUTING.md#submitting-changes)] **Need more inspiration?** [1] [Meteor](https://meteor.hackpad.com/Responding-to-GitHub-Issues-SKE2u3tkSiH ) [2] [Express.js](https://github.com/expressjs/express/blob/master/Contributing.md#becoming-a-committer)
+- Any form of violent language or threats
 
-# Community
-If there are other channels you use besides GitHub to discuss contributions, mention them here. You can also list the author, maintainers, and/or contributors here, or set expectations for response time.
+- Excessive swearing, either directed at the community, the product, or undirected as a general statement
 
-> You can chat with the core team on https://gitter.im/cucumber/cucumber. We try to have office hours on Fridays.
+- Sexual language or imagery within any MSP Challenge communication channel
 
-[source: [cucumber-ruby](https://github.com/cucumber/cucumber-ruby/blob/master/CONTRIBUTING.md#talking-with-other-devs)] **Need more inspiration?**
- [1] [Chef](https://github.com/chef/chef/blob/master/CONTRIBUTING.md#-developer-office-hours) [2] [Cookiecutter](https://github.com/audreyr/cookiecutter#community)
+- Inappropriate (social) contact, such as stalking, request of inappropriate contact with community members, or continued communication after a request to cease contact
 
-# BONUS: Code, commit message and labeling conventions
-These sections are not necessary, but can help streamline the contributions you receive.
+Any community members who have been requested to stop any form of inappropriate behavior are expected to comply with this request immediately.
 
-### Explain your preferred style for code, if you have any.
+### Consequences:
 
-**Need inspiration?** [1] [Requirejs](http://requirejs.org/docs/contributing.html#codestyle) [2] [Elasticsearch](https://github.com/elastic/elasticsearch/blob/master/CONTRIBUTING.md#contributing-to-the-elasticsearch-codebase)
+Failure to comply with above stated community responsibilities may lead to actions taken by the MSP Challenge team. Depending on the severity of the action this could lead to a warning of the offender, or ban from the community and community channels, as well as limitations to accessing the MSP Challenge content.
 
-### Explain if you use any commit message conventions.
+Thank you to all community members who help in creating a pleasant, open, and welcoming environment for the project.
 
-**Need inspiration?** [1] [Angular](https://github.com/angular/material/blob/master/.github/CONTRIBUTING.md#submit) [2] [Node.js](https://github.com/nodejs/node/blob/master/CONTRIBUTING.md#step-3-commit)
 
-### Explain if you use any labeling conventions for issues.
+## Communication with the Developers
 
-**Need inspiration?** [1] [StandardIssueLabels](https://github.com/wagenet/StandardIssueLabels#standardissuelabels) [2] [Atom](https://github.com/atom/atom/blob/master/CONTRIBUTING.md#issue-and-pull-request-labels)
+As our current focus on community contributions is limited, we have decided not to create and maintain a public chat, such as a Slack, Discord, or living Forum. This means that contributors are currently not provided means to engage in discussions or create active conversations with the developers.
+
+If you wish to contact the developers of the MSP Challenge Platform, please use the following methods:
+
+## Mail
+
+Please see our contact page for the most common contact methods: Contact us - MSP Challenge Community. We attempt to keep up to date with our inbox, however please provide us some leeway in responding to any mails you send us
+
+## Issue Tracker
+
+Please report any issues you encounter via the Github Issues Tracker. We will periodically check the issues, and determine whether we can incorporate these into our internal bug-fixing protocol.
+
+Multiple labels are available as part of the issues tracker, please use the correct labels to tag your issue so the team can properly review the issues.
+
+
+
+
+### Support
+
+The MSP Challenge is being developed by a core team, part of the Academy of Games and Media at the Breda University of Applied sciences. Because of this, we do not have the resources to develop and offer an infrastructure of support for contributions. While we allow our community to fork, and extend on the MSP Challenge, we can not guarantee that we will be able to answer any issues posted as part of the MSP Challenge repo, or integrate any extensions developed by community members.
+
+## Technical Questions
+
+Due to the limitations in time available from the development team, we cannot promise any technical support related to the software placed on the public GitHub repository. Feel free to create issues with information requests on technical difficulties so either our community members, or developers, can answer them if they have time to do so.
+
+### Issue Rules
+
+When submitting new issues, please consider the following rules to keep the process smooth and functional
+
+- Please refrain from creating duplicate issues, as this will only slow-down our communication efforts. If you encounter a similar issue to other users, please comment on that issue to let us know that you encountered it as well, including additional information where necessary. This counts for any bugs that have been discovered, as well as desired features or enhancements to the platform.
+
+### Bug Reporting
+
+If you encounter a bug, please use the Github Issues List to report on the bug, answering the following questions within any bug report you create
+
+- What version are you using?
+
+- Is the bug on the Server, Client, Simulations, or Build?
+
+- What operating system, and hardware do you use?
+
+- What did you do to encounter the bug?
+
+- What did you expect would happen instead?
+
+- What happened instead? Describe the exact details of the bug.
+
+### Feature or Enhancement Reporting
+
+If you are missing a highly relevant feature in the MSP Challenge Platform Edition, then other might have a similar need. If there is no existing issue regarding this feature or enhancement, feel free to add it to the issue list in Github. Many of our features and enhancements have been determined by user-feedback, and evaluations on existing sessions.
+
+-
+
+
+
+
+## Integration into the open version
+
+Due to the limited resources available to the MSP Challenge development team, we do not guarantee the integration of any contributions made to the MSP Challenge Platform Edition.
+
+After you have successfully expanded on your own fork of the MSP Challenge Simulation Platform, you can create a pull requests. This will notify the MSP Challenge team of external contributions, and allow the team to checkout the files for integration into the publicly available platform. These pull requests require a detailed description of the changes so that the team can properly review the provided changes.
+
+May the team be able to implement public contributions, then the following steps will be part of the integration process:
+
+1. Pull Request
+
+A pull request is created by the contributor, including the altered files, and a clear description of the added or altered functionality.
+
+2. Design Review
+
+A member of the MSP Challenge team will review the design of the contribution, based on the added description.
+
+3. Code Review
+
+A member of the MSP Challenge team will review the code of the contribution, both to determine whether it complies to the code responsibilities, and whether the expansion can be integrated within the available time.
+
+4. Integration
+
+The contribution is integrated via the development branch of the MSP Challenge Simulation Platform, to allow for internal testing of the contribution.
+
+5. Publication
+
+If all above steps have been successful, the contribution can become part of the public version.
+
+
+For more information on creating pull requests, please visit the documentation page by GitHub - About pull requests / GitHub Docs
+
+
+
+
+## Latest Release
+
+For information on the latest public release, please see the release notes on our Wiki
+
+Release notes - MSP Challenge Community
