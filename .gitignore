@@ -21,6 +21,32 @@
 **/[Ss]oftwareRasterizerLib.meta
 **/[Pp]ackages/**
 
+# Config file ignores, ignores all in the configfiles folder, but includes the basic files 
+**/[Ss]erver/[Ss]erverManager/[Cc]onfigfiles/**
+!**/[Ss]erver/[Ss]erverManager/[Cc]onfigfiles/[Bb]altic_Sea_basic**
+!**Baltic_Sea_basic_1.json
+!**/[Ss]erver/[Ss]erverManager/[Cc]onfigfiles/[Cc]lyde_marine_region_basic**
+!**Clyde_marine_region_basic_1.json
+!**/[Ss]erver/[Ss]erverManager/[Cc]onfigfiles/[Nn]orth_Sea_basic**
+!**North_Sea_basic_1.json
+!**/[Ss]erver/[Ss]erverManager/[Cc]onfigfiles/[Nn]orth_Sea_Digitwin_basic**
+!**North_Sea_Digitwin_basic_1.json
+**/[Ss]erver/[Ee]xport/**
+!**/[Ss]erver/[Ee]xport/DONOTREMOVE.txt**
+**/[Ss]erver/[Ff]iles/**
+**/[Ss]erver/[Ss]cripts/**
+**/[Ss]erver/[Rr]aster/**
+!**/[Ss]erver/[Rr]aster/DONOTREMOVE.txt**
+**/[Ss]erver/[Ss]erverManager/[Ll]og/**
+!**/[Ss]erver/[Ss]erverManager/[Ll]og/DONOTREMOVE.txt**
+**/[Ss]erver/[Ss]erverManager/[Ss]aves/[Aa]rchive/**
+!**/[Ss]erver/[Ss]erverManager/[Ss]aves/[Aa]rchive/DONOTREMOVE.txt**
+**/[Ss]erver/[Ss]erverManager/[Ss]ession_archive/**
+!**/[Ss]erver/[Ss]erverManager/[Ss]ession_archive/DONOTREMOVE.txt**
+**/[Ss]erver/[Ss]ession_archive/**
+!**/[Ss]erver/[Ss]ession_archive/DONOTREMOVE.txt**
+
+
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
 **/[Mm]emoryCaptures/**
