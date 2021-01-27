@@ -1,0 +1,161 @@
+<coverage>
+  <id>CoverageInfoImpl--49f87f:174769f0788:-7fb6</id>
+  <name>E_Bathymetry</name>
+  <nativeName>E_Bathymetry</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--49f87f:174769f0788:-7fcd</id>
+  </namespace>
+  <title>E_Bathymetry</title>
+  <description>Generated from GeoTIFF</description>
+  <keywords>
+    <string>E_Bathymetry</string>
+    <string>WCS</string>
+    <string>GeoTIFF</string>
+  </keywords>
+  <nativeCRS class="projected">PROJCS[&quot;ETRS89 / LAEA Europe&quot;, &#xd;
+  GEOGCS[&quot;ETRS89&quot;, &#xd;
+    DATUM[&quot;European Terrestrial Reference System 1989&quot;, &#xd;
+      SPHEROID[&quot;GRS 1980&quot;, 6378137.0, 298.257222101, AUTHORITY[&quot;EPSG&quot;,&quot;7019&quot;]], &#xd;
+      TOWGS84[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], &#xd;
+      AUTHORITY[&quot;EPSG&quot;,&quot;6258&quot;]], &#xd;
+    PRIMEM[&quot;Greenwich&quot;, 0.0, AUTHORITY[&quot;EPSG&quot;,&quot;8901&quot;]], &#xd;
+    UNIT[&quot;degree&quot;, 0.017453292519943295], &#xd;
+    AXIS[&quot;Geodetic longitude&quot;, EAST], &#xd;
+    AXIS[&quot;Geodetic latitude&quot;, NORTH], &#xd;
+    AUTHORITY[&quot;EPSG&quot;,&quot;4258&quot;]], &#xd;
+  PROJECTION[&quot;Lambert_Azimuthal_Equal_Area&quot;, AUTHORITY[&quot;EPSG&quot;,&quot;9820&quot;]], &#xd;
+  PARAMETER[&quot;latitude_of_center&quot;, 51.99999999999999], &#xd;
+  PARAMETER[&quot;longitude_of_center&quot;, 10.0], &#xd;
+  PARAMETER[&quot;false_easting&quot;, 4321000.0], &#xd;
+  PARAMETER[&quot;false_northing&quot;, 3210000.0], &#xd;
+  UNIT[&quot;m&quot;, 1.0], &#xd;
+  AXIS[&quot;Easting&quot;, EAST], &#xd;
+  AXIS[&quot;Northing&quot;, NORTH], &#xd;
+  AUTHORITY[&quot;EPSG&quot;,&quot;3035&quot;]]</nativeCRS>
+  <srs>EPSG:3035</srs>
+  <nativeBoundingBox>
+    <minx>4183040.0000086413</minx>
+    <maxx>5736566.058249442</maxx>
+    <miny>3306391.028844499</miny>
+    <maxy>4970508.445868874</maxy>
+    <crs class="projected">EPSG:3035</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>6.756533410495184</minx>
+    <maxx>40.947460739034234</maxx>
+    <miny>51.06356945795301</miny>
+    <maxy>67.82607322889048</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>REPROJECT_TO_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="dirName">E_Bathymetry_E_Bathymetry</entry>
+  </metadata>
+  <store class="coverageStore">
+    <id>CoverageStoreInfoImpl--49f87f:174769f0788:-7fc3</id>
+  </store>
+  <serviceConfiguration>false</serviceConfiguration>
+  <nativeFormat>GeoTIFF</nativeFormat>
+  <grid dimension="2">
+    <range>
+      <low>0 0</low>
+      <high>3849 4123</high>
+    </range>
+    <transform>
+      <scaleX>403.61809775027297</scaleX>
+      <scaleY>-403.61809775027285</scaleY>
+      <shearX>0.0</shearX>
+      <shearY>0.0</shearY>
+      <translateX>4183241.8090575165</translateX>
+      <translateY>4970306.636819999</translateY>
+    </transform>
+    <crs>EPSG:3035</crs>
+  </grid>
+  <supportedFormats>
+    <string>ArcGrid</string>
+    <string>GeoPackage (mosaic)</string>
+    <string>GEOTIFF</string>
+    <string>GIF</string>
+    <string>PNG</string>
+    <string>JPEG</string>
+    <string>TIFF</string>
+    <string>ImageMosaic</string>
+  </supportedFormats>
+  <interpolationMethods>
+    <string>nearest neighbor</string>
+    <string>bilinear</string>
+    <string>bicubic</string>
+  </interpolationMethods>
+  <defaultInterpolationMethod>nearest neighbor</defaultInterpolationMethod>
+  <dimensions>
+    <coverageDimension>
+      <name>RED_BAND</name>
+      <description>GridSampleDimension[-Infinity,Infinity]</description>
+      <range>
+        <min>-inf</min>
+        <max>inf</max>
+      </range>
+      <unit>W.m-2.Sr-1</unit>
+      <dimensionType>
+        <name>UNSIGNED_8BITS</name>
+      </dimensionType>
+    </coverageDimension>
+    <coverageDimension>
+      <name>GREEN_BAND</name>
+      <description>GridSampleDimension[-Infinity,Infinity]</description>
+      <range>
+        <min>-inf</min>
+        <max>inf</max>
+      </range>
+      <unit>W.m-2.Sr-1</unit>
+      <dimensionType>
+        <name>UNSIGNED_8BITS</name>
+      </dimensionType>
+    </coverageDimension>
+    <coverageDimension>
+      <name>BLUE_BAND</name>
+      <description>GridSampleDimension[-Infinity,Infinity]</description>
+      <range>
+        <min>-inf</min>
+        <max>inf</max>
+      </range>
+      <unit>W.m-2.Sr-1</unit>
+      <dimensionType>
+        <name>UNSIGNED_8BITS</name>
+      </dimensionType>
+    </coverageDimension>
+    <coverageDimension>
+      <name>ALPHA_BAND</name>
+      <description>GridSampleDimension[-Infinity,Infinity]</description>
+      <range>
+        <min>-inf</min>
+        <max>inf</max>
+      </range>
+      <dimensionType>
+        <name>UNSIGNED_8BITS</name>
+      </dimensionType>
+    </coverageDimension>
+  </dimensions>
+  <requestSRS>
+    <string>EPSG:3035</string>
+  </requestSRS>
+  <responseSRS>
+    <string>EPSG:3035</string>
+  </responseSRS>
+  <parameters>
+    <entry>
+      <string>InputTransparentColor</string>
+      <null/>
+    </entry>
+    <entry>
+      <string>SUGGESTED_TILE_SIZE</string>
+      <string>512,512</string>
+    </entry>
+    <entry>
+      <string>RescalePixels</string>
+      <boolean>true</boolean>
+    </entry>
+  </parameters>
+  <nativeCoverageName>E_Bathymetry</nativeCoverageName>
+</coverage>
