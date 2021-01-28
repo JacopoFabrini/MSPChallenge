@@ -12,7 +12,8 @@
 [Mm]SPConfigEditor/[Ll]ogs/**
 [Mm]SPConfigEditor/[Uu]ser[Ss]ettings/**
 
-**/[Oo]bj/**
+[Oo]bj/
+[Bb]in/
 **/[Pp]ackages/**
 **/[Ss]irenix/**
 **/[Ss]irenix.meta
