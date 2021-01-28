@@ -4,9 +4,9 @@ The MSP Challenge Simulation Platform is openly available for users to download 
 
 You might however be interested in developing new Client features, or to create your own Simulations to add additional data calculations to the platform. For this purpose, we have provided the source code of the Client, Server, and Simulations for our community to use for expanding on the MSP Challenge Simulation Platform.
 
-Source Location: MSPChallenge Repository
+### Source Location: MSPChallenge Repository
 
-License: GPL-3.0
+### License: GPL-3.0
 
 
 Thank you for considering to contribute to the MSP Challenge Platform Edition. We have seen many users of the MSP Challenge over the years, and it brings us great joy to see the enthusiasm of these users extend into becoming contributors to the platform.
