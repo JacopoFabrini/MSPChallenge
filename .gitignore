@@ -28,8 +28,6 @@
 **/[Ss]haderForge.meta
 **/[Cc]rosstales/**
 **/[Cc]rosstales.meta
-**/[Ss]oftwareRasterizerLib.meta
-
 
 # Server ignores, ignores all in the configfiles folder, but includes the basic files 
 [Ss]erver/[Ss]erverManager/[Cc]onfigfiles/**
