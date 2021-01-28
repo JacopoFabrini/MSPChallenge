@@ -1,6 +1,6 @@
 [Cc]lient/[Ll]ibrary/**
 [Cc]lient/[Tt]emp/**
-[Cc]lient/[Oo]bj/**
+**/[Oo]bj/**
 [Cc]lient/[Bb]uild/**
 [Cc]lient/[Bb]uilds/**
 [Cc]lient/[Ll]ogs/**
