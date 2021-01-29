@@ -12,7 +12,8 @@
 [Mm]SPConfigEditor/[Ll]ogs/**
 [Mm]SPConfigEditor/[Uu]ser[Ss]ettings/**
 
-**/[Oo]bj/**
+[Oo]bj/
+[Bb]in/
 **/[Pp]ackages/**
 **/[Ss]irenix/**
 **/[Ss]irenix.meta
@@ -45,6 +46,7 @@
 [Ss]erver/[Ss]cripts/**
 [Ss]erver/[Rr]aster/**
 ![Ss]erver/[Rr]aster/DONOTREMOVE.txt**
+Server/running_session_config/**
 [Ss]erver/[Ss]erverManager/[Ll]og/**
 ![Ss]erver/[Ss]erverManager/[Ll]og/DONOTREMOVE.txt**
 [Ss]erver/[Ss]erverManager/[Ss]aves/[Aa]rchive/**
@@ -70,6 +72,7 @@
 
 # Visual Studio cache directory
 .vs/
+.vscode/
 
 # Gradle cache directory
 .gradle/
