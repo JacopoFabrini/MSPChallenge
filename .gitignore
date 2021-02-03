@@ -3,6 +3,7 @@
 [Cc]lient/[Bb]uild/**
 [Cc]lient/[Bb]uilds/**
 [Cc]lient/[Ll]ogs/**
+[Cc]lient/[Ss]erializedBuildInfo/**
 [Cc]lient/[Uu]ser[Ss]ettings/**
 
 [Mm]SPConfigEditor/[Ll]ibrary/**
