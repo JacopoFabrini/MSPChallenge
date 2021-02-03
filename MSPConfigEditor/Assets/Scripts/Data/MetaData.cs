@@ -35,6 +35,9 @@ public class MetaData
     [JsonConverter(typeof(StringEnumConverter))]
     [DropdownFieldDrawer("Layer subcategory", InfoText = "The sub-category this layer is part of")]
     public ESubcategories layer_subcategory = ESubcategories.governance;
+    [JsonConverter(typeof(Bool01Converter))]
+    [BoolFieldDrawer("Download from Geoserver", Priority = 1)]
+    public bool download_from_geoserver;
 
     //Raster Settings
     [HideIfValue("1/layer_geotype", EGeoTypes.raster, true)]
@@ -60,9 +63,6 @@ public class MetaData
     [HideIfValue("1/layer_geotype", EGeoTypes.raster, true)]
     [FloatFieldDrawer("Raster Minimum Cutoff Value")]
     public float layer_raster_minimum_value_cutoff = 0.05f;
-    [JsonConverter(typeof(Bool01Converter))]
-    [BoolFieldDrawer("Download from Geoserver", Priority = 1)]
-    public bool layer_download_from_geoserver;
 
     //Interaction Settings
     [LineSpacer(1f, Priority = 1)]
