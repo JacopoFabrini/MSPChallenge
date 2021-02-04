@@ -37,7 +37,7 @@ public class MetaData
     public ESubcategories layer_subcategory = ESubcategories.governance;
     [JsonConverter(typeof(Bool01Converter))]
     [BoolFieldDrawer("Download from Geoserver", Priority = 1)]
-    public bool download_from_geoserver;
+    public bool layer_download_from_geoserver;
 
     //Raster Settings
     [HideIfValue("1/layer_geotype", EGeoTypes.raster, true)]
