@@ -58,6 +58,9 @@ Server/running_session_config/**
 ![Ss]erver/[Ss]ession_archive/DONOTREMOVE.txt**
 [Ss]erver/[Ss]imulations/MEL/**/*_Log.xml
 
+#Stuff for Simulations
+Simulations/MEL/EwE/**
+
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
 **/[Mm]emoryCaptures/**
