@@ -15,11 +15,11 @@
 			"GetWatchdogAddress", 
 			"IsOnline", 
 			"Latest",
-			"LoadConfig", 
 			"Meta", 
 			"NextMonth", 
 			"Planning",
 			"Realtime", 
+			["Setupfilename", Security::ACCESS_LEVEL_FLAG_SERVER_MANAGER], 
 			"Speed", 
 			["StartWatchdog", Security::ACCESS_LEVEL_FLAG_NONE], 
 			["State", Security::ACCESS_LEVEL_FLAG_SERVER_MANAGER], 
@@ -140,32 +140,6 @@
 		}
 
 		/**
-		 * @apiGroup Game
-		 * @api {GET} /game/LoadConfig Config
-		 * @apiDescription returns a json string with the "Global Data" of the config file
-		 * @apiSuccess {string} json string
-		 */
-		public function LoadConfig(){
-			$data = $this->GetGameConfigValues();
-
-			$this->SetupGametime($data);
-			$this->SetupCountries($data);
-
-			//start up simulations last
-			if(isset($data['MEL'])){
-				Base::Debug("setting up MEL");
-				$mel = new MEL();
-				$mel->Start($data['MEL']);
-			}
-
-			if(isset($data['CEL'])){
-				Base::Debug("setting up cel");
-			}
-
-			Base::Debug("Done!");
-		}
-
-		/**
 		* @apiGroup Game
 		* @api {GET} /game/GetCurrentMonth GetCurrentMonth
 		* @apiDescription Gets the current month of the active game.
@@ -183,7 +157,7 @@
 			return $currentMonth["game_currentmonth"];
 		}
 
-		public function Setupfilename($configFilename){
+		public function Setupfilename(string $configFilename){
 			Database::GetInstance()->query("UPDATE game SET game_configfile=?", array($configFilename));
 		}
 
@@ -648,10 +622,6 @@
 						return false;
 					}
 				}
-		}
-
-		public function GetAdminData(){
-			return Database::GetInstance()->query("SELECT * FROM game")[0];
 		}
 
 		protected function GetUpdateTime($id){

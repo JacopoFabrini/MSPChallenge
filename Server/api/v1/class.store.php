@@ -126,6 +126,17 @@ class Store extends Base
 		return $storeFolder;
 	}
 
+	public static function GetRasterStoreFolderContents()
+	{
+		// this is a generator function - notice the use of yield to save up on memory use
+		$dirIterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator(Store::GetRasterStoreFolder()));
+		foreach($dirIterator as $file) {
+			if ($file->getFilename() != "." && $file->getFilename() != "..") { 
+				yield $file->getPathName();
+			}
+		}
+	}
+
 	public static function GetRasterArchiveFolder()
 	{
 		$folder = self::GetRasterStoreFolder();
@@ -170,7 +181,7 @@ class Store extends Base
 			//Check if we should download the vector layer from geoserver. Default behaviour says we do, and just don't do it when it is specified.
 			if (!array_key_exists("layer_download_from_geoserver", $layerMetaData) || $layerMetaData["layer_download_from_geoserver"] == true) {
 				//download the geometry as a csv file from GeoServer
-				if (!IsExperimentalFeatureEnabled("geoserver_json_importer"))
+				if (!IsFeatureFlagEnabled("geoserver_json_importer"))
 				{
 					$startTime = microtime(true);
 					$csv = $layer->GetExport($region, $filename, "CSV", "", null);

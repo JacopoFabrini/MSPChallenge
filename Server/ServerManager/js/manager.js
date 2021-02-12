@@ -21,12 +21,16 @@ function resetToken(newtoken) {
 
 function updateInfobox(type, message) {
 	showToast(type, message);
-	updateSessionsTable($('input[name=inlineRadioOptions]:checked').val());
+	//updateSessionsTable($('input[name=inlineRadioOptions]:checked').val());
+	//updateSavesTable($('input[name=inlineRadioOptionSaves]:checked').val());
+	
+	// updating all info that might have changed, except the sessions and saves tables, because those update every X secs anyway
 	updateConfigVersionsTable($('input[name=radioOptionConfig]:checked').val());
 	configListToOptions();
 	watchdogListToOptions();
-	updateSavesTable($('input[name=inlineRadioOptionSaves]:checked').val());
 	SavesListToOptions();
+	WatchdogServerList();
+	GetServerAddr();
 }
 
 const MessageType = {
@@ -203,7 +207,6 @@ function saveSession(sessionId, saveType) {
 				$('#sessionInfo').modal('hide');
 			}
 		}, 
-		'async': false,
 		'type': 'POST'
 	});
 }
@@ -703,7 +706,7 @@ function SavesListToOptions(SaveId=0) {
 
 function savesListToTable(saveslist) {
 	$('#savesListtbody').empty();
-	if(saveslist == '') { $('<tr><td colspan="8">No saves yet. Create your first one by opening a server and selecting Save Server or Save Layers.</td></tr>').appendTo('#savesListtbody') }
+	if(saveslist == '') { $('<tr><td colspan="8">No saves yet. Create your first one by viewing a session\'s details and selecting one of the save options.</td></tr>').appendTo('#savesListtbody') }
 	$.each(saveslist, function(i, v) {
 		// check to see if file is available for download
 		if (ShowSaveFile(v.id)) {
@@ -927,7 +930,8 @@ function UploadSave() {
 
 function RecreateLoadSave(ExistingServerId) {
 	if (confirm('This will reload the save from which this server was originally recreated. All existing data will be lost. Are you sure?')) {
-		showToast(MessageType.INFO, 'Please wait...');
+		$('#sessionInfo').modal('hide');
+
 		var formData = new FormData();
 		formData.append("Token", currentToken);
 		formData.append("ExistingOrNewServerId", ExistingServerId);
@@ -935,20 +939,18 @@ function RecreateLoadSave(ExistingServerId) {
 
 		callLoadSave(formData);
 	}
-
-	$('#sessionInfo').modal('hide');
-
 }
 
 function submitLoadSave() {
 	var newServerName = $("#newServerName").val();
 	var SaveFileSelector = $("#SaveFileSelector").val();
 	var newWatchdogLoadSave = $("#newWatchdogLoadSave").val();
-
 	var SaveFileSelector = parseInt(SaveFileSelector);
 	if (isFormValid($('#formLoadSave')))
 	{
-		showToast(MessageType.INFO, 'This can take anywhere between a couple of seconds to 20 minutes to complete, depending on the server being loaded. A new notification like this one will pop up when server loading has finished.');
+		$('#modalNewSession').modal('hide');
+		$('#modalNewSession').find("form").trigger("reset");
+
 		var formData = new FormData();
 		formData.append("Token", currentToken);
 		formData.append("ExistingOrNewServerId", -1);
@@ -958,14 +960,18 @@ function submitLoadSave() {
 
 		callLoadSave(formData);
 	}
-
-	$('#modalNewSession').modal('hide');
-	$('#modalNewSession').find("form").trigger("reset");
-	//$('#sessionsTable').trigger('update', true);
-
 }
 
 function callLoadSave(formData) {
+	$.blockUI({ 
+		message: '<h3>Please wait...</h3>This can take anywhere between a couple of seconds to 20 minutes to complete, depending on the server being loaded.',
+		css: {  
+			border: 'none',
+			padding: '15px',
+			'text-align': 'left',
+			'border-radius': '5px' 
+			}
+	});
 	$.ajax({
 		url: "api/loadsave.php",
 		method: "POST",
@@ -977,6 +983,7 @@ function callLoadSave(formData) {
 		},
 		dataType: 'json',
 		success: function(data) {
+			$.unblockUI();
 			if (data.status == 'error') {
 				updateInfobox(MessageType.ERROR, 'submitLoadSave (API): '+data.message);
 			} else {
@@ -1503,8 +1510,6 @@ function submitNewServer() {
 					updateInfobox('danger', 'addgameserver (API): '+data.message);
 				} else {
 					updateInfobox('success', data.message);
-					WatchdogServerList();
-					GetServerAddr();
 				}
 			},
 			'async': false,

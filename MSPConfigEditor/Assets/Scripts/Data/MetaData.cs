@@ -104,7 +104,6 @@ public class MetaData
     [ListDrawer("States", Priority = 0), NewLineFieldDrawer("0/state", GetNameFromContent = true, Priority = 1, InfoText = "")]
     public List<LayerStateData> layer_states = new List<LayerStateData>();
 
-
     [LineSpacer(1f, Priority = 1)]
     [TitleSpacer("Editing Types", 18, Priority = 1)]
     [JsonConverter(typeof(EditingTypeConverter)), DropdownFieldDrawer("Editing Type")]
@@ -250,10 +249,10 @@ public class LayerTypeData
     public bool displayPoints;
     [HideIfValue("1/displayPoints", false)]
     [JsonConverter(typeof(ColourHexConverter)), ColourFieldDrawer("Color")]
-    public Color pointColor;
+    public Color pointColor = Color.black;
     [HideIfValue("1/displayPoints", false)]
     [FloatFieldDrawer("Size")]
-    public float pointSize;
+    public float pointSize = 0.03f;
     [HideIfValue("1/displayPoints", false)]
     [JsonConverter(typeof(StringEnumConverter)), DropdownFieldDrawer("Sprite Name")]
     public EPointPatterns pointSpriteName;

@@ -28,7 +28,7 @@ $ExistingOrNewServerId = $_POST['ExistingOrNewServerId'] ?? 0;
 $newServerName = $_POST['newServerName'] ?? '';
 
 //get the new watchdog ID
-$watchdogServer = $_POST['watchdogServer'] ?? 1;
+$watchdogServer = $_POST['newWatchdogLoadSave'] ?? 1;
 
 if (empty($SaveFileSelector) || empty($ExistingOrNewServerId)) {
     $response_array['message'] = 'SaveFileSelector and ExistingOrNewServerId are required.';
@@ -48,18 +48,19 @@ else {
                                             demo_session, api_access_token, save_id) 
                                     SELECT ? AS name, 0 AS game_config_version_id, game_server_id, ? AS watchdog_server_id, game_creation_time, game_start_year,
                                             game_end_month, game_current_month, game_running_til_time, password_admin,
-                                            password_player, session_state, game_state, game_visibility, players_active, players_past_hour, 
+                                            password_player, 'request', game_state, game_visibility, players_active, players_past_hour, 
                                             demo_session, api_access_token, id
                                             FROM game_saves WHERE game_saves.id = ?;",
                                     array($newServerName, $watchdogServer, $SaveFileSelector));
         $session_id = $db->lastId();
     }
     else {
-        //otherwise an existing server is going to be overwritten
+        //otherwise an existing server is going to be overwritten (recreated)
         $session_id = $ExistingOrNewServerId;
     }
 
-    
+    //get the correct token header for server API requests later on
+    $additionalHeaders = array(GetGameSessionAPIAuthenticationHeader($session_id));
     
     $getsavedetails = $db->get("game_saves", ["id", "=", $SaveFileSelector]);
     $savedetails = $getsavedetails->results();
@@ -70,11 +71,12 @@ else {
         $zip = new ZipArchive;
         $res = $zip->open($save_path);
         if ($res === TRUE) {
+            set_time_limit(600);
             // ready to get going, lock it up
             $response = GameSessionStateChanger::ChangeSessionState($session_id, GameSessionStateChanger::STATE_PAUSE); //don't check the return, this is just a precaution
             //empty the old raster folder if it exists, create the folders again (start from scratch)
             $alldone = false;
-            $dirtocheck = "../../raster/".$session_id."/";
+            $dirtocheck = GetServerRasterBaseDirectory().$session_id."/";
             if (is_dir($dirtocheck)) {
                 rrmdir($dirtocheck);
             }
@@ -91,14 +93,14 @@ else {
                     //put the session_config_X.json
                     if (strstr($fileinZIP, "session_config_") !== false) {
                         $newconfigfilename = "session_config_".$session_id.".json";
-                        $destination = "../../config/".$newconfigfilename;
+                        $destination = GetServerConfigBaseDirectory().$newconfigfilename;
                         $configsuccess = copy($source, $destination);
                     }
                     //put the raster folder and its files and dirs contents
                     elseif (strstr($fileinZIP, "raster/") !== false) {
                         $sourcedetails = $zip->statIndex($i);
                         if ($sourcedetails["size"] > 0) {   // this seems to be the most effective way of determining that we're dealing with an actual file
-                            $destination = "../../raster/".$session_id."/".str_replace("raster/", "", $fileinZIP);
+                            $destination = GetServerRasterBaseDirectory().$session_id."/".str_replace("raster/", "", $fileinZIP);
                             $rastersuccess[] = copy($source, $destination);
                         }
                     }
@@ -125,13 +127,18 @@ else {
                     }
                 }
                 if ($configsuccess && $dbasesuccess && !in_array(false, $rastersuccess)) {
-                    //$db->query("UPDATE game_list SET session_state = 'healthy', game_visibility = 'public' WHERE id = ?", array($session_id));
-                    // SetGameSessionValues to update the watchdog
-                    if (!empty($watchdogServer)) {
-                        $watchdog_address = $db->cell("game_watchdog_servers.address", ["id", "=", $watchdogServer]);
-                        $api_url = Config::get('msp_server_protocol').$db->cell("game_servers.address", ["id", "=", 1]).Config::get('code_branch')."/".$session_id."/api/GameSession/ResetWatchdogAddress";
-                        CallAPI("POST", $api_url, array("watchdog_address" => $watchdog_address));
+                    $server_address = $db->cell("game_servers.address", ["id", "=", 1]);
+                    $watchdog_address = $db->cell("game_watchdog_servers.address", ["id", "=", $watchdogServer]);
+                    if (!empty($watchdog_address)) {
+                        $api_url = Config::get('msp_server_protocol').$server_address.Config::get('code_branch')."/".$session_id."/api/GameSession/ResetWatchdogAddress";
+                        CallAPI("POST", $api_url, array("watchdog_address" => $watchdog_address), $additionalHeaders, false);
                     }
+                    if (!empty($newconfigfilename)) {
+                        $api_url2 = Config::get('msp_server_protocol').$server_address.Config::get('code_branch')."/".$session_id."/api/Game/Setupfilename";
+                        CallAPI("POST", $api_url2, array("configFilename" => $newconfigfilename), $additionalHeaders, false);
+                    }
+                    
+                    $db->query("UPDATE game_list SET session_state = 'healthy' WHERE id = ?", array($session_id));
                     $response_array['message'] = 'Save successfully loaded as server ID '.$session_id.'. Now available for use.';
                     $response_array['status'] = 'success';
                 }
