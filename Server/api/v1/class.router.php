@@ -31,15 +31,22 @@ class Router
 	public static function RouteApiCall(string $apiCallUrl, array $data)
 	{
 		$endpointData = self::ParseEndpointString($apiCallUrl);
-		$result = self::ExecuteCall($endpointData["class"], $endpointData["method"], $data, true);
-
-		if (UnitTestSupport::ShouldLogApiCalls())
+		try 
 		{
-			$unitTestSupport = new UnitTestSupport();
-			$unitTestSupport->RecordApiCall($endpointData["class"], $endpointData["method"], $data, $result);
-		}
+			$result = self::ExecuteCall($endpointData["class"], $endpointData["method"], $data, true);
 
-		return $result;
+			if (UnitTestSupport::ShouldLogApiCalls())
+			{
+				$unitTestSupport = new UnitTestSupport();
+				$unitTestSupport->RecordApiCall($endpointData["class"], $endpointData["method"], $data, $result);
+			}
+
+			return $result;
+		}
+		catch (Exception $e)
+		{
+			return self::FormatResponse(false, $e->getMessage(), null, $endpointData["class"], $endpointData["method"], $data); 
+		}
 	}
 
 	public static function ParseEndpointString(string $apiCallUrl)
@@ -172,7 +179,11 @@ class Router
 			if (gettype($input) != "string") {
 				throw new Exception("Target type was array, but input type was not string as expected. Input type was " . gettype($input));
 			}
-			$input = json_decode($input, true, 512, JSON_THROW_ON_ERROR);
+			$input = json_decode($input, true, 512);
+			if (json_last_error() != JSON_ERROR_NONE)
+			{
+				throw new Exception("Failed to decode json. Error: ".json_last_error_msg());
+			}
 			return true;
 		} else {
 			$filters = array(

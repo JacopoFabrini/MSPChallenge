@@ -9,13 +9,13 @@ class Database {
 	public $db_name;
 	
 	private $conn;
-	private bool $isTransactionRunning = false;
+	private $isTransactionRunning = false;
 	
 	private static $instance = null;
 
 	protected $salt = 'c02b7d24a066adb747fdeb12deb21bfa';
 
-	private static array $PDOArgs = array(
+	private static $PDOArgs = array(
 		PDO::MYSQL_ATTR_LOCAL_INFILE => true,
 		PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, 
 		PDO::ATTR_TIMEOUT => 5
