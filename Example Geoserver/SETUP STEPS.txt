@@ -1,0 +1,13 @@
+1. Create Workspace
+2. Create Folder in data->msp
+3. Add Store via data_dit->Data->Stores->New Data Source->Directory of spatial files
+4. Upload layers in this folder (just vector data)
+5. For each raster file, add store, but use the GeoTIFF option, and select the file via the browse option
+6. Go to layers -> add a new layer, and select the right store
+7. At the desired layer, press publish under the action column
+8. for raster files
+-EPSG:3035
+-Dimensions should be okay already
+9. for vector files
+-epsg:404000 (or desired used EPSG)
+-Bounding boxes should be computed from data / native bounds

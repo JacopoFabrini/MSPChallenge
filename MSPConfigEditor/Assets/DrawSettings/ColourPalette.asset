@@ -1,0 +1,211 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 938bdbfaa47f6064fbff41b9fc89c422, type: 3}
+  m_Name: ColourPalette
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  colourAssets:
+  - {fileID: 11400000, guid: 5b80ebbfa21363048a084ed87ece3e96, type: 2}
+  - {fileID: 11400000, guid: ca09dc8d3e317fc46a34d84f6e7e4b0e, type: 2}
+  - {fileID: 11400000, guid: a499a45e7d2f528408694d040d499de5, type: 2}
+  - {fileID: 11400000, guid: 314289eaf74a08348aa7153adc3a75bd, type: 2}
+  - {fileID: 11400000, guid: c953236e01e78e646a6f13941ec30ce1, type: 2}
+  - {fileID: 11400000, guid: 00369a01ce9a20445b4f385cf3bd0ce9, type: 2}
+  - {fileID: 11400000, guid: 7e3263c0e87bf7a4e8d8a9fe2f457381, type: 2}
+  - {fileID: 11400000, guid: 61fb7b0b3c4018449b48c11deb7a0abd, type: 2}
+  - {fileID: 11400000, guid: e116eb36f087ed9488de22db96919621, type: 2}
+  - {fileID: 11400000, guid: 33b928570ad3ced44abb102c270add3b, type: 2}
+  - {fileID: 11400000, guid: e0f8dafba5c2c5b42b483932e2aca8b3, type: 2}
+  - {fileID: 11400000, guid: ace07e792ee144043867ec1ac85798fc, type: 2}
+  - {fileID: 11400000, guid: d4d7321741f28c24eb3e98ce7a41693c, type: 2}
+  - {fileID: 11400000, guid: 9ab2a592782012c48b0e4c807ddb694a, type: 2}
+  - {fileID: 11400000, guid: 72eb15b845dcb094db8393d0009bc5f7, type: 2}
+  - {fileID: 11400000, guid: 05a9ea707eea76f4787b11656c5d8cd0, type: 2}
+  - {fileID: 11400000, guid: 8bf873eb7ab62fb4b9ab1a61660f3dd0, type: 2}
+  - {fileID: 11400000, guid: 9624dd3e66daf4a49933955e212ca316, type: 2}
+  - {fileID: 11400000, guid: 90358a380539ef34eb08e2f1e19ee80d, type: 2}
+  - {fileID: 11400000, guid: 2f62af00073e5a44a895adb7451b9526, type: 2}
+  - {fileID: 11400000, guid: c015b926c9adbe24cab6d953ae747478, type: 2}
+  - {fileID: 11400000, guid: 19fbfdc0b88ef8a48a7633f2ae79bbb1, type: 2}
+  - {fileID: 11400000, guid: a9c1433f16941a44690c44e061980d88, type: 2}
+  - {fileID: 11400000, guid: 78c2421a20c6b0f47853aaaf1efe226b, type: 2}
+  - {fileID: 11400000, guid: aecb42f04e4ed444fb83f2c35dc78cc2, type: 2}
+  - {fileID: 11400000, guid: 922be67fff3b12747a68a61670a569e8, type: 2}
+  - {fileID: 11400000, guid: c03d8048ebaedfb49822cafd1979d429, type: 2}
+  - {fileID: 11400000, guid: d1b996b68336d3a4ea31d6c1beee8769, type: 2}
+  - {fileID: 11400000, guid: 3e672c3cb262d9549a1c761aaf5e0a1a, type: 2}
+  - {fileID: 11400000, guid: 39319db1797aad74bb7a9c8351b263f7, type: 2}
+  - {fileID: 11400000, guid: af8c9eb649813bf4c95cdf7268dac6b4, type: 2}
+  - {fileID: 11400000, guid: 7232a12cab20c24458a73e552c6649c0, type: 2}
+  - {fileID: 11400000, guid: 82ead95f39edab64e8f84ad17954a150, type: 2}
+  - {fileID: 11400000, guid: cf6f8116996c88349a371553c1108cc8, type: 2}
+  - {fileID: 11400000, guid: 87d7a12a61e0dd144a3e7d896a732307, type: 2}
+  - {fileID: 11400000, guid: bd8728a4b231b4b45973dd3c24a1b20e, type: 2}
+  colourSets:
+  - name: Blue
+    colours:
+    - name: Accent light
+      colour: {r: 0.56266445, g: 0.43258, b: 0.86, a: 1}
+    - name: Accent
+      colour: {r: 0.36497602, g: 0.22748311, b: 0.6792453, a: 1}
+    - name: Accent dark
+      colour: {r: 0.2584279, g: 0.117740005, b: 0.58, a: 1}
+    - name: FatalError
+      colour: {r: 0.6981132, g: 0.16794232, b: 0.63633114, a: 1}
+    - name: Warning
+      colour: {r: 0.7814737, g: 0.7924528, b: 0.09344961, a: 1}
+    - name: Error
+      colour: {r: 0.93333334, g: 0.17102034, b: 0.09411764, a: 1}
+    - name: Grey 1 BG
+      colour: {r: 0.11764706, g: 0.11764706, b: 0.11764706, a: 1}
+    - name: Grey 2 Drawer
+      colour: {r: 0.23529412, g: 0.23529412, b: 0.23529412, a: 1}
+    - name: Grey 3 Drawer HL
+      colour: {r: 0.3529412, g: 0.3529412, b: 0.3529412, a: 1}
+    - name: Grey 4
+      colour: {r: 0.47058824, g: 0.47058824, b: 0.47058824, a: 1}
+    - name: Grey 5
+      colour: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 1}
+    - name: Grey 6
+      colour: {r: 0.7058824, g: 0.7058824, b: 0.7058824, a: 1}
+    - name: Grey 7 Drawer Selected
+      colour: {r: 1, g: 1, b: 1, a: 1}
+    - name: Grey 8
+      colour: {r: 0.9411765, g: 0.9411765, b: 0.9411765, a: 1}
+    - name: Scrollbar area
+      colour: {r: 0.9411765, g: 0.9411765, b: 0.9411765, a: 1}
+    - name: Scrollbar handle
+      colour: {r: 1, g: 1, b: 1, a: 1}
+    - name: Text Normal
+      colour: {r: 1, g: 1, b: 1, a: 1}
+    - name: Text Invert
+      colour: {r: 0, g: 0, b: 0, a: 1}
+    - name: Inputfield normal
+      colour: {r: 0.47058824, g: 0.47058824, b: 0.47058824, a: 1}
+    - name: Inputfield highlight
+      colour: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 1}
+    - name: Inputfield disabled
+      colour: {r: 0.11764706, g: 0.11764706, b: 0.11764706, a: 1}
+    - name: Inputfield text
+      colour: {r: 1, g: 1, b: 1, a: 1}
+    - name: Menuitem normal
+      colour: {r: 0.9411765, g: 0.9411765, b: 0.9411765, a: 1}
+    - name: Menuitem highlight
+      colour: {r: 0.8235294, g: 0.8235294, b: 0.8235294, a: 1}
+    - name: Menuitem disabled
+      colour: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 1}
+    - name: Menuitem text
+      colour: {r: 0, g: 0, b: 0, a: 1}
+    - name: Menuitem selectected
+      colour: {r: 0.23529412, g: 0.23529412, b: 0.23529412, a: 1}
+    - name: Slider bar
+      colour: {r: 0.8235294, g: 0.8235294, b: 0.8235294, a: 1}
+    - name: Slider BG
+      colour: {r: 0.11764706, g: 0.11764706, b: 0.11764706, a: 1}
+    - name: Slider handle
+      colour: {r: 1, g: 1, b: 1, a: 1}
+    - name: Dropdown normal
+      colour: {r: 1, g: 1, b: 1, a: 1}
+    - name: Dropdown disabled
+      colour: {r: 1, g: 1, b: 1, a: 0.5176471}
+    - name: Dropdown highlight
+      colour: {r: 0.9411765, g: 0.9411765, b: 0.9411765, a: 1}
+    - name: Dropdown selected
+      colour: {r: 0.23529412, g: 0.23529412, b: 0.23529412, a: 1}
+    - name: Dropdown text
+      colour: {r: 0, g: 0, b: 0, a: 1}
+    - name: Dropdown text selected
+      colour: {r: 1, g: 1, b: 1, a: 1}
+    palette: {fileID: 11400000}
+  - name: Orange
+    colours:
+    - name: Accent light
+      colour: {r: 0.937, g: 0.7149771, b: 0.32139105, a: 1}
+    - name: Accent
+      colour: {r: 0.8490566, g: 0.5907046, b: 0.13216448, a: 1}
+    - name: Accent dark
+      colour: {r: 0.76199996, g: 0.50449395, b: 0.048006017, a: 1}
+    - name: FatalError
+      colour: {r: 0.6981132, g: 0.16794232, b: 0.63633114, a: 1}
+    - name: Warning
+      colour: {r: 0.7814737, g: 0.7924528, b: 0.09344961, a: 1}
+    - name: Error
+      colour: {r: 0.93333334, g: 0.17102034, b: 0.09411764, a: 1}
+    - name: Grey 1 BG
+      colour: {r: 0.11764706, g: 0.11764706, b: 0.11764706, a: 1}
+    - name: Grey 2 Drawer
+      colour: {r: 0.23529412, g: 0.23529412, b: 0.23529412, a: 1}
+    - name: Grey 3 Drawer HL
+      colour: {r: 0.3529412, g: 0.3529412, b: 0.3529412, a: 1}
+    - name: Grey 4
+      colour: {r: 0.47058824, g: 0.47058824, b: 0.47058824, a: 1}
+    - name: Grey 5
+      colour: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 1}
+    - name: Grey 6
+      colour: {r: 0.7058824, g: 0.7058824, b: 0.7058824, a: 1}
+    - name: Grey 7 Drawer Selected
+      colour: {r: 1, g: 1, b: 1, a: 1}
+    - name: Grey 8
+      colour: {r: 0.9411765, g: 0.9411765, b: 0.9411765, a: 1}
+    - name: Scrollbar area
+      colour: {r: 0.9411765, g: 0.9411765, b: 0.9411765, a: 1}
+    - name: Scrollbar handle
+      colour: {r: 1, g: 1, b: 1, a: 1}
+    - name: Text Normal
+      colour: {r: 1, g: 1, b: 1, a: 1}
+    - name: Text Invert
+      colour: {r: 0, g: 0, b: 0, a: 1}
+    - name: Inputfield normal
+      colour: {r: 0.47058824, g: 0.47058824, b: 0.47058824, a: 1}
+    - name: Inputfield highlight
+      colour: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 1}
+    - name: Inputfield disabled
+      colour: {r: 0.11764706, g: 0.11764706, b: 0.11764706, a: 1}
+    - name: Inputfield text
+      colour: {r: 1, g: 1, b: 1, a: 1}
+    - name: Menuitem normal
+      colour: {r: 0.9411765, g: 0.9411765, b: 0.9411765, a: 1}
+    - name: Menuitem highlight
+      colour: {r: 0.8235294, g: 0.8235294, b: 0.8235294, a: 1}
+    - name: Menuitem disabled
+      colour: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 1}
+    - name: Menuitem text
+      colour: {r: 0, g: 0, b: 0, a: 1}
+    - name: Menuitem selectected
+      colour: {r: 0.23529412, g: 0.23529412, b: 0.23529412, a: 1}
+    - name: Slider bar
+      colour: {r: 0.8235294, g: 0.8235294, b: 0.8235294, a: 1}
+    - name: Slider BG
+      colour: {r: 0.11764706, g: 0.11764706, b: 0.11764706, a: 1}
+    - name: Slider handle
+      colour: {r: 1, g: 1, b: 1, a: 1}
+    - name: Dropdown normal
+      colour: {r: 1, g: 1, b: 1, a: 1}
+    - name: Dropdown disabled
+      colour: {r: 1, g: 1, b: 1, a: 0.5176471}
+    - name: Dropdown highlight
+      colour: {r: 0.9411765, g: 0.9411765, b: 0.9411765, a: 1}
+    - name: Dropdown selected
+      colour: {r: 0.23529412, g: 0.23529412, b: 0.23529412, a: 1}
+    - name: Dropdown text
+      colour: {r: 0, g: 0, b: 0, a: 1}
+    - name: Dropdown text selected
+      colour: {r: 1, g: 1, b: 1, a: 1}
+    palette: {fileID: 11400000}
