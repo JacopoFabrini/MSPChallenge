@@ -23,5 +23,5 @@ Geoserver, including GIS Files, and Configuration File that can be used with a p
 ## MSPConfigEditor
 The souurce files for the configuration editor, used to edit configuration files for the latest version of the MSP Challenge
 
-##Development Files
+## Development Files
 Specific files required for development, such as database worksheets
