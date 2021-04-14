@@ -18,7 +18,8 @@ To file a bug report or issue please visit:
 
 For help and support please email the GeoServer users group:
 
-  geoserver-users@lists.sourceforge.net
+  
+geoserver-users@lists.sourceforge.net
 
 
 Thanks for using GeoServer!
