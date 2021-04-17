@@ -12,7 +12,7 @@ The Unity Project containging the MSP Challenge Client
 Unity Version: N/A
 
 ## Server
-The MSP Challenge Platform Edition Server
+The MSP Challenge Server
 
 ## Simulations
 Contains separate folders for each of the simulations part of the MSP Challenge
