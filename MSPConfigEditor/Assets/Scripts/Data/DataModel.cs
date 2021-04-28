@@ -98,18 +98,12 @@ public class DataModel
     [StringFieldDrawer("Region base URL")]
     public string region_base_url;
 
-	[StringFieldDrawer("Geoserver URL")]
-	public string geoserver_url;
-
-	[StringFieldDrawer("Geoserver username"), HideIfValue("1/geoserver_url", null)]
-	public string geoserver_username;
-
-	[StringFieldDrawer("Geoserver password"), HideIfValue("1/geoserver_url", null)]
-	public string geoserver_password;
-
 	[FloatFieldDrawer("Restriction point size")]
     public float restriction_point_size;
 
+    [StringFieldDrawer("Base URL for the Wiki")]
+    public string wiki_base_url = "https://knowledge.mspchallenge.info/wiki/";
+
     [StringFieldDrawer("Windfarm API URL")]
-    public string windfarm_data_api_url;
+    public string windfarm_data_api_url = "https://hydro-engine.appspot.com/get_windfarm_data";
 }

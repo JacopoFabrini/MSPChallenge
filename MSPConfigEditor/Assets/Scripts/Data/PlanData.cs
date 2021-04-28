@@ -20,6 +20,8 @@ public class PlanData
     public int plan_gametime;
     [StringFieldDrawer("Plan Types")]
     public string plan_type; //3 comma separated ints
+    [StringFieldDrawer("Does the plan alter energy distributions or not")]
+    public int plan_alters_energy_distribution = 0;
 
     [ListDrawer("Layers", Priority = 0), NewLineFieldDrawer("0/name", GetNameFromContent = true, Priority = 1)]
     public List<PlanLayerData> layers;
