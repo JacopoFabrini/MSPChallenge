@@ -200,7 +200,7 @@ public class LayerTypeData
     public bool displayPolygon;
     [HideIfValue("1/displayPolygon", false)]
     [JsonConverter(typeof(ColourHexConverter)), ColourFieldDrawer("Color")]
-    public Color polygonColor;
+    public Color polygonColor = Color.black;
     [HideIfValue("1/displayPolygon", false)]
     //CANNOT CHANGE THIS TO A DROPDOWN UNTILL THEY ARE PROPER STRINGS, AND REPLACED IN THE CONFIG, OR NULL VALUES CAN BE HANDLED
     //[JsonConverter(typeof(StringEnumConverter)), DropdownFieldDrawer("Pattern Name")]
@@ -232,7 +232,7 @@ public class LayerTypeData
     public bool displayLines;
     [HideIfValue("1/displayLines", false)]
     [JsonConverter(typeof(ColourHexConverter)), ColourFieldDrawer("Color")]
-    public Color lineColor;
+    public Color lineColor = Color.black;
     [HideIfValue("1/displayLines", false)]
     [FloatFieldDrawer("Width")]
     public float lineWidth;
