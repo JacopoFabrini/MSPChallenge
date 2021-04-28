@@ -302,4 +302,26 @@ class Base
 
 		return $return;
 	}
+
+	public function AutoloadAllClasses() 
+	{
+		$apifolder = APIHelper::GetCurrentSessionServerApiFolder();
+		foreach (array_diff(scandir($apifolder), array('..', '.')) as $file) {
+			$file = strtolower($file);
+			if (substr($file, 0, 6) == "class.") {
+				$includeFileName = $apifolder . $file;
+				include_once($includeFileName); // won't include the same file twice
+			}
+		}
+	}
+
+	public static function isNewPasswordFormat($string)
+	{
+		if (base64_encode(base64_decode($string, true)) === $string) {
+			if (isJson(base64_decode($string))) {
+				return true;
+			}
+		}
+		return false;
+	}
 }

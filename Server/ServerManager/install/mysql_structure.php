@@ -42,14 +42,15 @@ CREATE TABLE `game_list` (
   `name` varchar(128) NOT NULL,
   `game_config_version_id` int(11) NOT NULL,
   `game_server_id` int(11) NOT NULL,
+  `game_geoserver_id` INT(11) NOT NULL DEFAULT 1,
   `watchdog_server_id` int(11) NOT NULL,
   `game_creation_time` bigint(20) NOT NULL COMMENT 'Unix timestamp',
   `game_start_year` int(11) NOT NULL,
   `game_end_month` int(11) NOT NULL,
   `game_current_month` int(11) NOT NULL,
   `game_running_til_time` bigint(20) NOT NULL COMMENT 'Unix timestamp',
-  `password_admin` varchar(45) NOT NULL,
-  `password_player` varchar(45) NOT NULL,
+  `password_admin` TEXT NOT NULL,
+  `password_player` TEXT NOT NULL,
   `session_state` enum('request','initializing','healthy','failed','archived') NOT NULL,
   `game_state` enum('setup','simulation','play','pause','end', 'fastforward') NOT NULL,
   `game_visibility` enum('public','private') NOT NULL,
@@ -57,7 +58,9 @@ CREATE TABLE `game_list` (
   `players_past_hour` int(10) unsigned DEFAULT NULL,
   `demo_session` tinyint(1) NOT NULL DEFAULT '0',
   `api_access_token` varchar(32) NOT NULL DEFAULT '',
-  `save_id` int(11) NOT NULL DEFAULT '0'
+  `save_id` int(11) NOT NULL DEFAULT '0',
+  `server_version` VARCHAR(45) NOT NULL
+
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -79,8 +82,8 @@ CREATE TABLE `game_saves` (
   `game_end_month` int(11) NOT NULL,
   `game_current_month` int(11) NOT NULL,
   `game_running_til_time` bigint(20) NOT NULL COMMENT 'Unix timestamp',
-  `password_admin` varchar(45) NOT NULL,
-  `password_player` varchar(45) NOT NULL,
+  `password_admin` TEXT NOT NULL,
+  `password_player` TEXT NOT NULL,
   `session_state` enum('request','initializing','healthy','failed','archived') NOT NULL,
   `game_state` enum('setup','simulation','play','pause','end') NOT NULL,
   `game_visibility` enum('public','private') NOT NULL,
@@ -92,7 +95,8 @@ CREATE TABLE `game_saves` (
   `save_path` varchar(255) NOT NULL,
   `save_notes` longtext NOT NULL DEFAULT '',
   `save_visibility` enum('active','archived') NOT NULL DEFAULT 'active',
-  `save_timestamp` timestamp NOT NULL DEFAULT current_timestamp()
+  `save_timestamp` timestamp NOT NULL DEFAULT current_timestamp(),
+  `server_version` varchar(45) NOT NULL
   ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -116,10 +120,20 @@ CREATE TABLE `game_servers` (
 CREATE TABLE `game_watchdog_servers` (
   `id` int(11) NOT NULL,
   `name` varchar(128) NOT NULL,
-  `address` varchar(255) NOT NULL COMMENT 'with trailing slash'
+  `address` varchar(255) NOT NULL COMMENT 'with trailing slash',
+  `available` TINYINT(1) NOT NULL DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
+
+CREATE TABLE `game_geoservers` (
+  `id` int(11) NOT NULL,
+  `name` varchar(128) NOT NULL,
+  `address` varchar(255) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `available` TINYINT(1) NOT NULL DEFAULT '1'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Table structure for table `settings`
@@ -185,20 +199,6 @@ CREATE TABLE `users` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users_online`
---
-
-CREATE TABLE `users_online` (
-  `id` int(10) NOT NULL,
-  `ip` varchar(15) NOT NULL,
-  `timestamp` varchar(15) NOT NULL,
-  `user_id` int(10) NOT NULL,
-  `session` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
 -- Indexes for dumped tables
 --
 
@@ -208,12 +208,6 @@ CREATE TABLE `users_online` (
 ALTER TABLE `users`
  ADD PRIMARY KEY (`id`), ADD KEY `EMAIL` (`email`) USING BTREE;
  
- --
- -- Indexes for table `users_online`
- --
- ALTER TABLE `users_online`
-   ADD PRIMARY KEY (`id`);
-
 --
 -- Indexes for table `game_config_files`
 --
@@ -257,6 +251,12 @@ ALTER TABLE `game_watchdog_servers`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexen voor tabel `game_geoservers`
+--
+ALTER TABLE `game_geoservers`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `settings`
 --
 ALTER TABLE `settings`
@@ -265,12 +265,6 @@ ALTER TABLE `settings`
 --
 -- AUTO_INCREMENT for dumped tables
 --
-
---
--- AUTO_INCREMENT for table `users_online`
---
-ALTER TABLE `users_online`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
   
 --
 -- AUTO_INCREMENT for table `game_config_files`
@@ -308,6 +302,12 @@ ALTER TABLE `game_servers`
 ALTER TABLE `game_watchdog_servers`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
+--
+-- AUTO_INCREMENT voor een tabel `game_geoservers`
+--
+ALTER TABLE `game_geoservers`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
   --
   -- Dumping data for table `game_servers`
   --
@@ -330,9 +330,10 @@ ALTER TABLE `game_watchdog_servers`
   (3, 3, 1, 'See www.mspchallenge.info', 'active', 1585692000, 1, 0, 'Clyde_marine_region_basic/Clyde_marine_region_basic_1.json', 'simcelt', 'Any'),
   (4, 4, 1, 'See www.mspchallenge.info', 'active', 1585692000, 1, 0, 'North_Sea_Digitwin_basic/North_Sea_Digitwin_basic_1.json', 'northsee', 'Any');
 
+  INSERT INTO `game_geoservers` (`id`, `name`, `address`, `username`, `password`) VALUES ('1', 'Default: the public MSP Challenge GeoServer', 'automatically obtained', 'automatically obtained', 'automatically obtained'); 
+
   INSERT INTO `settings` (`name`, `value`) VALUES 
   ('migration_20200618.php', 'Never'),
-  ('migration_20200713.php', 'Never'),
   ('migration_20200721.php', 'Never'),
   ('migration_20200901.php', 'Never'),
   ('migration_20200917.php', 'Never'),
@@ -340,7 +341,10 @@ ALTER TABLE `game_watchdog_servers`
   ('migration_20201002.php', 'Never'),
   ('migration_20201104.php', 'Never'),
   ('migration_20201130.php', 'Never'),
-  ('migration_20210211.php', 'Never');
+  ('migration_20210211.php', 'Never'),
+  ('migration_20210325.php', 'Never'),
+  ('migration_20210413.php', 'Never');
+
 
 ";
 ?>

@@ -2,20 +2,19 @@
 require_once 'init.php';
 $servermanager = ServerManager::getInstance();
 
-// run any outstanding database migrations
-$db = DB::getInstance();
-$db->dbase_migrate();
-
 if(isset($user) && $user->isLoggedIn()){
   if ($servermanager->freshinstall()) {
-    Redirect::to($url_app_root.'install/install.php');
+    // new installation, redirect to set up ServerManager database
+    Redirect::to($servermanager->GetServerManagerFolder().'install/install.php');
   }
   else {
-    Redirect::to($url_app_root.'manager.php');
+    // run any outstanding database migrations
+    $db = DB::getInstance()->dbase_migrate();
+    Redirect::to($servermanager->GetServerManagerFolder().'manager.php');
   }
 }
 else{
-  Redirect::to($url_app_root.'login.php');
+  Redirect::to($servermanager->GetServerManagerFolder().'login.php');
 }
 die();
 ?>

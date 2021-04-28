@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "date_modified": "2/2/2021",
-    "data_model_hash": "D85E3C60C9451949B07BDB7C522AF282688526886C61EB898F4940F56C2922CD",
+    "date_modified": "4/15/2021",
+    "data_model_hash": "997E19B0316A70CFF9871875FE43A6CF80ADEE77EF99FDEBCA988EF5478739A8",
     "errors": 0,
     "editor_version": 0.0,
     "min_supported_client": "",
@@ -20647,7 +20647,19 @@
         "layer_tooltip": "Places with population above 100.000 inhabitants",
         "layer_information": "",
         "layer_media": null,
-        "layer_text_info": null,
+        "layer_text_info": {
+          "property_per_state": {
+            "Current": "name",
+            "View": "name",
+            "Edit": "name"
+          },
+          "text_color": "#000000FF",
+          "text_size": "M",
+          "zoom_cutoff": 0.1,
+          "x": 0.0,
+          "y": -0.4,
+          "z": -0.05
+        },
         "layer_states": [
           {
             "state": "ASSEMBLY",
@@ -23551,7 +23563,19 @@
         "layer_tooltip": "",
         "layer_information": "",
         "layer_media": null,
-        "layer_text_info": null,
+        "layer_text_info": {
+          "property_per_state": {
+            "Current": "name",
+            "View": "name",
+            "Edit": "name"
+          },
+          "text_color": "#0504aaFF",
+          "text_size": "M",
+          "zoom_cutoff": 0.1,
+          "x": 0.0,
+          "y": -0.4,
+          "z": -0.05
+        },
         "layer_states": [
           {
             "state": "ASSEMBLY",
@@ -27710,7 +27734,7 @@
             "capacity": 25000000,
             "investmentCost": 200000.0,
             "availability": -12,
-            "media": "wiki://(NS)Energy_Cables"
+            "media": "wiki://BalticSea:Energy_Cables"
           },
           "1": {
             "displayName": "50MW",
@@ -27737,7 +27761,7 @@
             "capacity": 50000000,
             "investmentCost": 200000.0,
             "availability": -12,
-            "media": "wiki://(NS)Energy_Cables"
+            "media": "wiki://BalticSea:Energy_Cables"
           },
           "2": {
             "displayName": "80MW",
@@ -27764,7 +27788,7 @@
             "capacity": 80000000,
             "investmentCost": 200000.0,
             "availability": -12,
-            "media": "wiki://(NS)Energy_Cables"
+            "media": "wiki://BalticSea:Energy_Cables"
           },
           "3": {
             "displayName": "150MW",
@@ -27791,7 +27815,7 @@
             "capacity": 150000000,
             "investmentCost": 200000.0,
             "availability": -12,
-            "media": "wiki://(NS)Energy_Cables"
+            "media": "wiki://BalticSea:Energy_Cables"
           },
           "4": {
             "displayName": "300MW",
@@ -27818,7 +27842,7 @@
             "capacity": 300000000,
             "investmentCost": 200000.0,
             "availability": -12,
-            "media": "wiki://(NS)Energy_Cables"
+            "media": "wiki://BalticSea:Energy_Cables"
           },
           "5": {
             "displayName": "460MW",
@@ -27845,7 +27869,7 @@
             "capacity": 460000000,
             "investmentCost": 200000.0,
             "availability": -12,
-            "media": "wiki://(NS)Energy_Cables"
+            "media": "wiki://BalticSea:Energy_Cables"
           },
           "6": {
             "displayName": "10GW Corridor",
@@ -27872,7 +27896,7 @@
             "capacity": 10000000000,
             "investmentCost": 2E+07,
             "availability": -12,
-            "media": "wiki://(NS)Energy_Cables"
+            "media": "wiki://BalticSea:Energy_Cables"
           }
         },
         "layer_info_properties": [
@@ -27971,7 +27995,7 @@
             "capacity": 1000000000,
             "investmentCost": 100000.0,
             "availability": -12,
-            "media": "wiki://(NS)Electricity_Sockets"
+            "media": "wiki://BalticSea:Electricity_Sockets"
           },
           "1": {
             "displayName": "10.000MW",
@@ -27998,7 +28022,7 @@
             "capacity": 10000000000,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Electricity_Sockets"
+            "media": "wiki://BalticSea:Electricity_Sockets"
           }
         },
         "layer_info_properties": [
@@ -28097,7 +28121,7 @@
             "capacity": 400000000,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Electricity_Transformers"
+            "media": "wiki://BalticSea:Electricity_Transformers"
           },
           "1": {
             "displayName": "800MW",
@@ -28124,7 +28148,7 @@
             "capacity": 800000000,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Electricity_Transformers"
+            "media": "wiki://BalticSea:Electricity_Transformers"
           }
         },
         "layer_info_properties": [
@@ -28211,7 +28235,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS/Oil_%26_Gas_Installations)Operational"
+            "media": "wiki://BalticSea:Oil_%26_Gas_Installations/Operational"
           },
           "1": {
             "displayName": "Decommissioned (0MW)",
@@ -28238,7 +28262,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS/Oil_%26_Gas_Installations)Decommissioned"
+            "media": "wiki://BalticSea:Oil_%26_Gas_Installations/Decommissioned"
           },
           "2": {
             "displayName": "Closed (0MW)",
@@ -28265,7 +28289,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS/Oil_%26_Gas_Installations)Closed_Down"
+            "media": "wiki://BalticSea:Oil_%26_Gas_Installations/Closed_Down"
           },
           "3": {
             "displayName": "Other (0MW)",
@@ -28292,7 +28316,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS/Oil_%26_Gas_Installations)Derogation"
+            "media": "wiki://BalticSea:Oil_%26_Gas_Installations/Derogation"
           }
         },
         "layer_info_properties": [

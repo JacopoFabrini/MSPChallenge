@@ -8,11 +8,12 @@ using Newtonsoft.Json.Linq;
 using Newtonsoft.Json.Serialization;
 using UnityEngine.Networking;
 using Utility.Serialization;
+using System.Text;
 
 public static class ServerCommunication
 {
 	public const string ApiTokenHeader = "MSPAPIToken";
-	public const int REQUEST_TIMEOUT = 10;
+	public static readonly int[] REQUEST_TIMEOUT = { 1, 10, 30 };
 	public enum EWebRequestFailureResponse { Log, Error, Crash }
 
 	public abstract class ARequest
@@ -21,6 +22,8 @@ public static class ServerCommunication
 		public string Url;
 		public Action<ARequest, string> failureCallback;
 		public int retriesRemaining;
+		public bool expectMSPResultFormat = true;
+		public int timeoutLevel = 1;
 
 		public ARequest(string url, Action<ARequest, string> failureCallback, int retriesRemaining)
 		{
@@ -86,6 +89,7 @@ public static class ServerCommunication
     {
         public List<IMultipartFormSection> formData;
 		private bool addDefaultHeaders;
+		private bool priority = false;
 
 		public FormRequest(string url, List<IMultipartFormSection> formData, Action<T> successCallback, Action<ARequest, string> failureCallback, int retriesRemaining, bool addDefaultHeaders = true)
 			: base(url, successCallback, failureCallback, retriesRemaining)
@@ -106,7 +110,7 @@ public static class ServerCommunication
 			}
 			if(defaultHeaders != null && addDefaultHeaders)
 				AddHeaders(Www, defaultHeaders);
-			Www.timeout = REQUEST_TIMEOUT;
+			Www.timeout = REQUEST_TIMEOUT[timeoutLevel];
 		}
 	}
 
@@ -126,12 +130,22 @@ public static class ServerCommunication
 
 		public override void CreateRequest(Dictionary<string, string> defaultHeaders)
 		{
-			Www = UnityWebRequest.Post(Url, data);
+			//Www = UnityWebRequest.Post(Url, data);
+			//if (defaultHeaders != null && addDefaultHeaders)
+			//	AddHeaders(Www, defaultHeaders);
+			//Www.SetRequestHeader("Content-Type", "application/json");
+			////Www.uploadHandler.contentType = "application/json";
+			//Www.timeout = REQUEST_TIMEOUT;
+
+			//Kevin: updated the webrequest creation as the version above is appearantly broken for custom content types
+			Www = new UnityWebRequest(Url, "POST");
+			byte[] bodyRaw = Encoding.UTF8.GetBytes(data);
+			Www.uploadHandler = new UploadHandlerRaw(bodyRaw);
+			Www.downloadHandler = new DownloadHandlerBuffer();
+			Www.timeout = REQUEST_TIMEOUT[timeoutLevel];
+			Www.SetRequestHeader("Content-Type", "application/json");
 			if (defaultHeaders != null && addDefaultHeaders)
 				AddHeaders(Www, defaultHeaders);
-			Www.SetRequestHeader("Content-Type", "application/json");
-			//Www.uploadHandler.contentType = "application/json";
-			Www.timeout = REQUEST_TIMEOUT;
 		}
     }
 	
@@ -189,6 +203,18 @@ public static class ServerCommunication
 		doingSomethingWindow.GetComponent<RectTransform>().localPosition = Vector3.zero;
 		doingSomethingWindow.SetActive(false);
 	}
+
+	public static void DoPriorityRequest(string url, NetworkForm form, Action<string> successCallback, Action<ARequest, string> failureCallback)
+	{
+		ARequest request = new FormRequest<string>(Server.Url + url, (form != null) ? form.Form : null, successCallback, failureCallback, 0);
+		request.timeoutLevel = 0;
+		requestsQueue.Enqueue(request);
+
+		if (OnRequestQueued != null)
+		{
+			OnRequestQueued(request);
+		}
+	}
 	
 	//Note: specifying a custom failure callback avoids all default ones, including automatic retries.
 	public static void DoRequest<T>(string url, NetworkForm form, Action<T> successCallback, Action<ARequest, string> failureCallback, int retriesOnFail = 3)
@@ -218,7 +244,7 @@ public static class ServerCommunication
 		}
 	}
 
-	public static void DoRequest(string url, NetworkForm form, EWebRequestFailureResponse responseType = EWebRequestFailureResponse.Error, int retriesOnFail = 3)
+	public static void DoRequest(string url, NetworkForm form, int retriesOnFail = 3)
 	{
 		DoRequest<string>(url, form, null, HandleRequestFailureError, retriesOnFail);
 	}
@@ -266,8 +292,9 @@ public static class ServerCommunication
 		FeatureCollection featureCollection = new FeatureCollection(features);
 		string content = JsonConvert.SerializeObject(featureCollection);
 
-		//DoRequest<T>(url, content, successCallback, failureCallback, retriesOnFail);
 		ARequest request = new RawDataRequest<T>(url, content, successCallback, failureCallback, retriesOnFail, false); //Needs to be seperate so the server URL is not added
+		request.timeoutLevel = 2;
+		request.expectMSPResultFormat = false;
 		requestsQueue.Enqueue(request);
 
 		if (OnRequestQueued != null)
@@ -381,35 +408,64 @@ public static class ServerCommunication
 		{
 			MemoryTraceWriter traceWriter = new MemoryTraceWriter();
 			traceWriter.LevelFilter = System.Diagnostics.TraceLevel.Warning;
-			bool processPayload = false;
-			RequestResult result = null;
-			try
+
+			if (request.expectMSPResultFormat)
 			{
-				result = JsonConvert.DeserializeObject<RequestResult>(request.Www.downloadHandler.text, new JsonSerializerSettings
+				bool processPayload = false;
+				RequestResult result = null;
+				try
 				{
-					TraceWriter = traceWriter,
-					Error = (sender, errorArgs) =>
+					result = JsonConvert.DeserializeObject<RequestResult>(request.Www.downloadHandler.text, new JsonSerializerSettings
 					{
+						TraceWriter = traceWriter,
+						Error = (sender, errorArgs) =>
+						{
 							Debug.LogError("Unable to deserialize: '" + request.Www.downloadHandler.text + "'");
 							Util.HandleDeserializationError(sender, errorArgs);
 							Debug.LogError("Deserialization error: " + errorArgs.ErrorContext.Error);
-						
-					},
-					Converters = new List<JsonConverter> { new JsonConverterBinaryBool() }
-				});
-				if (!result.success)
-				{
-					request.failureCallback.Invoke(request, $"Server request to url {request.Www.url} failed.\nServer response: {result.message}");
+
+						},
+						Converters = new List<JsonConverter> { new JsonConverterBinaryBool() }
+					});
+					if (!result.success)
+					{
+						request.failureCallback.Invoke(request, result.message);
+					}
+					else
+						processPayload = true;
 				}
-				else
-					processPayload = true;
-			}
-			catch (System.Exception e)
-			{
-				request.failureCallback.Invoke(request, $"Error deserializing message from request to url: {request.Www.url}\nError message: {e.Message}");
-			}
-			if(processPayload)
+				catch (System.Exception e)
+				{
+					request.failureCallback.Invoke(request, $"Error deserializing message from request to url: {request.Www.url}\nError message: {e.Message}");
+				}
+				if (processPayload)
 					request.ProcessPayload(result.payload);
+			}
+			else
+			{
+				JToken result = null;
+				try
+				{
+					result = JsonConvert.DeserializeObject<JToken>(request.Www.downloadHandler.text, new JsonSerializerSettings
+					{
+						TraceWriter = traceWriter,
+						Error = (sender, errorArgs) =>
+						{
+							Debug.LogError("Unable to deserialize: '" + request.Www.downloadHandler.text + "'");
+							Util.HandleDeserializationError(sender, errorArgs);
+							Debug.LogError("Deserialization error: " + errorArgs.ErrorContext.Error);
+
+						},
+						Converters = new List<JsonConverter> { new JsonConverterBinaryBool() }
+					});
+				}
+				catch (System.Exception e)
+				{
+					request.failureCallback.Invoke(request, $"Error deserializing message from request to url: {request.Www.url}\nError message: {e.Message}");
+					return;
+				}
+				request.ProcessPayload(result);
+			}
 		}
 	}
 

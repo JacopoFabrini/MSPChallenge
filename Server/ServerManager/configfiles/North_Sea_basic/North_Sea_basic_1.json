@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "date_modified": "12/10/2020",
-    "data_model_hash": "A83EDE2D8EF04832B05EE73875682FCAF9B17B14137AB8B80FE8637733C931A4",
+    "date_modified": "4/15/2021",
+    "data_model_hash": "A373AF7671228C282CC657EA36454861669A1229C60863F8E9902A1FD8967150",
     "errors": 0,
     "editor_version": 0.0,
     "min_supported_client": "",
@@ -21367,6 +21367,7 @@
         "layer_short": "",
         "layer_category": "management",
         "layer_subcategory": "governance",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -21374,7 +21375,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -21454,6 +21454,7 @@
         "layer_short": "Countries",
         "layer_category": "management",
         "layer_subcategory": "governance",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -21461,7 +21462,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 0,
         "layer_editable": 0,
@@ -21611,6 +21611,7 @@
         "layer_short": "North Sea File",
         "layer_category": "management",
         "layer_subcategory": "governance",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -21618,7 +21619,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 0,
         "layer_selectable": 0,
         "layer_editable": 0,
@@ -21698,6 +21698,7 @@
         "layer_short": "Cities",
         "layer_category": "management",
         "layer_subcategory": "governance",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -21705,7 +21706,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -21715,7 +21715,19 @@
         "layer_tooltip": "Cities",
         "layer_information": "",
         "layer_media": null,
-        "layer_text_info": null,
+        "layer_text_info": {
+          "property_per_state": {
+            "Current": "name",
+            "View": "name",
+            "Edit": "name"
+          },
+          "text_color": "#000000FF",
+          "text_size": "M",
+          "zoom_cutoff": 0.1,
+          "x": 0.0,
+          "y": -0.2,
+          "z": -0.05
+        },
         "layer_states": [
           {
             "state": "ASSEMBLY",
@@ -21759,7 +21771,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Cities"
+            "media": "wiki://NorthSea:Cities"
           }
         },
         "layer_info_properties": [
@@ -22023,6 +22035,7 @@
         "layer_short": "Country Info",
         "layer_category": "management",
         "layer_subcategory": "governance",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -22030,7 +22043,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -22208,6 +22220,7 @@
         "layer_short": "Topography",
         "layer_category": "management",
         "layer_subcategory": "environmental_conditions",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELCustomizable",
@@ -22215,7 +22228,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 0,
         "layer_editable": 0,
@@ -22415,6 +22427,7 @@
         "layer_short": "Rivers",
         "layer_category": "management",
         "layer_subcategory": "governance",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -22422,7 +22435,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -22558,6 +22570,7 @@
         "layer_short": "Territorial Waters Lines",
         "layer_category": "management",
         "layer_subcategory": "governance",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -22565,7 +22578,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -22619,7 +22631,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS/EEZ)Green"
+            "media": "wiki://NorthSea:EEZ/Green"
           },
           "1": {
             "displayName": "Red",
@@ -22646,7 +22658,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS/EEZ)Red"
+            "media": "wiki://NorthSea:EEZ/Red"
           },
           "2": {
             "displayName": "Pink",
@@ -22673,7 +22685,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS/EEZ)Pink"
+            "media": "wiki://NorthSea:EEZ/Pink"
           },
           "3": {
             "displayName": "Yellow",
@@ -22700,7 +22712,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS/EEZ)Yellow"
+            "media": "wiki://NorthSea:EEZ/Yellow"
           },
           "4": {
             "displayName": "Orange",
@@ -22727,7 +22739,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS/EEZ)Orange"
+            "media": "wiki://NorthSea:EEZ/Orange"
           },
           "5": {
             "displayName": "Brown",
@@ -22754,7 +22766,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS/EEZ)Brown"
+            "media": "wiki://NorthSea:EEZ/Brown"
           },
           "6": {
             "displayName": "Blue",
@@ -22781,7 +22793,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS/EEZ)Blue"
+            "media": "wiki://NorthSea:EEZ/Blue"
           },
           "7": {
             "displayName": "Purple",
@@ -22808,7 +22820,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS/EEZ)Purple"
+            "media": "wiki://NorthSea:EEZ/Purple"
           }
         },
         "layer_info_properties": [
@@ -22834,6 +22846,7 @@
         "layer_short": "EEZ",
         "layer_category": "management",
         "layer_subcategory": "governance",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -22841,7 +22854,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 0,
         "layer_editable": 0,
@@ -22895,7 +22907,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS/EEZ)Green"
+            "media": "wiki://NorthSea:EEZ/Green"
           },
           "1": {
             "displayName": "Red",
@@ -22922,7 +22934,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS/EEZ)Red"
+            "media": "wiki://NorthSea:EEZ/Red"
           },
           "2": {
             "displayName": "Pink",
@@ -22949,7 +22961,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS/EEZ)Pink"
+            "media": "wiki://NorthSea:EEZ/Pink"
           },
           "3": {
             "displayName": "Yellow",
@@ -22976,7 +22988,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS/EEZ)Yellow"
+            "media": "wiki://NorthSea:EEZ/Yellow"
           },
           "4": {
             "displayName": "Orange",
@@ -23003,7 +23015,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS/EEZ)Orange"
+            "media": "wiki://NorthSea:EEZ/Orange"
           },
           "5": {
             "displayName": "Brown",
@@ -23030,7 +23042,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS/EEZ)Brown"
+            "media": "wiki://NorthSea:EEZ/Brown"
           },
           "6": {
             "displayName": "Blue",
@@ -23057,7 +23069,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS/EEZ)Blue"
+            "media": "wiki://NorthSea:EEZ/Blue"
           },
           "7": {
             "displayName": "Purple",
@@ -23084,7 +23096,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS/EEZ)Purple"
+            "media": "wiki://NorthSea:EEZ/Purple"
           }
         },
         "layer_info_properties": [
@@ -23124,6 +23136,7 @@
         "layer_short": "ICES Rectangles",
         "layer_category": "management",
         "layer_subcategory": "governance",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -23131,7 +23144,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -23309,6 +23321,7 @@
         "layer_short": "Wind Speed",
         "layer_category": "management",
         "layer_subcategory": "environmental_conditions",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELCustomizable",
@@ -23316,7 +23329,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -23370,7 +23382,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Wind_Speed"
+            "media": "wiki://NorthSea:Wind_Speed"
           },
           "1": {
             "displayName": "5.0 - 6.0 m/s",
@@ -23397,7 +23409,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Wind_Speed"
+            "media": "wiki://NorthSea:Wind_Speed"
           },
           "2": {
             "displayName": "6.0 - 7.0 m/s",
@@ -23424,7 +23436,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Wind_Speed"
+            "media": "wiki://NorthSea:Wind_Speed"
           },
           "3": {
             "displayName": "7.0 - 8.0 m/s",
@@ -23451,7 +23463,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Wind_Speed"
+            "media": "wiki://NorthSea:Wind_Speed"
           },
           "4": {
             "displayName": "8.0 - 9.0 m/s",
@@ -23478,7 +23490,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Wind_Speed"
+            "media": "wiki://NorthSea:Wind_Speed"
           },
           "5": {
             "displayName": "> 9.0 m/s",
@@ -23505,7 +23517,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Wind_Speed"
+            "media": "wiki://NorthSea:Wind_Speed"
           }
         },
         "layer_info_properties": null
@@ -23516,6 +23528,7 @@
         "layer_short": "Wave Height",
         "layer_category": "management",
         "layer_subcategory": "environmental_conditions",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELCustomizable",
@@ -23523,7 +23536,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -23577,7 +23589,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Wave_Height"
+            "media": "wiki://NorthSea:Wave_Height"
           },
           "1": {
             "displayName": "1.0 - 1.5 m",
@@ -23604,7 +23616,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Wave_Height"
+            "media": "wiki://NorthSea:Wave_Height"
           },
           "2": {
             "displayName": "1.5 - 2.0 m",
@@ -23631,7 +23643,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Wave_Height"
+            "media": "wiki://NorthSea:Wave_Height"
           },
           "3": {
             "displayName": "2.0 - 2.5 m",
@@ -23658,7 +23670,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Wave_Height"
+            "media": "wiki://NorthSea:Wave_Height"
           },
           "4": {
             "displayName": "2.5 - 3.0 m",
@@ -23685,7 +23697,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Wave_Height"
+            "media": "wiki://NorthSea:Wave_Height"
           },
           "5": {
             "displayName": "> 3.0 m",
@@ -23712,7 +23724,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Wave_Height"
+            "media": "wiki://NorthSea:Wave_Height"
           }
         },
         "layer_info_properties": null
@@ -23723,6 +23735,7 @@
         "layer_short": "Currents Speed",
         "layer_category": "management",
         "layer_subcategory": "environmental_conditions",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELCustomizable",
@@ -23730,7 +23743,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -23784,7 +23796,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Currents"
+            "media": "wiki://NorthSea:Currents"
           },
           "1": {
             "displayName": "0.03 - 0.05 m/s",
@@ -23811,7 +23823,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Currents"
+            "media": "wiki://NorthSea:Currents"
           },
           "2": {
             "displayName": "0.05 - 0.08 m/s",
@@ -23838,7 +23850,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Currents"
+            "media": "wiki://NorthSea:Currents"
           },
           "3": {
             "displayName": "0.08 - 0.10 m/s",
@@ -23865,7 +23877,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Currents"
+            "media": "wiki://NorthSea:Currents"
           },
           "4": {
             "displayName": "0.10 - 0.13 m/s",
@@ -23892,7 +23904,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Currents"
+            "media": "wiki://NorthSea:Currents"
           },
           "5": {
             "displayName": "> 0.13 m/s",
@@ -23919,7 +23931,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Currents"
+            "media": "wiki://NorthSea:Currents"
           }
         },
         "layer_info_properties": null
@@ -23930,6 +23942,7 @@
         "layer_short": "Bathymetry",
         "layer_category": "management",
         "layer_subcategory": "environmental_conditions",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELCustomizable",
@@ -23937,7 +23950,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.0,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -23946,7 +23958,7 @@
         "layer_green": 0,
         "layer_tooltip": "Depth of the sea area",
         "layer_information": "",
-        "layer_media": "wiki://(NS)Bathymetry",
+        "layer_media": "wiki://NorthSea:Bathymetry",
         "layer_text_info": null,
         "layer_states": [
           {
@@ -23991,7 +24003,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Bathymetry"
+            "media": "wiki://NorthSea:Bathymetry"
           },
           "1": {
             "displayName": "20 - 40 m",
@@ -24018,7 +24030,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Bathymetry"
+            "media": "wiki://NorthSea:Bathymetry"
           },
           "2": {
             "displayName": "40 - 60 m",
@@ -24045,7 +24057,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Bathymetry"
+            "media": "wiki://NorthSea:Bathymetry"
           },
           "3": {
             "displayName": "60 -100 m",
@@ -24072,7 +24084,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Bathymetry"
+            "media": "wiki://NorthSea:Bathymetry"
           },
           "4": {
             "displayName": "100 - 200 m",
@@ -24099,7 +24111,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Bathymetry"
+            "media": "wiki://NorthSea:Bathymetry"
           },
           "5": {
             "displayName": "200 - 500 m ",
@@ -24126,7 +24138,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Bathymetry"
+            "media": "wiki://NorthSea:Bathymetry"
           },
           "6": {
             "displayName": "500 - 1000 m ",
@@ -24191,6 +24203,7 @@
         "layer_short": "Eutrophication Status",
         "layer_category": "management",
         "layer_subcategory": "environmental_conditions",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -24198,7 +24211,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -24428,6 +24440,7 @@
         "layer_short": "Sediments",
         "layer_category": "management",
         "layer_subcategory": "environmental_conditions",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -24435,7 +24448,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -24489,7 +24501,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS/Sediments)Mud"
+            "media": "wiki://NorthSea:Sediments/Mud"
           },
           "1": {
             "displayName": "Fine sand",
@@ -24516,7 +24528,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS/Sediments)Fine_sand"
+            "media": "wiki://NorthSea:Sediments/Fine_sand"
           },
           "2": {
             "displayName": "Coarse sand",
@@ -24543,7 +24555,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS/Sediments)Coarse_sand"
+            "media": "wiki://NorthSea:Sediments/Coarse_sand"
           },
           "3": {
             "displayName": "Gravel",
@@ -24570,7 +24582,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS/Sediments)Gravel"
+            "media": "wiki://NorthSea:Sediments/Gravel"
           },
           "4": {
             "displayName": "Pebbels",
@@ -24597,7 +24609,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS/Sediments)Pebbels"
+            "media": "wiki://NorthSea:Sediments/Pebbels"
           }
         },
         "layer_info_properties": [
@@ -24665,6 +24677,7 @@
         "layer_short": "Fossil Fuel Availability",
         "layer_category": "management",
         "layer_subcategory": "natural_resources",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -24672,7 +24685,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -24726,7 +24738,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Fossil_Fuel_Availability"
+            "media": "wiki://NorthSea:Fossil_Fuel_Availability"
           },
           "1": {
             "displayName": "2 mill barrels / km2",
@@ -24753,7 +24765,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Fossil_Fuel_Availability"
+            "media": "wiki://NorthSea:Fossil_Fuel_Availability"
           }
         },
         "layer_info_properties": [
@@ -24807,6 +24819,7 @@
         "layer_short": "Sand & Gravel Availability",
         "layer_category": "management",
         "layer_subcategory": "natural_resources",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -24814,7 +24827,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -24868,7 +24880,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Sand_and_Gravel_Availability"
+            "media": "wiki://NorthSea:Sand_and_Gravel_Availability"
           }
         },
         "layer_info_properties": [
@@ -24950,6 +24962,7 @@
         "layer_short": "Military Areas",
         "layer_category": "management",
         "layer_subcategory": "governance",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -24957,7 +24970,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 1,
@@ -25011,7 +25023,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS/Military_Areas)Ammunition_Dump"
+            "media": "wiki://NorthSea:Military_Areas/Ammunition_Dump"
           },
           "0": {
             "displayName": "Practice Area",
@@ -25038,7 +25050,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS/Military_Areas)Practice_Area"
+            "media": "wiki://NorthSea:Military_Areas/Practice_Area"
           },
           "1": {
             "displayName": "Fly zone",
@@ -25065,7 +25077,7 @@
             "capacity": 6,
             "investmentCost": 7.0,
             "availability": -12,
-            "media": "wiki://(NS/Military_Areas)Fly_zone"
+            "media": "wiki://NorthSea:Military_Areas/Fly_zone"
           },
           "3": {
             "displayName": "Undefined",
@@ -25092,7 +25104,7 @@
             "capacity": 6,
             "investmentCost": 7.0,
             "availability": -12,
-            "media": "wiki://(NS/Military_Areas)Undefined"
+            "media": "wiki://NorthSea:Military_Areas/Undefined"
           }
         },
         "layer_info_properties": [
@@ -25202,6 +25214,7 @@
         "layer_short": "Telecom Cables",
         "layer_category": "activities",
         "layer_subcategory": "cables_and_pipelines",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -25209,7 +25222,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 1,
@@ -25263,7 +25275,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Telecom_Cables"
+            "media": "wiki://NorthSea:Telecom_Cables"
           },
           "1": {
             "displayName": "Prospective",
@@ -25290,7 +25302,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Telecom_Cables"
+            "media": "wiki://NorthSea:Telecom_Cables"
           },
           "2": {
             "displayName": "In Use",
@@ -25317,7 +25329,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Telecom_Cables"
+            "media": "wiki://NorthSea:Telecom_Cables"
           }
         },
         "layer_info_properties": [
@@ -25469,6 +25481,7 @@
         "layer_short": "Unused Cables",
         "layer_category": "activities",
         "layer_subcategory": "cables_and_pipelines",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -25476,7 +25489,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 1,
@@ -25530,7 +25542,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Unused_Cables"
+            "media": "wiki://NorthSea:Unused_Cables"
           }
         },
         "layer_info_properties": [
@@ -25990,6 +26002,7 @@
         "layer_short": "Dumping areas",
         "layer_category": "activities",
         "layer_subcategory": "shipping",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -25997,7 +26010,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 1,
@@ -26051,7 +26063,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS/Dredging_Dumping_Areas)Closed"
+            "media": "wiki://NorthSea:Dredging_Dumping_Areas/Closed"
           },
           "1": {
             "displayName": "Open",
@@ -26078,7 +26090,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS/Dredging_Dumping_Areas)Open"
+            "media": "wiki://NorthSea:Dredging_Dumping_Areas/Open"
           }
         },
         "layer_info_properties": [
@@ -26188,6 +26200,7 @@
         "layer_short": "Recreational Interest",
         "layer_category": "activities",
         "layer_subcategory": "recreational",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -26195,7 +26208,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 1,
@@ -26249,7 +26261,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS/Recreational_Interest)Water_sport_area"
+            "media": "wiki://NorthSea:Recreational_Interest/Water_sport_area"
           },
           "0": {
             "displayName": "Beach recreation area",
@@ -26276,7 +26288,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS/Recreational_Interest)Beach_recreation_area"
+            "media": "wiki://NorthSea:Recreational_Interest/Beach_recreation_area"
           },
           "2": {
             "displayName": "Recreational Fishing area",
@@ -26303,7 +26315,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS/Recreational_Interest)Recreational_Fishing_area"
+            "media": "wiki://NorthSea:Recreational_Interest/Recreational_Fishing_area"
           },
           "3": {
             "displayName": "Other",
@@ -26330,7 +26342,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS/Recreational_Interest)Other"
+            "media": "wiki://NorthSea:Recreational_Interest/Other"
           }
         },
         "layer_info_properties": [
@@ -26398,6 +26410,7 @@
         "layer_short": "Wind Farms",
         "layer_category": "activities",
         "layer_subcategory": "energy",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -26405,7 +26418,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 1,
@@ -26471,7 +26483,7 @@
             "capacity": 6000000,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS/Wind_Farms)6MW"
+            "media": "wiki://NorthSea:Wind_Farms/6MW"
           },
           "1": {
             "displayName": "6MW Floating Wind",
@@ -26498,7 +26510,7 @@
             "capacity": 6000000,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS/Wind_Farms)Floating"
+            "media": "wiki://NorthSea:Wind_Farms/Floating"
           }
         },
         "layer_info_properties": [
@@ -26678,6 +26690,7 @@
         "layer_short": "Wave Farms",
         "layer_category": "activities",
         "layer_subcategory": "energy",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -26685,7 +26698,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 1,
@@ -26751,7 +26763,7 @@
             "capacity": 3000000,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Wave_Farms"
+            "media": "wiki://NorthSea:Wave_Farms"
           }
         },
         "layer_info_properties": [
@@ -26833,6 +26845,7 @@
         "layer_short": "Tidal Farms",
         "layer_category": "activities",
         "layer_subcategory": "energy",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -26840,7 +26853,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 1,
@@ -26906,7 +26918,7 @@
             "capacity": 3000000,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Tidal_Farms"
+            "media": "wiki://NorthSea:Tidal_Farms"
           }
         },
         "layer_info_properties": [
@@ -26974,6 +26986,7 @@
         "layer_short": "Wind Farms - Areas of Search",
         "layer_category": "activities",
         "layer_subcategory": "energy",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -26981,7 +26994,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 1,
@@ -27215,6 +27227,7 @@
         "layer_short": "Wave Farms - Areas of Search",
         "layer_category": "activities",
         "layer_subcategory": "energy",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -27222,7 +27235,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 1,
@@ -27428,6 +27440,7 @@
         "layer_short": "Tidal Farms - Areas of Search",
         "layer_category": "activities",
         "layer_subcategory": "energy",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -27435,7 +27448,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 1,
@@ -27641,6 +27653,7 @@
         "layer_short": "Energy Cables",
         "layer_category": "activities",
         "layer_subcategory": "cables_and_pipelines",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -27648,7 +27661,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 1,
@@ -27714,7 +27726,7 @@
             "capacity": 25000000,
             "investmentCost": 200000.0,
             "availability": -12,
-            "media": "wiki://(NS)Energy_Cables"
+            "media": "wiki://NorthSea:Energy_Cables"
           },
           "1": {
             "displayName": "50MW",
@@ -27741,7 +27753,7 @@
             "capacity": 50000000,
             "investmentCost": 200000.0,
             "availability": -12,
-            "media": "wiki://(NS)Energy_Cables"
+            "media": "wiki://NorthSea:Energy_Cables"
           },
           "2": {
             "displayName": "80MW",
@@ -27768,7 +27780,7 @@
             "capacity": 80000000,
             "investmentCost": 200000.0,
             "availability": -12,
-            "media": "wiki://(NS)Energy_Cables"
+            "media": "wiki://NorthSea:Energy_Cables"
           },
           "3": {
             "displayName": "150MW",
@@ -27795,7 +27807,7 @@
             "capacity": 150000000,
             "investmentCost": 200000.0,
             "availability": -12,
-            "media": "wiki://(NS)Energy_Cables"
+            "media": "wiki://NorthSea:Energy_Cables"
           },
           "4": {
             "displayName": "300MW",
@@ -27822,7 +27834,7 @@
             "capacity": 300000000,
             "investmentCost": 200000.0,
             "availability": -12,
-            "media": "wiki://(NS)Energy_Cables"
+            "media": "wiki://NorthSea:Energy_Cables"
           },
           "5": {
             "displayName": "460MW",
@@ -27849,7 +27861,7 @@
             "capacity": 460000000,
             "investmentCost": 200000.0,
             "availability": -12,
-            "media": "wiki://(NS)Energy_Cables"
+            "media": "wiki://NorthSea:Energy_Cables"
           }
         },
         "layer_info_properties": [
@@ -27875,6 +27887,7 @@
         "layer_short": "Cable Corridors",
         "layer_category": "activities",
         "layer_subcategory": "cables_and_pipelines",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -27882,7 +27895,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 1,
@@ -27962,6 +27974,7 @@
         "layer_short": "Electricity Cables (non-editable)",
         "layer_category": "activities",
         "layer_subcategory": "cables_and_pipelines",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -27969,7 +27982,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 0,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -28023,7 +28035,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Energy_Cables"
+            "media": "wiki://NorthSea:Energy_Cables"
           }
         },
         "layer_info_properties": [
@@ -28315,6 +28327,7 @@
         "layer_short": "Landing Stations",
         "layer_category": "activities",
         "layer_subcategory": "energy",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -28322,7 +28335,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 1,
@@ -28388,7 +28400,7 @@
             "capacity": 1000000000,
             "investmentCost": 100000.0,
             "availability": -12,
-            "media": "wiki://(NS)Electricity_Sockets"
+            "media": "wiki://NorthSea:Electricity_Sockets"
           },
           "1": {
             "displayName": "10.000MW",
@@ -28415,7 +28427,7 @@
             "capacity": 10000000000,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Electricity_Sockets"
+            "media": "wiki://NorthSea:Electricity_Sockets"
           }
         },
         "layer_info_properties": [
@@ -28469,6 +28481,7 @@
         "layer_short": "Converter Station",
         "layer_category": "activities",
         "layer_subcategory": "energy",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -28476,7 +28489,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 1,
@@ -28542,7 +28554,7 @@
             "capacity": 400000000,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Electricity_Transformers"
+            "media": "wiki://NorthSea:Electricity_Transformers"
           },
           "1": {
             "displayName": "800MW",
@@ -28569,7 +28581,7 @@
             "capacity": 800000000,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Electricity_Transformers"
+            "media": "wiki://NorthSea:Electricity_Transformers"
           }
         },
         "layer_info_properties": [
@@ -28623,6 +28635,7 @@
         "layer_short": "Oil & Gas Installations",
         "layer_category": "activities",
         "layer_subcategory": "energy",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -28630,7 +28643,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 1,
@@ -28684,7 +28696,7 @@
             "capacity": 100000000,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS/Oil_%26_Gas_Installations)Operational"
+            "media": "wiki://NorthSea:Oil_%26_Gas_Installations/Operational"
           },
           "1": {
             "displayName": "Decommissioned (0MW)",
@@ -28711,7 +28723,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS/Oil_%26_Gas_Installations)Decommissioned"
+            "media": "wiki://NorthSea:Oil_%26_Gas_Installations/Decommissioned"
           },
           "2": {
             "displayName": "Closed (0MW)",
@@ -28738,7 +28750,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS/Oil_%26_Gas_Installations)Closed_Down"
+            "media": "wiki://NorthSea:Oil_%26_Gas_Installations/Closed_Down"
           },
           "3": {
             "displayName": "Other (0MW)",
@@ -28765,7 +28777,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS/Oil_%26_Gas_Installations)Derogation"
+            "media": "wiki://NorthSea:Oil_%26_Gas_Installations/Derogation"
           }
         },
         "layer_info_properties": [
@@ -29029,6 +29041,7 @@
         "layer_short": "Pipelines",
         "layer_category": "activities",
         "layer_subcategory": "cables_and_pipelines",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -29036,7 +29049,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 0,
         "layer_selectable": 0,
         "layer_editable": 0,
@@ -29116,6 +29128,7 @@
         "layer_short": "Pipelines",
         "layer_category": "activities",
         "layer_subcategory": "cables_and_pipelines",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -29123,7 +29136,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 1,
@@ -29177,7 +29189,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Pipelines"
+            "media": "wiki://NorthSea:Pipelines"
           },
           "1": {
             "displayName": "Unused",
@@ -29204,7 +29216,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Pipelines"
+            "media": "wiki://NorthSea:Pipelines"
           },
           "2": {
             "displayName": "Planned",
@@ -29231,7 +29243,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Pipelines"
+            "media": "wiki://NorthSea:Pipelines"
           }
         },
         "layer_info_properties": [
@@ -29383,6 +29395,7 @@
         "layer_short": "Oil Station",
         "layer_category": "activities",
         "layer_subcategory": "energy",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -29390,7 +29403,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 1,
@@ -29444,7 +29456,7 @@
             "capacity": 10000000000,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Oil_Stations"
+            "media": "wiki://NorthSea:Oil_Stations"
           }
         },
         "layer_info_properties": [
@@ -29470,6 +29482,7 @@
         "layer_short": "Oil & Gas Licensed Areas",
         "layer_category": "activities",
         "layer_subcategory": "energy",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -29477,7 +29490,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 1,
@@ -29531,7 +29543,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Oil_%26_Gas_Licensed_Areas"
+            "media": "wiki://NorthSea:Oil_%26_Gas_Licensed_Areas"
           }
         },
         "layer_info_properties": [
@@ -29697,6 +29709,7 @@
         "layer_short": "Sand & Gravel Extraction",
         "layer_category": "activities",
         "layer_subcategory": "shipping",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -29704,7 +29717,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 1,
@@ -29758,7 +29770,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Sand_%26_Gravel_Extraction"
+            "media": "wiki://NorthSea:Sand_%26_Gravel_Extraction"
           }
         },
         "layer_info_properties": [
@@ -29868,6 +29880,7 @@
         "layer_short": "IMO Routes",
         "layer_category": "activities",
         "layer_subcategory": "shipping",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -29875,7 +29888,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 1,
@@ -30105,6 +30117,7 @@
         "layer_short": "National Shipping Lanes",
         "layer_category": "activities",
         "layer_subcategory": "shipping",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -30112,7 +30125,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 1,
@@ -30370,6 +30382,7 @@
         "layer_short": "Ports",
         "layer_category": "activities",
         "layer_subcategory": "shipping",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -30377,7 +30390,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -30387,7 +30399,19 @@
         "layer_tooltip": "",
         "layer_information": "",
         "layer_media": null,
-        "layer_text_info": null,
+        "layer_text_info": {
+          "property_per_state": {
+            "Current": "name",
+            "View": "name",
+            "Edit": "name"
+          },
+          "text_color": "#0504aaFF",
+          "text_size": "M",
+          "zoom_cutoff": 0.1,
+          "x": 0.0,
+          "y": -0.2,
+          "z": -0.05
+        },
         "layer_states": [
           {
             "state": "ASSEMBLY",
@@ -30687,6 +30711,7 @@
         "layer_short": "No shipping zones",
         "layer_category": "activities",
         "layer_subcategory": "shipping",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -30694,7 +30719,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 1,
@@ -30896,6 +30920,7 @@
         "layer_short": "Shipping Intensity",
         "layer_category": "activities",
         "layer_subcategory": "shipping_activity",
+        "layer_download_from_geoserver": 0,
         "layer_width": 376,
         "layer_height": 332,
         "layer_raster_material": "RasterMELNew",
@@ -30903,7 +30928,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 0,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -30957,7 +30981,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Shipping_Intensity"
+            "media": "wiki://NorthSea:Shipping_Intensity"
           },
           "1": {
             "displayName": "250 to 500 ship",
@@ -30984,7 +31008,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Shipping_Intensity"
+            "media": "wiki://NorthSea:Shipping_Intensity"
           },
           "2": {
             "displayName": "500 to 1250 ship",
@@ -31011,7 +31035,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Shipping_Intensity"
+            "media": "wiki://NorthSea:Shipping_Intensity"
           },
           "3": {
             "displayName": "1250 to 2000 ship",
@@ -31038,7 +31062,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Shipping_Intensity"
+            "media": "wiki://NorthSea:Shipping_Intensity"
           },
           "4": {
             "displayName": "2000 to 3000 ship",
@@ -31065,7 +31089,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Shipping_Intensity"
+            "media": "wiki://NorthSea:Shipping_Intensity"
           },
           "5": {
             "displayName": "3000 to 4000 ship",
@@ -31092,7 +31116,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Shipping_Intensity"
+            "media": "wiki://NorthSea:Shipping_Intensity"
           },
           "6": {
             "displayName": "4000 to 4500 ship",
@@ -31119,7 +31143,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Shipping_Intensity"
+            "media": "wiki://NorthSea:Shipping_Intensity"
           },
           "7": {
             "displayName": "4500 to 5000 ship",
@@ -31146,7 +31170,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Shipping_Intensity"
+            "media": "wiki://NorthSea:Shipping_Intensity"
           }
         },
         "layer_info_properties": null
@@ -31157,6 +31181,7 @@
         "layer_short": "Ferry Intensity",
         "layer_category": "activities",
         "layer_subcategory": "shipping_activity",
+        "layer_download_from_geoserver": 0,
         "layer_width": 376,
         "layer_height": 332,
         "layer_raster_material": "RasterMELCustomizable",
@@ -31164,7 +31189,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 0,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -31218,7 +31242,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Ferry_Intensity"
+            "media": "wiki://NorthSea:Ferry_Intensity"
           },
           "1": {
             "displayName": "250 to 500 ship",
@@ -31245,7 +31269,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Ferry_Intensity"
+            "media": "wiki://NorthSea:Ferry_Intensity"
           },
           "2": {
             "displayName": "500 to 1250 ship",
@@ -31272,7 +31296,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Ferry_Intensity"
+            "media": "wiki://NorthSea:Ferry_Intensity"
           },
           "3": {
             "displayName": "1250 to 2000 ship",
@@ -31299,7 +31323,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Ferry_Intensity"
+            "media": "wiki://NorthSea:Ferry_Intensity"
           },
           "4": {
             "displayName": "2000 to 3000 ship",
@@ -31326,7 +31350,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Ferry_Intensity"
+            "media": "wiki://NorthSea:Ferry_Intensity"
           },
           "5": {
             "displayName": "3000 to 4000 ship",
@@ -31353,7 +31377,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Ferry_Intensity"
+            "media": "wiki://NorthSea:Ferry_Intensity"
           },
           "6": {
             "displayName": "4000 to 4500 ship",
@@ -31380,7 +31404,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Ferry_Intensity"
+            "media": "wiki://NorthSea:Ferry_Intensity"
           },
           "7": {
             "displayName": "4500 to 5000 ship",
@@ -31407,7 +31431,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Ferry_Intensity"
+            "media": "wiki://NorthSea:Ferry_Intensity"
           }
         },
         "layer_info_properties": null
@@ -31418,6 +31442,7 @@
         "layer_short": "Passenger Intensity",
         "layer_category": "activities",
         "layer_subcategory": "shipping_activity",
+        "layer_download_from_geoserver": 0,
         "layer_width": 376,
         "layer_height": 332,
         "layer_raster_material": "RasterMELCustomizable",
@@ -31425,7 +31450,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 0,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -31479,7 +31503,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Passenger_Intensity"
+            "media": "wiki://NorthSea:Passenger_Intensity"
           },
           "1": {
             "displayName": "250 to 500 ship",
@@ -31506,7 +31530,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Passenger_Intensity"
+            "media": "wiki://NorthSea:Passenger_Intensity"
           },
           "2": {
             "displayName": "500 to 1250 ship",
@@ -31533,7 +31557,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Passenger_Intensity"
+            "media": "wiki://NorthSea:Passenger_Intensity"
           },
           "3": {
             "displayName": "1250 to 2000 ship",
@@ -31560,7 +31584,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Passenger_Intensity"
+            "media": "wiki://NorthSea:Passenger_Intensity"
           },
           "4": {
             "displayName": "2000 to 3000 ship",
@@ -31587,7 +31611,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Passenger_Intensity"
+            "media": "wiki://NorthSea:Passenger_Intensity"
           },
           "5": {
             "displayName": "3000 to 4000 ship",
@@ -31614,7 +31638,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Passenger_Intensity"
+            "media": "wiki://NorthSea:Passenger_Intensity"
           },
           "6": {
             "displayName": "4000 to 4500 ship",
@@ -31641,7 +31665,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Passenger_Intensity"
+            "media": "wiki://NorthSea:Passenger_Intensity"
           },
           "7": {
             "displayName": "4500 to 5000 ship",
@@ -31668,7 +31692,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Passenger_Intensity"
+            "media": "wiki://NorthSea:Passenger_Intensity"
           }
         },
         "layer_info_properties": null
@@ -31679,6 +31703,7 @@
         "layer_short": "Tanker Intensity",
         "layer_category": "activities",
         "layer_subcategory": "shipping_activity",
+        "layer_download_from_geoserver": 0,
         "layer_width": 376,
         "layer_height": 332,
         "layer_raster_material": "RasterMELCustomizable",
@@ -31686,7 +31711,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 0,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -31740,7 +31764,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Tanker_Intensity"
+            "media": "wiki://NorthSea:Tanker_Intensity"
           },
           "1": {
             "displayName": "250 to 500 ship",
@@ -31767,7 +31791,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Tanker_Intensity"
+            "media": "wiki://NorthSea:Tanker_Intensity"
           },
           "2": {
             "displayName": "500 to 1250 ship",
@@ -31794,7 +31818,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Tanker_Intensity"
+            "media": "wiki://NorthSea:Tanker_Intensity"
           },
           "3": {
             "displayName": "1250 to 2000 ship",
@@ -31821,7 +31845,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Tanker_Intensity"
+            "media": "wiki://NorthSea:Tanker_Intensity"
           },
           "4": {
             "displayName": "2000 to 3000 ship",
@@ -31848,7 +31872,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Tanker_Intensity"
+            "media": "wiki://NorthSea:Tanker_Intensity"
           },
           "5": {
             "displayName": "3000 to 4000 ship",
@@ -31875,7 +31899,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Tanker_Intensity"
+            "media": "wiki://NorthSea:Tanker_Intensity"
           },
           "6": {
             "displayName": "4000 to 4500 ship",
@@ -31902,7 +31926,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Tanker_Intensity"
+            "media": "wiki://NorthSea:Tanker_Intensity"
           },
           "7": {
             "displayName": "4500 to 5000 ship",
@@ -31929,7 +31953,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Tanker_Intensity"
+            "media": "wiki://NorthSea:Tanker_Intensity"
           }
         },
         "layer_info_properties": null
@@ -31940,6 +31964,7 @@
         "layer_short": "Maintenance Intensity",
         "layer_category": "activities",
         "layer_subcategory": "shipping_activity",
+        "layer_download_from_geoserver": 0,
         "layer_width": 376,
         "layer_height": 332,
         "layer_raster_material": "RasterMELCustomizable",
@@ -31947,7 +31972,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 0,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -32001,7 +32025,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Maintenance_Intensity"
+            "media": "wiki://NorthSea:Maintenance_Intensity"
           },
           "1": {
             "displayName": "250 to 500 ship",
@@ -32028,7 +32052,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Maintenance_Intensity"
+            "media": "wiki://NorthSea:Maintenance_Intensity"
           },
           "2": {
             "displayName": "500 to 1250 ship",
@@ -32055,7 +32079,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Maintenance_Intensity"
+            "media": "wiki://NorthSea:Maintenance_Intensity"
           },
           "3": {
             "displayName": "1250 to 2000 ship",
@@ -32082,7 +32106,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Maintenance_Intensity"
+            "media": "wiki://NorthSea:Maintenance_Intensity"
           },
           "4": {
             "displayName": "2000 to 3000 ship",
@@ -32109,7 +32133,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Maintenance_Intensity"
+            "media": "wiki://NorthSea:Maintenance_Intensity"
           },
           "5": {
             "displayName": "3000 to 4000 ship",
@@ -32136,7 +32160,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Maintenance_Intensity"
+            "media": "wiki://NorthSea:Maintenance_Intensity"
           },
           "6": {
             "displayName": "4000 to 4500 ship",
@@ -32163,7 +32187,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Maintenance_Intensity"
+            "media": "wiki://NorthSea:Maintenance_Intensity"
           },
           "7": {
             "displayName": "4500 to 5000 ship",
@@ -32190,7 +32214,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Maintenance_Intensity"
+            "media": "wiki://NorthSea:Maintenance_Intensity"
           }
         },
         "layer_info_properties": null
@@ -32201,6 +32225,7 @@
         "layer_short": "Cargo Intensity",
         "layer_category": "activities",
         "layer_subcategory": "shipping_activity",
+        "layer_download_from_geoserver": 0,
         "layer_width": 376,
         "layer_height": 332,
         "layer_raster_material": "RasterMELCustomizable",
@@ -32208,7 +32233,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 0,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -32262,7 +32286,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Cargo_Intensity"
+            "media": "wiki://NorthSea:Cargo_Intensity"
           },
           "1": {
             "displayName": "250 to 500 ship",
@@ -32289,7 +32313,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Cargo_Intensity"
+            "media": "wiki://NorthSea:Cargo_Intensity"
           },
           "2": {
             "displayName": "500 to 1250 ship",
@@ -32316,7 +32340,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Cargo_Intensity"
+            "media": "wiki://NorthSea:Cargo_Intensity"
           },
           "3": {
             "displayName": "1250 to 2000 ship",
@@ -32343,7 +32367,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Cargo_Intensity"
+            "media": "wiki://NorthSea:Cargo_Intensity"
           },
           "4": {
             "displayName": "2000 to 3000 ship",
@@ -32370,7 +32394,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Cargo_Intensity"
+            "media": "wiki://NorthSea:Cargo_Intensity"
           },
           "5": {
             "displayName": "3000 to 4000 ship",
@@ -32397,7 +32421,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Cargo_Intensity"
+            "media": "wiki://NorthSea:Cargo_Intensity"
           },
           "6": {
             "displayName": "4000 to 4500 ship",
@@ -32424,7 +32448,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Cargo_Intensity"
+            "media": "wiki://NorthSea:Cargo_Intensity"
           },
           "7": {
             "displayName": "4500 to 5000 ship",
@@ -32451,7 +32475,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Cargo_Intensity"
+            "media": "wiki://NorthSea:Cargo_Intensity"
           }
         },
         "layer_info_properties": null
@@ -32462,6 +32486,7 @@
         "layer_short": "Total Intensity for MEL",
         "layer_category": "activities",
         "layer_subcategory": "shipping_activity",
+        "layer_download_from_geoserver": 0,
         "layer_width": 376,
         "layer_height": 332,
         "layer_raster_material": "RasterMELCustomizable",
@@ -32469,7 +32494,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 0,
         "layer_active": 0,
         "layer_selectable": 0,
         "layer_editable": 0,
@@ -32523,7 +32547,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Shipping_Intensity"
+            "media": "wiki://NorthSea:Shipping_Intensity"
           },
           "1": {
             "displayName": "250 to 500 ship",
@@ -32550,7 +32574,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Shipping_Intensity"
+            "media": "wiki://NorthSea:Shipping_Intensity"
           },
           "2": {
             "displayName": "500 to 1250 ship",
@@ -32577,7 +32601,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Shipping_Intensity"
+            "media": "wiki://NorthSea:Shipping_Intensity"
           },
           "3": {
             "displayName": "1250 to 2000 ship",
@@ -32604,7 +32628,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Shipping_Intensity"
+            "media": "wiki://NorthSea:Shipping_Intensity"
           },
           "4": {
             "displayName": "2000 to 3000 ship",
@@ -32631,7 +32655,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Shipping_Intensity"
+            "media": "wiki://NorthSea:Shipping_Intensity"
           },
           "5": {
             "displayName": "3000 to 4000 ship",
@@ -32658,7 +32682,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Shipping_Intensity"
+            "media": "wiki://NorthSea:Shipping_Intensity"
           },
           "6": {
             "displayName": "4000 to 4500 ship",
@@ -32685,7 +32709,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Shipping_Intensity"
+            "media": "wiki://NorthSea:Shipping_Intensity"
           },
           "7": {
             "displayName": "4500 to 5000 ship",
@@ -32712,7 +32736,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Shipping_Intensity"
+            "media": "wiki://NorthSea:Shipping_Intensity"
           }
         },
         "layer_info_properties": null
@@ -32723,6 +32747,7 @@
         "layer_short": "Shipping Risk",
         "layer_category": "activities",
         "layer_subcategory": "shipping_activity",
+        "layer_download_from_geoserver": 0,
         "layer_width": 376,
         "layer_height": 332,
         "layer_raster_material": "RasterMELNew",
@@ -32730,7 +32755,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 0,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -32784,7 +32808,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Shipping_Risk"
+            "media": "wiki://NorthSea:Shipping_Risk"
           },
           "1": {
             "displayName": "Medium Low",
@@ -32811,7 +32835,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Shipping_Risk"
+            "media": "wiki://NorthSea:Shipping_Risk"
           },
           "2": {
             "displayName": "Medium",
@@ -32838,7 +32862,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Shipping_Risk"
+            "media": "wiki://NorthSea:Shipping_Risk"
           },
           "3": {
             "displayName": "Medium High",
@@ -32865,7 +32889,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Shipping_Risk"
+            "media": "wiki://NorthSea:Shipping_Risk"
           },
           "4": {
             "displayName": "High",
@@ -32892,7 +32916,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Shipping_Risk"
+            "media": "wiki://NorthSea:Shipping_Risk"
           },
           "5": {
             "displayName": "EXTREME",
@@ -32919,7 +32943,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Shipping_Risk"
+            "media": "wiki://NorthSea:Shipping_Risk"
           }
         },
         "layer_info_properties": null
@@ -32930,6 +32954,7 @@
         "layer_short": "20m Bathymetry",
         "layer_category": "activities",
         "layer_subcategory": "shipping",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -32937,7 +32962,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 0,
         "layer_selectable": 0,
         "layer_editable": 0,
@@ -33031,6 +33055,7 @@
         "layer_short": "Shipping Gates",
         "layer_category": "activities",
         "layer_subcategory": "shipping",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -33038,7 +33063,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 0,
         "layer_editable": 0,
@@ -33118,6 +33142,7 @@
         "layer_short": "C_Points_25KM_2",
         "layer_category": "activities",
         "layer_subcategory": "shipping",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -33125,7 +33150,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 0,
         "layer_selectable": 0,
         "layer_editable": 0,
@@ -33275,6 +33299,7 @@
         "layer_short": "Invisible Shipping Lanes",
         "layer_category": "activities",
         "layer_subcategory": "shipping",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -33282,7 +33307,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 0,
         "layer_selectable": 0,
         "layer_editable": 0,
@@ -33376,6 +33400,7 @@
         "layer_short": "Lighthouses",
         "layer_category": "activities",
         "layer_subcategory": "recreational",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -33383,7 +33408,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -33505,6 +33529,7 @@
         "layer_short": "Wreckages",
         "layer_category": "activities",
         "layer_subcategory": "shipping",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -33512,7 +33537,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -33566,7 +33590,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Wreckages"
+            "media": "wiki://NorthSea:Wreckages"
           }
         },
         "layer_info_properties": [
@@ -33620,6 +33644,7 @@
         "layer_short": "Anchorages",
         "layer_category": "activities",
         "layer_subcategory": "shipping",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -33627,7 +33652,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 1,
@@ -33681,7 +33705,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Anchorages"
+            "media": "wiki://NorthSea:Anchorages"
           }
         },
         "layer_info_properties": [
@@ -33735,6 +33759,7 @@
         "layer_short": "Precautionary Areas",
         "layer_category": "activities",
         "layer_subcategory": "shipping",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -33742,7 +33767,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 1,
@@ -33796,7 +33820,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Anchorages"
+            "media": "wiki://NorthSea:Anchorages"
           }
         },
         "layer_info_properties": []
@@ -33807,6 +33831,7 @@
         "layer_short": "Shipping Intensity Passenger (static)",
         "layer_category": "activities",
         "layer_subcategory": "shipping",
+        "layer_download_from_geoserver": 1,
         "layer_width": 376,
         "layer_height": 332,
         "layer_raster_material": "RasterMELNew",
@@ -33814,7 +33839,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -33868,7 +33892,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Shipping_Intensity"
+            "media": "wiki://NorthSea:Shipping_Intensity"
           },
           "1": {
             "displayName": "25 - 50 hours/km2/month",
@@ -33895,7 +33919,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Shipping_Intensity"
+            "media": "wiki://NorthSea:Shipping_Intensity"
           },
           "2": {
             "displayName": "50 - 75 hours/km2/month",
@@ -33922,7 +33946,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Shipping_Intensity"
+            "media": "wiki://NorthSea:Shipping_Intensity"
           },
           "3": {
             "displayName": "75 - 100 hours/km2/month",
@@ -33949,7 +33973,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Shipping_Intensity"
+            "media": "wiki://NorthSea:Shipping_Intensity"
           },
           "4": {
             "displayName": ">100 hours/km2/month",
@@ -33976,7 +34000,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Shipping_Intensity"
+            "media": "wiki://NorthSea:Shipping_Intensity"
           }
         },
         "layer_info_properties": null
@@ -33987,6 +34011,7 @@
         "layer_short": "Shipping Intensity Tanker(static)",
         "layer_category": "activities",
         "layer_subcategory": "shipping",
+        "layer_download_from_geoserver": 1,
         "layer_width": 376,
         "layer_height": 332,
         "layer_raster_material": "RasterMELNew",
@@ -33994,7 +34019,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -34048,7 +34072,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Shipping_Intensity"
+            "media": "wiki://NorthSea:Shipping_Intensity"
           },
           "1": {
             "displayName": "25 - 50 hours/km2/month",
@@ -34075,7 +34099,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Shipping_Intensity"
+            "media": "wiki://NorthSea:Shipping_Intensity"
           },
           "2": {
             "displayName": "50 - 75 hours/km2/month",
@@ -34102,7 +34126,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Shipping_Intensity"
+            "media": "wiki://NorthSea:Shipping_Intensity"
           },
           "3": {
             "displayName": "75 - 100 hours/km2/month",
@@ -34129,7 +34153,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Shipping_Intensity"
+            "media": "wiki://NorthSea:Shipping_Intensity"
           },
           "4": {
             "displayName": ">100 hours/km2/month",
@@ -34156,7 +34180,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Shipping_Intensity"
+            "media": "wiki://NorthSea:Shipping_Intensity"
           }
         },
         "layer_info_properties": null
@@ -34167,6 +34191,7 @@
         "layer_short": "Shipping Intensity Cargo(static)",
         "layer_category": "activities",
         "layer_subcategory": "shipping",
+        "layer_download_from_geoserver": 1,
         "layer_width": 376,
         "layer_height": 332,
         "layer_raster_material": "RasterMELNew",
@@ -34174,7 +34199,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -34228,7 +34252,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Shipping_Intensity"
+            "media": "wiki://NorthSea:Shipping_Intensity"
           },
           "1": {
             "displayName": "25 - 50 hours/km2/month",
@@ -34255,7 +34279,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Shipping_Intensity"
+            "media": "wiki://NorthSea:Shipping_Intensity"
           },
           "2": {
             "displayName": "50 - 75 hours/km2/month",
@@ -34282,7 +34306,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Shipping_Intensity"
+            "media": "wiki://NorthSea:Shipping_Intensity"
           },
           "3": {
             "displayName": "75 - 100 hours/km2/month",
@@ -34309,7 +34333,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Shipping_Intensity"
+            "media": "wiki://NorthSea:Shipping_Intensity"
           },
           "4": {
             "displayName": ">100 hours/km2/month",
@@ -34336,7 +34360,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Shipping_Intensity"
+            "media": "wiki://NorthSea:Shipping_Intensity"
           }
         },
         "layer_info_properties": null
@@ -34347,6 +34371,7 @@
         "layer_short": "Aquaculture",
         "layer_category": "activities",
         "layer_subcategory": "aquaculture",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -34354,7 +34379,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 1,
@@ -34408,7 +34432,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Aquaculture"
+            "media": "wiki://NorthSea:Aquaculture"
           },
           "1": {
             "displayName": "Fish farm 1 Ton/year",
@@ -34435,7 +34459,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Aquaculture"
+            "media": "wiki://NorthSea:Aquaculture"
           }
         },
         "layer_info_properties": [
@@ -34517,6 +34541,7 @@
         "layer_short": "Natura 2000",
         "layer_category": "ecology",
         "layer_subcategory": "protected_areas",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -34524,7 +34549,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 1,
@@ -34578,7 +34602,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS/Natura_2000)No_Protection"
+            "media": "wiki://NorthSea:Natura_2000/No_Protection"
           },
           "4": {
             "displayName": "Habitats Directive",
@@ -34605,7 +34629,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS/Natura_2000)Habitats_Directive"
+            "media": "wiki://NorthSea:Natura_2000/Habitats_Directive"
           },
           "5": {
             "displayName": "Birds Directive",
@@ -34632,7 +34656,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS/Natura_2000)Birds_Directive"
+            "media": "wiki://NorthSea:Natura_2000/Birds_Directive"
           }
         },
         "layer_info_properties": [
@@ -34840,6 +34864,7 @@
         "layer_short": "Marine Protected Areas",
         "layer_category": "ecology",
         "layer_subcategory": "protected_areas",
+        "layer_download_from_geoserver": 1,
         "layer_width": 1024,
         "layer_height": 1024,
         "layer_raster_material": "RasterMELNew",
@@ -34847,7 +34872,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 1,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 1,
@@ -34901,7 +34925,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS/Protected_Areas)No_Protection"
+            "media": "wiki://NorthSea:Protected_Areas/No_Protection"
           },
           "1": {
             "displayName": "No bottom trawl fishing",
@@ -34928,7 +34952,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS/Protected_Areas)_Bottom_Trawl"
+            "media": "wiki://NorthSea:Protected_Areas/_Bottom_Trawl"
           },
           "2": {
             "displayName": "No industrial and pelagic trawl fishing",
@@ -34955,7 +34979,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS/Protected_Areas)_Industrial_and_Pelagic_Trawl"
+            "media": "wiki://NorthSea:Protected_Areas/_Industrial_and_Pelagic_Trawl"
           },
           "3": {
             "displayName": "No drift and fixed nets fishing",
@@ -34982,7 +35006,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS/Protected_Areas)_Drift_and_fixed_nets"
+            "media": "wiki://NorthSea:Protected_Areas/_Drift_and_fixed_nets"
           }
         },
         "layer_info_properties": [
@@ -35302,6 +35326,7 @@
         "layer_short": "Noise",
         "layer_category": "ecology",
         "layer_subcategory": "pressure",
+        "layer_download_from_geoserver": 0,
         "layer_width": 114,
         "layer_height": 85,
         "layer_raster_material": "RasterMELCustomizable",
@@ -35309,7 +35334,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 0,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -35363,7 +35387,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Noise"
+            "media": "wiki://NorthSea:Noise"
           },
           "1": {
             "displayName": "Low",
@@ -35390,7 +35414,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Noise"
+            "media": "wiki://NorthSea:Noise"
           },
           "2": {
             "displayName": "Medium",
@@ -35417,7 +35441,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Noise"
+            "media": "wiki://NorthSea:Noise"
           },
           "3": {
             "displayName": "High",
@@ -35444,7 +35468,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Noise"
+            "media": "wiki://NorthSea:Noise"
           },
           "4": {
             "displayName": "Very High",
@@ -35471,7 +35495,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Noise"
+            "media": "wiki://NorthSea:Noise"
           }
         },
         "layer_info_properties": null
@@ -35482,6 +35506,7 @@
         "layer_short": "Artificial Substrate",
         "layer_category": "ecology",
         "layer_subcategory": "pressure",
+        "layer_download_from_geoserver": 0,
         "layer_width": 114,
         "layer_height": 85,
         "layer_raster_material": "RasterMELCustomizable",
@@ -35489,7 +35514,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 0,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -35543,7 +35567,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Artificial_Substrate"
+            "media": "wiki://NorthSea:Artificial_Substrate"
           },
           "1": {
             "displayName": "Low",
@@ -35570,7 +35594,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Artificial_Substrate"
+            "media": "wiki://NorthSea:Artificial_Substrate"
           },
           "2": {
             "displayName": "Medium",
@@ -35597,7 +35621,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Artificial_Substrate"
+            "media": "wiki://NorthSea:Artificial_Substrate"
           },
           "3": {
             "displayName": "High",
@@ -35624,7 +35648,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Artificial_Substrate"
+            "media": "wiki://NorthSea:Artificial_Substrate"
           },
           "4": {
             "displayName": "Very High",
@@ -35651,7 +35675,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Artificial_Substrate"
+            "media": "wiki://NorthSea:Artificial_Substrate"
           }
         },
         "layer_info_properties": null
@@ -35662,6 +35686,7 @@
         "layer_short": "Bottom Disturbance",
         "layer_category": "ecology",
         "layer_subcategory": "pressure",
+        "layer_download_from_geoserver": 0,
         "layer_width": 114,
         "layer_height": 85,
         "layer_raster_material": "RasterMELCustomizable",
@@ -35669,7 +35694,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 0,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -35723,7 +35747,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Bottom_Disturbace"
+            "media": "wiki://NorthSea:Bottom_Disturbace"
           },
           "1": {
             "displayName": "Low",
@@ -35750,7 +35774,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Bottom_Disturbace"
+            "media": "wiki://NorthSea:Bottom_Disturbace"
           },
           "2": {
             "displayName": "Medium",
@@ -35777,7 +35801,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Bottom_Disturbace"
+            "media": "wiki://NorthSea:Bottom_Disturbace"
           },
           "3": {
             "displayName": "High",
@@ -35804,7 +35828,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Bottom_Disturbace"
+            "media": "wiki://NorthSea:Bottom_Disturbace"
           },
           "4": {
             "displayName": "Very High",
@@ -35831,7 +35855,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Bottom_Disturbace"
+            "media": "wiki://NorthSea:Bottom_Disturbace"
           }
         },
         "layer_info_properties": null
@@ -35842,6 +35866,7 @@
         "layer_short": "Surface Disturbance",
         "layer_category": "ecology",
         "layer_subcategory": "pressure",
+        "layer_download_from_geoserver": 0,
         "layer_width": 114,
         "layer_height": 85,
         "layer_raster_material": "RasterMELCustomizable",
@@ -35849,7 +35874,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 0,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -35903,7 +35927,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Surface_Disturbance"
+            "media": "wiki://NorthSea:Surface_Disturbance"
           },
           "1": {
             "displayName": "Low",
@@ -35930,7 +35954,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Surface_Disturbance"
+            "media": "wiki://NorthSea:Surface_Disturbance"
           },
           "2": {
             "displayName": "Medium",
@@ -35957,7 +35981,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Surface_Disturbance"
+            "media": "wiki://NorthSea:Surface_Disturbance"
           },
           "3": {
             "displayName": "High",
@@ -35984,7 +36008,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Surface_Disturbance"
+            "media": "wiki://NorthSea:Surface_Disturbance"
           },
           "4": {
             "displayName": "Very High",
@@ -36011,7 +36035,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Surface_Disturbance"
+            "media": "wiki://NorthSea:Surface_Disturbance"
           }
         },
         "layer_info_properties": null
@@ -36022,6 +36046,7 @@
         "layer_short": "No Industrial Trawl Fishing",
         "layer_category": "ecology",
         "layer_subcategory": "protected_areas",
+        "layer_download_from_geoserver": 0,
         "layer_width": 114,
         "layer_height": 85,
         "layer_raster_material": "RasterMELCustomizable",
@@ -36029,7 +36054,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 0,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -36083,7 +36107,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Protection_Against_Industrial_Trawl"
+            "media": "wiki://NorthSea:Protection_Against_Industrial_Trawl"
           },
           "1": {
             "displayName": "Low Protection",
@@ -36110,7 +36134,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Protection_Against_Industrial_Trawl"
+            "media": "wiki://NorthSea:Protection_Against_Industrial_Trawl"
           },
           "2": {
             "displayName": "Medium Protection",
@@ -36137,7 +36161,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Protection_Against_Industrial_Trawl"
+            "media": "wiki://NorthSea:Protection_Against_Industrial_Trawl"
           },
           "3": {
             "displayName": "High Protection",
@@ -36164,7 +36188,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Protection_Against_Industrial_Trawl"
+            "media": "wiki://NorthSea:Protection_Against_Industrial_Trawl"
           },
           "4": {
             "displayName": "Very High Protection",
@@ -36191,7 +36215,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Protection_Against_Industrial_Trawl"
+            "media": "wiki://NorthSea:Protection_Against_Industrial_Trawl"
           }
         },
         "layer_info_properties": null
@@ -36202,6 +36226,7 @@
         "layer_short": "No Bottom Trawl Fishing",
         "layer_category": "ecology",
         "layer_subcategory": "protected_areas",
+        "layer_download_from_geoserver": 0,
         "layer_width": 114,
         "layer_height": 85,
         "layer_raster_material": "RasterMELCustomizable",
@@ -36209,7 +36234,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 0,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -36263,7 +36287,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Protection_Against_Bottom_Trawl"
+            "media": "wiki://NorthSea:Protection_Against_Bottom_Trawl"
           },
           "1": {
             "displayName": "Low Protection",
@@ -36290,7 +36314,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Protection_Against_Bottom_Trawl"
+            "media": "wiki://NorthSea:Protection_Against_Bottom_Trawl"
           },
           "2": {
             "displayName": "Medium Protection",
@@ -36317,7 +36341,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Protection_Against_Bottom_Trawl"
+            "media": "wiki://NorthSea:Protection_Against_Bottom_Trawl"
           },
           "3": {
             "displayName": "High Protection",
@@ -36344,7 +36368,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Protection_Against_Bottom_Trawl"
+            "media": "wiki://NorthSea:Protection_Against_Bottom_Trawl"
           },
           "4": {
             "displayName": "Very High Protection",
@@ -36371,7 +36395,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Protection_Against_Bottom_Trawl"
+            "media": "wiki://NorthSea:Protection_Against_Bottom_Trawl"
           }
         },
         "layer_info_properties": null
@@ -36382,6 +36406,7 @@
         "layer_short": "No Nets Fishing",
         "layer_category": "ecology",
         "layer_subcategory": "protected_areas",
+        "layer_download_from_geoserver": 0,
         "layer_width": 114,
         "layer_height": 85,
         "layer_raster_material": "RasterMELCustomizable",
@@ -36389,7 +36414,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 0,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -36443,7 +36467,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Protection_Against_Nets"
+            "media": "wiki://NorthSea:Protection_Against_Nets"
           },
           "1": {
             "displayName": "Low Protection",
@@ -36470,7 +36494,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Protection_Against_Nets"
+            "media": "wiki://NorthSea:Protection_Against_Nets"
           },
           "2": {
             "displayName": "Medium Protection",
@@ -36497,7 +36521,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Protection_Against_Nets"
+            "media": "wiki://NorthSea:Protection_Against_Nets"
           },
           "3": {
             "displayName": "High Protection",
@@ -36524,7 +36548,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Protection_Against_Nets"
+            "media": "wiki://NorthSea:Protection_Against_Nets"
           },
           "4": {
             "displayName": "Very High Protection",
@@ -36551,7 +36575,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Protection_Against_Nets"
+            "media": "wiki://NorthSea:Protection_Against_Nets"
           }
         },
         "layer_info_properties": null
@@ -36562,6 +36586,7 @@
         "layer_short": "Benthic invertebrates",
         "layer_category": "ecology",
         "layer_subcategory": "macrobenthos",
+        "layer_download_from_geoserver": 0,
         "layer_width": 114,
         "layer_height": 85,
         "layer_raster_material": "RasterMELCustomizable",
@@ -36569,7 +36594,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 0,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -36623,7 +36647,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Benthic_invertebrates"
+            "media": "wiki://NorthSea:Benthic_invertebrates"
           },
           "1": {
             "displayName": "Low Density",
@@ -36650,7 +36674,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Benthic_invertebrates"
+            "media": "wiki://NorthSea:Benthic_invertebrates"
           },
           "2": {
             "displayName": "Medium Density",
@@ -36677,7 +36701,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Benthic_invertebrates"
+            "media": "wiki://NorthSea:Benthic_invertebrates"
           },
           "3": {
             "displayName": "High Density",
@@ -36704,7 +36728,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Benthic_invertebrates"
+            "media": "wiki://NorthSea:Benthic_invertebrates"
           },
           "4": {
             "displayName": "Very High Density",
@@ -36731,7 +36755,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Benthic_invertebrates"
+            "media": "wiki://NorthSea:Benthic_invertebrates"
           }
         },
         "layer_info_properties": null
@@ -36742,6 +36766,7 @@
         "layer_short": "Cod",
         "layer_category": "ecology",
         "layer_subcategory": "fish",
+        "layer_download_from_geoserver": 0,
         "layer_width": 114,
         "layer_height": 85,
         "layer_raster_material": "RasterMELCustomizable",
@@ -36749,7 +36774,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 0,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -36803,7 +36827,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Cod"
+            "media": "wiki://NorthSea:Cod"
           },
           "1": {
             "displayName": "Low Density",
@@ -36830,7 +36854,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Cod"
+            "media": "wiki://NorthSea:Cod"
           },
           "2": {
             "displayName": "Medium Density",
@@ -36857,7 +36881,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Cod"
+            "media": "wiki://NorthSea:Cod"
           },
           "3": {
             "displayName": "High Density",
@@ -36884,7 +36908,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Cod"
+            "media": "wiki://NorthSea:Cod"
           },
           "4": {
             "displayName": "Very High Density",
@@ -36911,7 +36935,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Cod"
+            "media": "wiki://NorthSea:Cod"
           }
         },
         "layer_info_properties": null
@@ -36922,6 +36946,7 @@
         "layer_short": "Demersal fish",
         "layer_category": "ecology",
         "layer_subcategory": "fish",
+        "layer_download_from_geoserver": 0,
         "layer_width": 114,
         "layer_height": 85,
         "layer_raster_material": "RasterMELCustomizable",
@@ -36929,7 +36954,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 0,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -36983,7 +37007,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Demersal_fish"
+            "media": "wiki://NorthSea:Demersal_fish"
           },
           "1": {
             "displayName": "Low Density",
@@ -37010,7 +37034,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Demersal_fish"
+            "media": "wiki://NorthSea:Demersal_fish"
           },
           "2": {
             "displayName": "Medium Density",
@@ -37037,7 +37061,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Demersal_fish"
+            "media": "wiki://NorthSea:Demersal_fish"
           },
           "3": {
             "displayName": "High Density",
@@ -37064,7 +37088,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Demersal_fish"
+            "media": "wiki://NorthSea:Demersal_fish"
           },
           "4": {
             "displayName": "Very High Density",
@@ -37091,7 +37115,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Demersal_fish"
+            "media": "wiki://NorthSea:Demersal_fish"
           }
         },
         "layer_info_properties": null
@@ -37102,6 +37126,7 @@
         "layer_short": "Flatfish",
         "layer_category": "ecology",
         "layer_subcategory": "fish",
+        "layer_download_from_geoserver": 0,
         "layer_width": 114,
         "layer_height": 85,
         "layer_raster_material": "RasterMELCustomizable",
@@ -37109,7 +37134,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 0,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -37163,7 +37187,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Flatfish"
+            "media": "wiki://NorthSea:Flatfish"
           },
           "1": {
             "displayName": "Low Density",
@@ -37190,7 +37214,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Flatfish"
+            "media": "wiki://NorthSea:Flatfish"
           },
           "2": {
             "displayName": "Medium Density",
@@ -37217,7 +37241,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Flatfish"
+            "media": "wiki://NorthSea:Flatfish"
           },
           "3": {
             "displayName": "High Density",
@@ -37244,7 +37268,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Flatfish"
+            "media": "wiki://NorthSea:Flatfish"
           },
           "4": {
             "displayName": "Very High Density",
@@ -37271,7 +37295,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Flatfish"
+            "media": "wiki://NorthSea:Flatfish"
           }
         },
         "layer_info_properties": null
@@ -37282,6 +37306,7 @@
         "layer_short": "Mackerel",
         "layer_category": "ecology",
         "layer_subcategory": "fish",
+        "layer_download_from_geoserver": 0,
         "layer_width": 114,
         "layer_height": 85,
         "layer_raster_material": "RasterMELCustomizable",
@@ -37289,7 +37314,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 0,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -37343,7 +37367,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Mackerel"
+            "media": "wiki://NorthSea:Mackerel"
           },
           "1": {
             "displayName": "Low Density",
@@ -37370,7 +37394,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Mackerel"
+            "media": "wiki://NorthSea:Mackerel"
           },
           "2": {
             "displayName": "Medium Density",
@@ -37397,7 +37421,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Mackerel"
+            "media": "wiki://NorthSea:Mackerel"
           },
           "3": {
             "displayName": "High Density",
@@ -37424,7 +37448,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Mackerel"
+            "media": "wiki://NorthSea:Mackerel"
           },
           "4": {
             "displayName": "Very High Density",
@@ -37451,7 +37475,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Mackerel"
+            "media": "wiki://NorthSea:Mackerel"
           }
         },
         "layer_info_properties": null
@@ -37462,6 +37486,7 @@
         "layer_short": "Herring",
         "layer_category": "ecology",
         "layer_subcategory": "fish",
+        "layer_download_from_geoserver": 0,
         "layer_width": 114,
         "layer_height": 85,
         "layer_raster_material": "RasterMELCustomizable",
@@ -37469,7 +37494,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 0,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -37523,7 +37547,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Herring"
+            "media": "wiki://NorthSea:Herring"
           },
           "1": {
             "displayName": "Low Density ",
@@ -37550,7 +37574,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Herring"
+            "media": "wiki://NorthSea:Herring"
           },
           "2": {
             "displayName": "Medium Density",
@@ -37577,7 +37601,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Herring"
+            "media": "wiki://NorthSea:Herring"
           },
           "3": {
             "displayName": "High Density",
@@ -37604,7 +37628,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Herring"
+            "media": "wiki://NorthSea:Herring"
           },
           "4": {
             "displayName": "Very High Density",
@@ -37631,7 +37655,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Herring"
+            "media": "wiki://NorthSea:Herring"
           }
         },
         "layer_info_properties": null
@@ -37642,6 +37666,7 @@
         "layer_short": "Sandeel",
         "layer_category": "ecology",
         "layer_subcategory": "fish",
+        "layer_download_from_geoserver": 0,
         "layer_width": 114,
         "layer_height": 85,
         "layer_raster_material": "RasterMELCustomizable",
@@ -37649,7 +37674,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 0,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -37703,7 +37727,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Sandeel"
+            "media": "wiki://NorthSea:Sandeel"
           },
           "1": {
             "displayName": "Low Density",
@@ -37730,7 +37754,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Sandeel"
+            "media": "wiki://NorthSea:Sandeel"
           },
           "2": {
             "displayName": "Medium Density",
@@ -37757,7 +37781,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Sandeel"
+            "media": "wiki://NorthSea:Sandeel"
           },
           "3": {
             "displayName": "High Density",
@@ -37784,7 +37808,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Sandeel"
+            "media": "wiki://NorthSea:Sandeel"
           },
           "4": {
             "displayName": "Very High Density",
@@ -37811,7 +37835,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Sandeel"
+            "media": "wiki://NorthSea:Sandeel"
           }
         },
         "layer_info_properties": null
@@ -37822,6 +37846,7 @@
         "layer_short": "Windfarm indifferent seabird",
         "layer_category": "ecology",
         "layer_subcategory": "birds_and_mammals",
+        "layer_download_from_geoserver": 0,
         "layer_width": 114,
         "layer_height": 85,
         "layer_raster_material": "RasterMELCustomizable",
@@ -37829,7 +37854,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 0,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -37883,7 +37907,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Windfarm_indifferent_seabirds"
+            "media": "wiki://NorthSea:Windfarm_indifferent_seabirds"
           },
           "1": {
             "displayName": "Low Density",
@@ -37910,7 +37934,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Windfarm_indifferent_seabirds"
+            "media": "wiki://NorthSea:Windfarm_indifferent_seabirds"
           },
           "2": {
             "displayName": "Medium Density",
@@ -37937,7 +37961,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Windfarm_indifferent_seabirds"
+            "media": "wiki://NorthSea:Windfarm_indifferent_seabirds"
           },
           "3": {
             "displayName": "High Density",
@@ -37964,7 +37988,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Windfarm_indifferent_seabirds"
+            "media": "wiki://NorthSea:Windfarm_indifferent_seabirds"
           },
           "4": {
             "displayName": "Very High Density",
@@ -37991,7 +38015,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Windfarm_indifferent_seabirds"
+            "media": "wiki://NorthSea:Windfarm_indifferent_seabirds"
           }
         },
         "layer_info_properties": null
@@ -38002,6 +38026,7 @@
         "layer_short": "Windfarm avoiding seabird",
         "layer_category": "ecology",
         "layer_subcategory": "birds_and_mammals",
+        "layer_download_from_geoserver": 0,
         "layer_width": 114,
         "layer_height": 85,
         "layer_raster_material": "RasterMELCustomizable",
@@ -38009,7 +38034,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 0,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -38063,7 +38087,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Windfarm_avoiding_seabirds"
+            "media": "wiki://NorthSea:Windfarm_avoiding_seabirds"
           },
           "1": {
             "displayName": "Low Density",
@@ -38090,7 +38114,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Windfarm_avoiding_seabirds"
+            "media": "wiki://NorthSea:Windfarm_avoiding_seabirds"
           },
           "2": {
             "displayName": "Medium Density",
@@ -38117,7 +38141,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Windfarm_avoiding_seabirds"
+            "media": "wiki://NorthSea:Windfarm_avoiding_seabirds"
           },
           "3": {
             "displayName": "High Density",
@@ -38144,7 +38168,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Windfarm_avoiding_seabirds"
+            "media": "wiki://NorthSea:Windfarm_avoiding_seabirds"
           },
           "4": {
             "displayName": "Very High Density",
@@ -38171,7 +38195,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Windfarm_avoiding_seabirds"
+            "media": "wiki://NorthSea:Windfarm_avoiding_seabirds"
           }
         },
         "layer_info_properties": null
@@ -38182,6 +38206,7 @@
         "layer_short": "Cetacean",
         "layer_category": "ecology",
         "layer_subcategory": "birds_and_mammals",
+        "layer_download_from_geoserver": 0,
         "layer_width": 114,
         "layer_height": 85,
         "layer_raster_material": "RasterMELCustomizable",
@@ -38189,7 +38214,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 0,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -38243,7 +38267,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Cetacean"
+            "media": "wiki://NorthSea:Cetacean"
           },
           "1": {
             "displayName": "Low Density",
@@ -38270,7 +38294,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Cetacean"
+            "media": "wiki://NorthSea:Cetacean"
           },
           "2": {
             "displayName": "Medium Density",
@@ -38297,7 +38321,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Cetacean"
+            "media": "wiki://NorthSea:Cetacean"
           },
           "3": {
             "displayName": "High Density",
@@ -38324,7 +38348,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Cetacean"
+            "media": "wiki://NorthSea:Cetacean"
           },
           "4": {
             "displayName": "Very High Density",
@@ -38351,7 +38375,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Cetacean"
+            "media": "wiki://NorthSea:Cetacean"
           }
         },
         "layer_info_properties": null
@@ -38362,6 +38386,7 @@
         "layer_short": "Seal",
         "layer_category": "ecology",
         "layer_subcategory": "birds_and_mammals",
+        "layer_download_from_geoserver": 0,
         "layer_width": 114,
         "layer_height": 85,
         "layer_raster_material": "RasterMELCustomizable",
@@ -38369,7 +38394,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 0,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -38423,7 +38447,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Seal"
+            "media": "wiki://NorthSea:Seal"
           },
           "1": {
             "displayName": "Low Density",
@@ -38450,7 +38474,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Seal"
+            "media": "wiki://NorthSea:Seal"
           },
           "2": {
             "displayName": "Medium Density",
@@ -38477,7 +38501,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Seal"
+            "media": "wiki://NorthSea:Seal"
           },
           "3": {
             "displayName": "High Density",
@@ -38504,7 +38528,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Seal"
+            "media": "wiki://NorthSea:Seal"
           },
           "4": {
             "displayName": "Very High Density",
@@ -38531,7 +38555,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Seal"
+            "media": "wiki://NorthSea:Seal"
           }
         },
         "layer_info_properties": null
@@ -38542,6 +38566,7 @@
         "layer_short": "Bottom Trawl Catch",
         "layer_category": "activities",
         "layer_subcategory": "fishing",
+        "layer_download_from_geoserver": 0,
         "layer_width": 114,
         "layer_height": 85,
         "layer_raster_material": "RasterMELCustomizable",
@@ -38549,7 +38574,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 0,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -38603,7 +38627,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Bottom_Trawl_Catch"
+            "media": "wiki://NorthSea:Bottom_Trawl_Catch"
           },
           "1": {
             "displayName": "Low Density",
@@ -38630,7 +38654,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Bottom_Trawl_Catch"
+            "media": "wiki://NorthSea:Bottom_Trawl_Catch"
           },
           "2": {
             "displayName": "Medium Density",
@@ -38657,7 +38681,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Bottom_Trawl_Catch"
+            "media": "wiki://NorthSea:Bottom_Trawl_Catch"
           },
           "3": {
             "displayName": "High Density",
@@ -38684,7 +38708,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Bottom_Trawl_Catch"
+            "media": "wiki://NorthSea:Bottom_Trawl_Catch"
           },
           "4": {
             "displayName": "Very High Density",
@@ -38711,7 +38735,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Bottom_Trawl_Catch"
+            "media": "wiki://NorthSea:Bottom_Trawl_Catch"
           }
         },
         "layer_info_properties": null
@@ -38722,6 +38746,7 @@
         "layer_short": "Drift and Fixed Nets Catch",
         "layer_category": "activities",
         "layer_subcategory": "fishing",
+        "layer_download_from_geoserver": 0,
         "layer_width": 114,
         "layer_height": 85,
         "layer_raster_material": "RasterMELCustomizable",
@@ -38729,7 +38754,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 0,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -38783,7 +38807,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Drift_and_Fixed_Nets_Catch"
+            "media": "wiki://NorthSea:Drift_and_Fixed_Nets_Catch"
           },
           "1": {
             "displayName": "Low Density",
@@ -38810,7 +38834,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Drift_and_Fixed_Nets_Catch"
+            "media": "wiki://NorthSea:Drift_and_Fixed_Nets_Catch"
           },
           "2": {
             "displayName": "Medium Density",
@@ -38837,7 +38861,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Drift_and_Fixed_Nets_Catch"
+            "media": "wiki://NorthSea:Drift_and_Fixed_Nets_Catch"
           },
           "3": {
             "displayName": "High Density",
@@ -38864,7 +38888,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Drift_and_Fixed_Nets_Catch"
+            "media": "wiki://NorthSea:Drift_and_Fixed_Nets_Catch"
           },
           "4": {
             "displayName": "Very High Density",
@@ -38891,7 +38915,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Drift_and_Fixed_Nets_Catch"
+            "media": "wiki://NorthSea:Drift_and_Fixed_Nets_Catch"
           }
         },
         "layer_info_properties": null
@@ -38902,6 +38926,7 @@
         "layer_short": "Industrial and Pelagic Trawl Catch",
         "layer_category": "activities",
         "layer_subcategory": "fishing",
+        "layer_download_from_geoserver": 0,
         "layer_width": 114,
         "layer_height": 85,
         "layer_raster_material": "RasterMELCustomizable",
@@ -38909,7 +38934,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 0,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -38963,7 +38987,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Industrial_and_Pelagic_Trawl_Catch"
+            "media": "wiki://NorthSea:Industrial_and_Pelagic_Trawl_Catch"
           },
           "1": {
             "displayName": "Low Density",
@@ -38990,7 +39014,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Industrial_and_Pelagic_Trawl_Catch"
+            "media": "wiki://NorthSea:Industrial_and_Pelagic_Trawl_Catch"
           },
           "2": {
             "displayName": "Medium Density",
@@ -39017,7 +39041,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Industrial_and_Pelagic_Trawl_Catch"
+            "media": "wiki://NorthSea:Industrial_and_Pelagic_Trawl_Catch"
           },
           "3": {
             "displayName": "High Density",
@@ -39044,7 +39068,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Industrial_and_Pelagic_Trawl_Catch"
+            "media": "wiki://NorthSea:Industrial_and_Pelagic_Trawl_Catch"
           },
           "4": {
             "displayName": "Very High Density",
@@ -39071,7 +39095,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Industrial_and_Pelagic_Trawl_Catch"
+            "media": "wiki://NorthSea:Industrial_and_Pelagic_Trawl_Catch"
           }
         },
         "layer_info_properties": null
@@ -39082,6 +39106,7 @@
         "layer_short": "Shannon Diversity Indicator",
         "layer_category": "ecology",
         "layer_subcategory": "biodiversity_indicator",
+        "layer_download_from_geoserver": 0,
         "layer_width": 114,
         "layer_height": 85,
         "layer_raster_material": "RasterMELCustomizable",
@@ -39089,7 +39114,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 0,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -39143,7 +39167,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Shannon_Diversity_Indicator"
+            "media": "wiki://NorthSea:Shannon_Diversity_Indicator"
           },
           "1": {
             "displayName": "Low Density",
@@ -39170,7 +39194,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Shannon_Diversity_Indicator"
+            "media": "wiki://NorthSea:Shannon_Diversity_Indicator"
           },
           "2": {
             "displayName": "Medium Density",
@@ -39197,7 +39221,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Shannon_Diversity_Indicator"
+            "media": "wiki://NorthSea:Shannon_Diversity_Indicator"
           },
           "3": {
             "displayName": "High Density",
@@ -39224,7 +39248,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Shannon_Diversity_Indicator"
+            "media": "wiki://NorthSea:Shannon_Diversity_Indicator"
           },
           "4": {
             "displayName": "Very High Density",
@@ -39251,7 +39275,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Shannon_Diversity_Indicator"
+            "media": "wiki://NorthSea:Shannon_Diversity_Indicator"
           }
         },
         "layer_info_properties": null
@@ -39262,6 +39286,7 @@
         "layer_short": "Large Fish Indicator",
         "layer_category": "ecology",
         "layer_subcategory": "biodiversity_indicator",
+        "layer_download_from_geoserver": 0,
         "layer_width": 114,
         "layer_height": 85,
         "layer_raster_material": "RasterMELCustomizable",
@@ -39269,7 +39294,6 @@
         "layer_raster_color_interpolation": 0,
         "layer_raster_pattern": "Default",
         "layer_raster_minimum_value_cutoff": 0.05,
-        "layer_download_from_geoserver": 0,
         "layer_active": 1,
         "layer_selectable": 1,
         "layer_editable": 0,
@@ -39323,7 +39347,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Large_Fish_Indicator"
+            "media": "wiki://NorthSea:Large_Fish_Indicator"
           },
           "1": {
             "displayName": "Low Density",
@@ -39350,7 +39374,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Large_Fish_Indicator"
+            "media": "wiki://NorthSea:Large_Fish_Indicator"
           },
           "2": {
             "displayName": "Medium Density",
@@ -39377,7 +39401,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Large_Fish_Indicator"
+            "media": "wiki://NorthSea:Large_Fish_Indicator"
           },
           "3": {
             "displayName": "High Density",
@@ -39404,7 +39428,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Large_Fish_Indicator"
+            "media": "wiki://NorthSea:Large_Fish_Indicator"
           },
           "4": {
             "displayName": "Very High Density",
@@ -39431,7 +39455,7 @@
             "capacity": 0,
             "investmentCost": 0.0,
             "availability": -12,
-            "media": "wiki://(NS)Large_Fish_Indicator"
+            "media": "wiki://NorthSea:Large_Fish_Indicator"
           }
         },
         "layer_info_properties": null

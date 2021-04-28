@@ -2,7 +2,8 @@
 
 $pageTitle = 'MSP Challenge Server Manager';
 
-require_once $abs_app_root.$url_app_root.'templates/security_headers.php';
+$url_app_root = ServerManager::getInstance()->GetServerManagerFolder();
+require_once ServerManager::getInstance()->GetServerManagerRoot().'templates/security_headers.php';
 
 // from here on HTML will be included
 
@@ -10,16 +11,13 @@ require_once('header1_must_include.php'); ?>
 
 <?php /* ALL CSS FIRST! */ ?>
 
-<?php //require_once $abs_app_root.$url_app_root.'css/glyphicons.php'; ?>
-
 <!-- AKA Primary CSS -->
 <link href="<?=$url_app_root;?>css/color_schemes/bootstrap.min.css" rel="stylesheet">
 
-<?php require_once($abs_app_root . $url_app_root . 'templates/style.php'); ?>
+<?php require_once(ServerManager::getInstance()->GetServerManagerRoot() . 'templates/style.php'); ?>
 
 <!-- Template CSS -->
 <!-- AKA Secondary CSS -->
-<!-- <link href="<?=$url_app_root;?>css/sb-admin.css" rel="stylesheet"> -->
 
 <!-- Table Sorting and Such -->
 <link href="<?=$url_app_root;?>css/datatables.css" rel="stylesheet">
@@ -59,10 +57,7 @@ if (typeof jQuery == 'undefined') {
 }
 </script>
 
-<!-- Toasts -->
 <script src="<?=$url_app_root;?>js/toasts/tata.js"></script>
-
-<script src="<?=$url_app_root;?>js/manager.js"></script>
 
 <script src="<?=$url_app_root;?>js/jquery.tablesorter-2.31.1.min.js"></script>
 
@@ -76,10 +71,12 @@ if (typeof jQuery == 'undefined') {
 
 <script src="<?=$url_app_root;?>js/bootstrap.min.js"></script>
 
+<!-- ServerManager's main js, with cache busting -->
+<script src="<?=$url_app_root;?>js/manager.js?v=<?=time();?>"></script>
 
 </head>
 <body>
   <?php //require_once('css/style.php'); ?>
   <?php
-  require_once $abs_app_root.$url_app_root.'templates/navigation.php';
+  require_once ServerManager::getInstance()->GetServerManagerRoot().'templates/navigation.php';
   ?>

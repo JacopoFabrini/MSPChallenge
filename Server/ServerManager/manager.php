@@ -24,30 +24,38 @@ require_once 'init.php';
 
 if (!$user->isAuthorised()) {
 	if ($user->isLoggedIn()) {
-		Redirect::to($url_app_root.'logout.php');
+		Redirect::to(ServerManager::getInstance()->GetServerManagerFolder().'logout.php');
 	}
 	else {
-		Redirect::to($url_app_root.'index.php');
+		Redirect::to(ServerManager::getInstance()->GetServerManagerFolder().'index.php');
 	}
 } 
 
-require_once $abs_app_root . $url_app_root . 'templates/header.php'; ?>
+require_once ServerManager::getInstance()->GetServerManagerRoot() . 'templates/header.php'; ?>
 
 <div id="page-wrapper">
 	<div role="main" class="container">
 		<div id="infobox"></div>
 		<ul class="nav nav-tabs" id="myTab" role="tablist">
 			<li class="nav-item">
-				<a href="#tabSessionsList" class="nav-link active" role="tab" data-toggle="tab" aria-controls="tabSessionsList" aria-selected="true"><i class="fa fa-list-alt"></i> Sessions</a>
+				<a href="#tabSessionsList" class="nav-link active" role="tab" data-toggle="tab" aria-controls="tabSessionsList" aria-selected="true">
+					<i class="fa fa-list-alt"></i> <span class="tabSessionsListText">Sessions</span>
+				</a>
 			</li>
 			<li class="nav-item">
-				<a href="#tabSavesList" class="nav-link" role="tab" data-toggle="tab" aria-controls="tabSavesList" aria-selected="false"><i class="fa fa-save"></i> Saves</a>
+				<a href="#tabSavesList" class="nav-link" role="tab" data-toggle="tab" aria-controls="tabSavesList" aria-selected="false">
+					<i class="fa fa-save"></i> <span class="tabSavesListText">Saves</span>
+				</a>
 			</li>
 			<li class="nav-item">
-				<a href="#tabConfigVersions" class="nav-link" role="tab" data-toggle="tab" aria-controls="tabConfigVersions" aria-selected="false"><i class="fa fa-file-text"></i> Configurations</a>
+				<a href="#tabConfigVersions" class="nav-link" role="tab" data-toggle="tab" aria-controls="tabConfigVersions" aria-selected="false">
+					<i class="fa fa-file-text"></i> <span class="tabConfigVersionsText">Configurations</span>
+				</a>
 			</li>
 			<li class="nav-item">
-				<a href="#tabSettings" class="nav-link" role="tab" data-toggle="tab" aria-controls="tabSettings" aria-selected="false"><i class="fa fa-wrench"></i> Settings</a>
+				<a href="#tabSettings" class="nav-link" role="tab" data-toggle="tab" aria-controls="tabSettings" aria-selected="false">
+					<i class="fa fa-wrench"></i> <span class="tabSettingsText">Settings</span>
+				</a>
 			</li>	
 
 		</ul>
@@ -59,9 +67,11 @@ require_once $abs_app_root . $url_app_root . 'templates/header.php'; ?>
 						<button type="button" id="btnCreateServer" class="btn btn-primary  pull-left" data-toggle="modal" data-target="#modalNewSession"><i class="fa fa-plus-circle" title="Create new session"></i> New Session</button>
 						<button id="buttonRefreshSessionsList" class="btn btn-primary"><i class="fa fa-refresh" title="Refresh" id="buttonRefreshSessionsListIcon"></i> Refresh</button>
 					</div>
-					<div class="col-md-12 flex-right" id="sessionsList">
-						<div class="well well-sm" >
-							Filter:
+					<div class="col-md-12" id="sessionsList">
+						<div class="float-left">
+							Here you can create a new MSP Challenge session, and administer existing ones.
+						</div>
+						<div class="well well-sm float-right" >Filter:
 							<span id="radioFilterSessionsList">
 								<div class="form-check form-check-inline">
 									<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="public" checked>
@@ -80,9 +90,9 @@ require_once $abs_app_root . $url_app_root . 'templates/header.php'; ?>
 					</div>
 
 					<div class="col-md-12">
-						<p>Here you can create a new MSP Challenge session, and administer existing ones.</p>
+						
 						<div class="table-responsive">
-							<table id="sessionsTable" class="table table-hover table-striped tablesorter-default">
+							<table id="sessionsTable" class="table table-hover table-striped">
 								<thead>
 									<tr>
 										<th>ID</th>
@@ -92,7 +102,7 @@ require_once $abs_app_root . $url_app_root . 'templates/header.php'; ?>
 										<th>State</th>
 										<th>Current Month</th>
 										<th>Ending Month</th>
-										<th class="text-center sorter-false">Quick Actions</th>
+										<th class="text-center">Quick Actions</th>
 									</tr>
 								</thead>
 								<tbody id="sessionsListtbody">
@@ -111,8 +121,11 @@ require_once $abs_app_root . $url_app_root . 'templates/header.php'; ?>
 						<button type="button" id="btnLoadSave" class="btn btn-primary pull-left" data-toggle="modal" data-target="#modalUploadSave"><i class="fa fa-plus-circle" title=""></i> Upload Session Save</button>
 						<button id="buttonRefreshSavesList" class="btn btn-primary"><i class="fa fa-refresh" title="Refresh" id="buttonRefreshSavesListIcon"></i> Refresh</button>
 					</div>
-					<div class="col-md-12 flex-right" id="savesList">
-						<div class="well well-sm" >
+					<div class="col-md-12" id="savesList">
+						<div class="float-left">
+							Here you can review and reuse saves of MSP Challenge sessions.
+						</div>
+						<div class="well well-sm float-right" >
 							Filter:
 							<span id="radioFilterSavesList">
 								<div class="form-check form-check-inline">
@@ -128,9 +141,8 @@ require_once $abs_app_root . $url_app_root . 'templates/header.php'; ?>
 					</div>
 
 					<div class="col-md-12">
-						<p>Here you can review and reuse saves of MSP Challenge sessions.</p>
 						<div class="table-responsive">
-							<table id="savesTable" class="table table-hover table-striped tablesorter-default">
+							<table id="savesTable" class="table table-hover table-striped">
 								<thead>
 									<tr>
 										<th>Created</th>
@@ -138,7 +150,7 @@ require_once $abs_app_root . $url_app_root . 'templates/header.php'; ?>
 										<th>Month / Year</th>
 										<th>Configuration</th>
 										<th>Type</th>
-										<th class="text-center sorter-false">Quick Actions</th>
+										<th class="text-center">Quick Actions</th>
 									</tr>
 								</thead>
 								<tbody id="savesListtbody">
@@ -157,9 +169,11 @@ require_once $abs_app_root . $url_app_root . 'templates/header.php'; ?>
 					<button type="button" class="btn btn-primary pull-left" data-toggle="modal" data-target="#modalNewConfigFile"><i class="fa fa-plus-circle" title="Create a new Configuration"></i> New Configuration</button>
 					<button id="buttonRefreshConfigVersionsList" class="btn btn-primary"><i class="fa fa-refresh" title="Refresh" id="buttonRefreshConfigVersionsListIcon"></i> Refresh</button>
 				</div>
-				<div class="col-md-12 flex-right" id="configVersionsList">
-					<div class="well well-sm" style="text-align: end;">
-
+				<div class="col-md-12" id="configVersionsList">
+					<div class="float-left">
+						Here you can upload a new MSP Challenge session configuration file, and administer existing ones.
+					</div>
+					<div class="well well-sm float-right" style="text-align: end;">
 						Filter:
 						<span id="radioFilterConfigVersionsList">
 							<div class="form-check form-check-inline">
@@ -176,9 +190,8 @@ require_once $abs_app_root . $url_app_root . 'templates/header.php'; ?>
 					</div>
 				</div>
 				<div class="col-md-12">
-						<p>Here you can upload a new MSP Challenge session configuration file, and administer existing ones.</p>
 						<div class="table-responsive">
-							<table id="configVersionsTable" class="table table-hover tablesorter-default">
+							<table id="configVersionsTable" class="table table-hover">
 								<thead>
 									<tr>
 										<th></th>
@@ -187,7 +200,7 @@ require_once $abs_app_root . $url_app_root . 'templates/header.php'; ?>
 										<th>Date uploaded</th>
 										<th>Uploaded by</th>
 										<th>Last used</th>
-										<th class="text-center sorter-false">Quick Actions</th>
+										<th class="text-center">Quick Actions</th>
 									</tr>
 								</thead>
 								<tbody id="configVersionsListtbody">
@@ -203,6 +216,42 @@ require_once $abs_app_root . $url_app_root . 'templates/header.php'; ?>
 			<div class="tab-pane fade" id="tabSettings" role="tabpanel" aria-labelledby="tabSettings-tab">
 			<p>Here you can change various settings of this MSP Challenge server.</p>
 				<div class="card-deck">	
+					
+					<div class="card">
+						<div class="card-header">
+							User Access
+						</div>
+						<div class="card-body">
+							<p class="card-text">The other users that should have access to this MSP Challenge server. Note that only this server's administrator(s) can change this.</p>
+						</div>
+						<div class="card-footer">
+							<a href="https://auth.mspchallenge.info/usersc/server_manager.php" class="btn btn-primary" role="button">Change</a>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header">
+							Simulation Servers
+						</div>
+						<div class="card-body">
+							<p class="card-text">Any simulation servers additional to this one, if you would rather have the background simulations run on a different computer than this one.</p>
+						</div>
+						<div class="card-footer">
+							<button type="button" id="btnSimServer" class="btn btn-primary  pull-left" data-toggle="modal" data-target="#modalNewSimServers">Change</button>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header">
+							GeoServers
+						</div>
+						<div class="card-body">
+							<p class="card-text">Any GeoServers to which you have access, and which have been set up to work with the MSP Challenge Simulation Platform, in addition to the default public MSP Challenge GeoServer used by default.</p>
+						</div>
+						<div class="card-footer">
+							<button type="button" id="btnGeoServer" class="btn btn-primary  pull-left" data-toggle="modal" data-target="#modalNewGeoServers">Change</button>
+						</div>
+					</div>
+				<?php /* </div>
+				<div class="card-deck">*/ ?>
 					<div class="card">
 						<div class="card-header">
 							Server Address
@@ -238,28 +287,6 @@ require_once $abs_app_root . $url_app_root . 'templates/header.php'; ?>
 						</div>
 					</div>
 					*/ ?>
-					<div class="card">
-						<div class="card-header">
-							User Access
-						</div>
-						<div class="card-body">
-							<p class="card-text">The other users that should have access to this MSP Challenge server. Note that only this server's administrator(s) can change this.</p>
-						</div>
-						<div class="card-footer">
-							<a href="https://auth.mspchallenge.info/usersc/server_manager.php" class="btn btn-primary" role="button">Change</a>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-header">
-							Simulation Servers
-						</div>
-						<div class="card-body">
-							<p class="card-text">Any simulation servers additional to this one, if you would rather have the background simulations run on a different computer than this one.</p>
-						</div>
-						<div class="card-footer">
-							<button type="button" id="btnSimServer" class="btn btn-primary  pull-left" data-toggle="modal" data-target="#modalNewSimServers">Change</button>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>
@@ -310,47 +337,54 @@ require_once $abs_app_root . $url_app_root . 'templates/header.php'; ?>
 						</ul>
 						<div class="tab-content" id="myNewSessionModalTabContent">
 							<div class="tab-pane fade show active" id="NewSessionModalDefault" role="tabpanel" aria-labelledby="NewSessionModalDefault-tab">
-							<form class="form-horizontal" role="form" data-toggle="validator" id="formNewSession" enctype="multipart/form-data">
-								<div class="form-group">
-									<label for="newSessionName">Session Name</label>
-									<input type="text" class="form-control" id="newSessionName" name="session name" required="true">
-								</div>
-								<div class="form-group">
-									<label for="newWatchdog">Simulation Server</label>
-									<select class="form-control" id="newWatchdog" required="required">
-									</select>
-								</div>
-								<div class="form-group">
-									<label for="newConfigFile">Configuration File</label>
-									<select class="form-control" id="newConfigFile" required="required">
-									</select>
-								</div>
-								<div class="form-group">
-									<label for="newConfigVersion">Configuration Version</label>
-									<select class="form-control" id="newConfigVersion" required="required"></select>
-								</div>
-								<div class="form-group">
-									<label for="newAdminPassword">Admin Password</label>
-									<input type="text" class="form-control" id="newAdminPassword" required="required" title="This feature offers minimal security only. The set password will be retrievable here in the ServerManager for all its users. So do not enter one of your personal, commonly-used passwords.">
-								</div>
-								<div class="form-group">
-									<label for="newPlayerPassword">Player Password</label>
-									<input type="text" class="form-control" id="newPlayerPassword" title="This feature offers minimal security only. The set password will be retrievable here in the ServerManager for all its users. So do not enter one of your personal, commonly-used passwords.">
-								</div>
-								<div class="form-group">
-									<input type="hidden"  id="newGameServer" value="1" />
-								</div>
-								<div class="form-group">
-									<input type="hidden"  id="newVisibility" value="public" />
-									<?php /* 
-									<label for="newVisibility">Visibility</label>
-									<select class="form-control" id="newVisibility" required="required">
-										<option value="public" selected>public</option>
-										<option value="private">private</option>
-									</select>
-									*/?>
-								</div>
-							</form>
+								<form class="form-horizontal" role="form" data-toggle="validator" id="formNewSession" enctype="multipart/form-data">
+									<div class="form-group">
+										<label for="newSessionName">Session Name</label>
+										<input type="text" class="form-control" id="newSessionName" name="session name" required="true">
+									</div>
+									<div class="form-group">
+										<label for="newConfigFile">Configuration File</label>
+										<select class="form-control" id="newConfigFile" required="required">
+										</select>
+									</div>
+									<div class="form-group">
+										<label for="newConfigVersion">Configuration Version</label>
+										<select class="form-control" id="newConfigVersion" required="required"></select>
+									</div>
+									<div class="form-group">
+										<label for="newGeoServer">GeoServer</label>
+										<select class="form-control" id="newGeoServer" required="required">
+										</select>
+									</div>
+									<div class="form-group">
+										<label for="newWatchdog">Simulation Server</label>
+										<select class="form-control" id="newWatchdog" required="required">
+										</select>
+									</div>
+									<div class="form-group">
+										<label for="newAdminPassword">Admin Password</label>
+										<input type="text" class="form-control" id="newAdminPassword" required="required">
+										<small id="adminPasswordHelp" class="form-text text-muted">This and more sophisticated user access settings can always be changed after the session has been successfully created.</small>
+									</div>
+									<div class="form-group">
+										<label for="newPlayerPassword">Player Password</label>
+										<input type="text" class="form-control" id="newPlayerPassword" title="This feature offers minimal security only. The set password will be retrievable here in the ServerManager for all its users. So do not enter one of your personal, commonly-used passwords.">
+										<small id="userPasswordHelp" class="form-text text-muted">This and more sophisticated user access settings can always be changed after the session has been successfully created.</small>
+									</div>
+									<div class="form-group">
+										<input type="hidden"  id="newGameServer" value="1" />
+									</div>
+									<div class="form-group">
+										<input type="hidden"  id="newVisibility" value="public" />
+										<?php /* 
+										<label for="newVisibility">Visibility</label>
+										<select class="form-control" id="newVisibility" required="required">
+											<option value="public" selected>public</option>
+											<option value="private">private</option>
+										</select>
+										*/?>
+									</div>
+								</form>
 							</div>
 							<div class="tab-pane fade show" id="NewSessionModalLoadSave" role="tabpanel" aria-labelledby="NewSessionModalLoadSave-tab">
 							<form class="form-horizontal" role="form" data-toggle="validator" id="formLoadSave" enctype="multipart/form-data">
@@ -375,6 +409,148 @@ require_once $abs_app_root . $url_app_root . 'templates/header.php'; ?>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
 						<button type="button" class="btn btn-primary" onClick="newSessionChoice();">Create session</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal Session user management -->
+		<button type="button" id="btnSessionUsers" class="btn btn-primary" data-toggle="modal" data-target="#sessionUsers" style="display: none;"></button>
+		<div class="modal fade" id="sessionUsers" tabindex="-1" role="dialog" aria-labelledby="sessionUsersCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-wide" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="sessionUsersCenterTitle">Session User Management</h5>
+						<button type="button" id="btnCloseSessionUsers" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<p>When setting a password, anyone who has that password will be able to log on to your session as that user type. 
+						When setting specific users, those authentication provider's users will be able to log on to your session as that user type (assuming they entered the correct username and password). 
+						</p>
+						<form class="form-horizontal" role="form" data-toggle="validator" id="formSessionUsers">
+							<div class="row">
+								<div class="col">
+									<div id="adminUserAccess">
+										<h6>Administrators</h6>
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="provider_admin" value="local" onChange="limitUserAccessView('#adminPasswordFields');">
+											<label class="form-check-label" for="provider_admin">
+												Set a password
+											</label>
+										</div>
+										<div id="adminPasswordFields">
+											<div class="input-group mb-3">
+												<input type="text" class="form-control" placeholder="Enter a password. Administrators require a password." id="password_admin" name="password_admin">
+											</div>	
+										</div>
+										<div id="adminProviders">
+											<div class="form-check">
+									 			<input class="form-check-input" type="radio" name="provider_admin" value="external" onChange="limitUserAccessView('#adminUserFields');">
+												<label class="form-check-label" for="provider_admin">
+													Set users from
+												</label>
+												<select class="form-control-sm d-inline-block p-0 h-25" id="provider_admin_external"></select>
+											</div>
+										</div>
+										<div id="adminUserFields">
+											<div class="input-group mb-3">
+												<div contenteditable="true" class="form-control" style="height: auto !important;" id="users_admin"></div>
+												<div class="input-group-append">
+													<button class="btn btn-outline-secondary" type="button" id="button-find-users_admin" onclick="findUsersAtProvider('#users_admin', $('#provider_admin_external').val());">Find</button>
+												</div>
+											</div>
+										</div>							
+									</div>
+								</div>
+								<div class="col">
+									<div id="regionUserAccess">
+										<h6>Region Managers</h6>
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="provider_region" id="provider_region" value="local" onChange="limitUserAccessView('#regionPasswordFields');">
+											<label class="form-check-label" for="provider_region">
+												Set a password
+											</label>
+										</div>
+										<div id="regionPasswordFields">
+											<div class="input-group mb-3">
+												<input type="text" class="form-control" placeholder="Enter a password. Region managers require a password." id="password_region" name="password_region">
+											</div>
+										</div>
+										<div id="regionProviders">
+											<div class="form-check">
+									 			<input class="form-check-input" type="radio" name="provider_region" value="external" onChange="limitUserAccessView('#regionUserFields');">
+												<label class="form-check-label" for="provider_region">
+													Set users from
+												</label>
+												<select class="form-control-sm d-inline-block p-0 h-25" id="provider_region_external"></select>
+											</div>
+										</div>
+										<div id="regionUserFields">
+											<div class="input-group mb-3">
+												<div contenteditable="true" class="form-control" style="height: auto !important;" id="users_region"></div>
+												<div class="input-group-append">
+													<button class="btn btn-outline-secondary" type="button" id="button-find-users_region" onclick="findUsersAtProvider('#users_region', $('#provider_region_external').val());">Find</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col">
+									<div id="playerUserAccess" style="margin-top: 25px;">
+										<h6>Players</h6>
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="provider_player" id="provider_player" value="local" onChange="limitUserAccessView('#playerPasswordFields');">
+											<label class="form-check-label" for="provider_player">
+												Set a password
+											</label>
+										</div>
+										<div id="playerPasswordFields">
+											<div class="input-group mb-3">
+												<input type="text" class="form-control" placeholder="Leave empty for immediate access." id="password_playerall" name="password_playerall" oninput="toggleFields();">
+												<div class="input-group-append">
+													<span class="input-group-text">All countries</span>
+												</div>
+											</div>
+											<div id="playerPasswordExtraFields">
+											</div>
+										</div>
+										<div id="playerProviders">
+											<div class="form-check">
+									 			<input class="form-check-input" type="radio" name="provider_player" value="external" onChange="limitUserAccessView('#playerUserFields');">
+												<label class="form-check-label" for="provider_player">
+													Set users from 
+												</label>
+												<select class="form-control-sm d-inline-block p-0 h-25" id="provider_player_external"></select>
+											</div>
+										</div>
+										<div id="playerUserFields">
+											<div class="input-group mb-3">
+												<div contenteditable="true" class="form-control" style="height: auto !important;" id="users_playerall"></div>
+												<script language="javascript">$("#users_playerall").on("change keydown paste input", function() {
+													toggleDivs();
+												});</script>
+												<div class="input-group-append">
+													<span class="input-group-text">All countries</span>
+												</div>
+												<div class="input-group-append">
+													<button class="btn btn-outline-secondary" type="button" id="button-find-users_playerall" onclick="findUsersAtProvider('#users_playerall', $('#provider_player_external').val());">Find</button>
+												</div>
+											</div>
+											<div id="playerUserExtraFields">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+						<button type="button" class="btn btn-primary" onClick="saveUserAccess();">Save</button>
 					</div>
 				</div>
 			</div>
@@ -454,7 +630,7 @@ require_once $abs_app_root . $url_app_root . 'templates/header.php'; ?>
 			</div>
 		</div>
 
-		<!-- Modal: New Config info -->
+		<!-- Modal: New Config -->
 		<div class="modal fade" id="modalNewConfigFile" tabindex="-1" role="dialog" aria-labelledby="newconfigfileModalLabel">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
@@ -478,7 +654,7 @@ require_once $abs_app_root . $url_app_root . 'templates/header.php'; ?>
 							</div>
 							<div class="form-group">
 								<label for="newConfigFileName" >New configuration file name</label>
-								<input type="text" class="form-control" id="newConfigFileName" disabled=true value="Change if uploading a completely new configuration file" required="required">
+								<input type="text" class="form-control" id="newConfigFileName" disabled=true placeholder="Change if uploading a completely new configuration file">
 							</div>
 							<div class="form-group">
 								<label for="newConfigDescription">Description</label>
@@ -534,26 +710,25 @@ require_once $abs_app_root . $url_app_root . 'templates/header.php'; ?>
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h4 class="modal-title" id="NewSimServersModalLabel">Add Additional Simulation Servers</h4>
+						<h4 class="modal-title" id="NewSimServersModalLabel">Simulation Servers</h4>
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						</button>
 					</div>
 					<div class="modal-body">
-						<p>
-							<table id="watchdogServerTable" class="table table-sm table-hover">
-								<thead>
-									<tr>
-										<th>Simulation Server Name</th>
-										<th>IP Address</th>
-										<th></th>
-									</tr>
-								</thead>
-								<tbody id="watchdogServerBody">
-								</tbody>
-							</table>
-						</p>
+						<table id="watchdogServerTable" class="table table-sm table-hover">
+							<thead>
+								<tr>
+									<th>Simulation Server Name</th>
+									<th>IP Address</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody id="watchdogServerBody">
+							</tbody>
+						</table>
 						<form class="form-horizontal" role="form" data-toggle="validator" id="formNewWatchdogServer" enctype="multipart/form-data">
+							<h5>Add additional simulation server</h5>
 							<div class="row">
 								<div class="col">
 									<label for="newWatchdogServerName">Simulation Server Name</label>
@@ -569,6 +744,56 @@ require_once $abs_app_root . $url_app_root . 'templates/header.php'; ?>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
 						<button type="button" class="btn btn-primary" onClick="submitNewWatchdogServer();">Add</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal: New Geo Servers -->
+		<div class="modal fade" id="modalNewGeoServers" tabindex="-1" role="dialog" aria-labelledby="NewGeoServersModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" id="NewGeoServersModalLabel">GeoServers</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<table id="GeoServerTable" class="table table-sm table-hover">
+							<thead>
+								<tr>
+									<th>GeoServer Name</th>
+									<th>Fully-qualified URL</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody id="GeoServerBody">
+							</tbody>
+						</table>
+						<form class="form-horizontal" role="form" data-toggle="validator" id="formNewGeoServer">
+							<h5>Add a new GeoServer:</h5>
+							<div class="form-group">
+									<label for="newGeoServerName">GeoServer Name</label>
+									<input type="text" class="form-control" id="newGeoServerName" required="required" placeholder="required">
+							</div>
+							<div class="form-group">
+									<label for="newGeoServerAddress">Fully-qualified URL</label>
+									<input type="text" class="form-control" id="newGeoServerAddress" required="required" placeholder="required">
+							</div>
+							<div class="form-group">
+									<label for="newGeoServerUsername">Username</label>
+									<input type="text" class="form-control" id="newGeoServerUsername" required="required" placeholder="required">
+							</div>
+							<div class="form-group">
+									<label for="newGeoServerPassword">Password</label>
+									<input type="text" class="form-control" id="newGeoServerPassword" required="required" placeholder="required">
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+						<button type="button" class="btn btn-primary" onClick="submitNewGeoServer();">Add</button>
 					</div>
 				</div>
 			</div>
@@ -610,7 +835,6 @@ require_once $abs_app_root . $url_app_root . 'templates/header.php'; ?>
 	
 	$(document).ready(function() {
 		updateSessionsTable('public');
-		$("#sessionsTable").tablesorter();
 		$("#buttonRefreshSessionsList").click(function() {
 			updateSessionsTable($('input[name=inlineRadioOptions]:checked').val());
 		});
@@ -632,6 +856,7 @@ require_once $abs_app_root . $url_app_root . 'templates/header.php'; ?>
 			onUploadConfigFileOriginalSelected(this.value);
 		});
 		configListToOptions();
+		GeoServerListToOptions();
 		watchdogListToOptions();
 
 		updateSavesTable('active');
@@ -648,6 +873,9 @@ require_once $abs_app_root . $url_app_root . 'templates/header.php'; ?>
 
 		WatchdogServerList();
 		GetServerAddr();
+		GeoServerList();
+
+		
 	});
 
 	regularupdateTablesManager = setInterval(function() {
@@ -657,5 +885,5 @@ require_once $abs_app_root . $url_app_root . 'templates/header.php'; ?>
 	
 </script>
 <!-- footers -->
-<?php require_once $abs_app_root . $url_app_root . 'templates/footer.php'; // the final html footer copyright row + the external js calls
+<?php require_once ServerManager::getInstance()->GetServerManagerRoot() . 'templates/footer.php'; // the final html footer copyright row + the external js calls
 ?>
