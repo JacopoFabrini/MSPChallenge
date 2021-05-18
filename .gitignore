@@ -50,6 +50,7 @@
 Server/running_session_config/**
 [Ss]erver/[Ss]erverManager/[Ll]og/**
 ![Ss]erver/[Ss]erverManager/[Ll]og/DONOTREMOVE.txt**
+Server/ServerManager/saves/**
 [Ss]erver/[Ss]erverManager/[Ss]aves/[Aa]rchive/**
 ![Ss]erver/[Ss]erverManager/[Ss]aves/[Aa]rchive/DONOTREMOVE.txt**
 [Ss]erver/[Ss]erverManager/[Ss]ession_archive/**
@@ -98,6 +99,7 @@ ExportedObj/
 *.opendb
 *.VC.db
 *.bak
+*.vsconfig
 
 # Unity3D generated meta files
 *.pidb.meta
