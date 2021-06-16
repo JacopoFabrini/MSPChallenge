@@ -12,7 +12,7 @@ public class LongFieldDrawer : InputFieldDrawer<LongFieldDrawerAttribute, FieldD
         if (String.IsNullOrEmpty(a_newValue))
         {
             m_inputField.text = "0";
-            m_fieldData?.SetValue(0);
+            m_fieldData?.SetValue(0L);
         }
         else
         {
@@ -23,7 +23,7 @@ public class LongFieldDrawer : InputFieldDrawer<LongFieldDrawerAttribute, FieldD
             catch (Exception e)
             {
                 Debug.Log("Exception occured when parsing long input: " + e);
-                m_fieldData?.SetValue(0);
+                m_fieldData?.SetValue(0L);
             }
         }
     }

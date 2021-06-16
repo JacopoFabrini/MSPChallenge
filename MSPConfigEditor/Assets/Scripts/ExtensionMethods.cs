@@ -15,13 +15,18 @@ public static class ExtensionMethods
 
     public static object GetNewBaseObject(this Type a_type)
     {
-        if (a_type == typeof(string))
-            return "";
-        else if (a_type == typeof(int) || a_type == typeof(long) || a_type == typeof(float) || a_type == typeof(double) ||
-                 a_type == typeof(int?) || a_type == typeof(long?) || a_type == typeof(float?) || a_type == typeof(double?))
-            return 0;
-        else
-            return Activator.CreateInstance(a_type);
+		if (a_type == typeof(string))
+			return "";
+		else if (a_type == typeof(int) || a_type == typeof(int?))
+			return 0;
+		else if (a_type == typeof(long) || a_type == typeof(long?))
+			return 0L;
+		else if (a_type == typeof(float) || a_type == typeof(float?))
+			return 0f;
+		else if (a_type == typeof(double) || a_type == typeof(double?))
+			return 0.0;
+		else
+			return Activator.CreateInstance(a_type);
     }
 
     public static Vector2 GetSnapToPositionToBringChildIntoView(this ScrollRect instance, RectTransform child)

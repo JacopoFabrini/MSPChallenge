@@ -12,7 +12,7 @@ public class DoubleFieldDrawer : InputFieldDrawer<DoubleFieldDrawerAttribute, Fi
         if (String.IsNullOrEmpty(a_newValue))
         {
             m_inputField.text = "0";
-            m_fieldData?.SetValue(0);
+            m_fieldData?.SetValue(0.0);
         }
         else
         {
@@ -23,7 +23,7 @@ public class DoubleFieldDrawer : InputFieldDrawer<DoubleFieldDrawerAttribute, Fi
             catch (Exception e)
             {
                 Debug.Log("Exception occured when parsing int input: " + e);
-                m_fieldData?.SetValue(0);
+                m_fieldData?.SetValue(0.0);
             }
         }
     }
