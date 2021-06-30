@@ -2,3 +2,7 @@
 	path = Client
 	url = git@github.com:BredaUniversityResearch/MSPChallenge-Client.git
 	branch = dev
+[submodule "Server"]
+	path = Server
+	url = git@github.com:BredaUniversityResearch/MSPChallenge-Server.git
+	branch = dev
