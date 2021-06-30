@@ -619,7 +619,7 @@
 				
 				$width = $height * $widthRatioMultiplier;
 				$bounds = $rasterMeta["boundingbox"][0][0].",".$rasterMeta["boundingbox"][0][1].",".$rasterMeta["boundingbox"][1][0].",".$rasterMeta["boundingbox"][1][1];
-				return $this->geoserver->ows($workspace . "/wms/reflect?layers=" . urlencode($workspace) . ":" . urlencode($layer) . "&format=image/png&transparent=FALSE&width=" . round($width) . "&height=" . $height ."&bbox=".$bounds);
+				return $this->geoserver->ows($workspace . "/wms/reflect?layers=" . urlencode($workspace) . ":" . urlencode($layer) . "&format=image/png&transparent=TRUE&width=" . round($width) . "&height=" . $height ."&bbox=".$bounds);
 			}
 			else{
 				throw new Exception("Incorrect format, use GML, CSV, JSON or PNG");
