@@ -1,0 +1,4 @@
+[submodule "Client"]
+	path = Client
+	url = git@github.com:BredaUniversityResearch/MSPChallenge-Client.git
+	branch = dev
