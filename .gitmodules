@@ -6,3 +6,7 @@
 	path = Server
 	url = git@github.com:BredaUniversityResearch/MSPChallenge-Server.git
 	branch = dev
+[submodule "Simulations"]
+	path = Simulations
+	url = git@github.com:BredaUniversityResearch/MSPChallenge-Simulations.git
+	branch = dev
