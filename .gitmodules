@@ -10,3 +10,7 @@
 	path = Simulations
 	url = git@github.com:BredaUniversityResearch/MSPChallenge-Simulations.git
 	branch = dev
+[submodule "Example GeoServer"]
+	path = Example GeoServer
+	url = git@github.com:BredaUniversityResearch/MSPChallenge-Example-GeoServer.git
+	branch = dev
