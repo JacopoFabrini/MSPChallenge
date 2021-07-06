@@ -14,3 +14,7 @@
 	path = Example GeoServer
 	url = git@github.com:BredaUniversityResearch/MSPChallenge-Example-GeoServer.git
 	branch = dev
+[submodule "MSPConfigEditor"]
+	path = MSPConfigEditor
+	url = git@github.com:BredaUniversityResearch/CradleConfigEditor.git
+	branch = MSPChallenge
