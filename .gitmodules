@@ -1,20 +1,16 @@
 [submodule "Client"]
 	path = Client
-	url = git@github.com:BredaUniversityResearch/MSPChallenge-Client.git
+	url = ../MSPChallenge-Client.git
 	branch = dev
 [submodule "Server"]
 	path = Server
-	url = git@github.com:BredaUniversityResearch/MSPChallenge-Server.git
+	url = ../MSPChallenge-Server.git
 	branch = dev
 [submodule "Simulations"]
 	path = Simulations
-	url = git@github.com:BredaUniversityResearch/MSPChallenge-Simulations.git
+	url = ../MSPChallenge-Simulations.git
 	branch = dev
 [submodule "Example GeoServer"]
 	path = Example GeoServer
-	url = git@github.com:BredaUniversityResearch/MSPChallenge-Example-GeoServer.git
+	url = ../MSPChallenge-Example-GeoServer.git
 	branch = dev
-[submodule "MSPConfigEditor"]
-	path = MSPConfigEditor
-	url = git@github.com:BredaUniversityResearch/CradleConfigEditor.git
-	branch = MSPChallenge
