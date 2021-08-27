@@ -1,8 +1,0 @@
-{
-    "name": "SoftwareRasterizerLib",
-    "references": [
-        "MSP2050Plugins"
-    ],
-    "includePlatforms": [],
-    "excludePlatforms": []
-}
